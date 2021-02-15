@@ -1,9 +1,25 @@
+// React
 import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Homepage from "./components/Homepage";
+
+// Layouts
+import Header from "./components/layouts/Header";
+import Footer from "./components/layouts/Footer";
+
+// Pages
+
 function App() {
    return (
-      <React.Fragment>
-         <h1>Portfolio Starter</h1>
-      </React.Fragment>
+      <Router>
+         <React.Fragment>
+            <Header />
+            <div className="wrapper">
+               <Homepage />
+            </div>
+            <Footer />
+         </React.Fragment>
+      </Router>
    );
 }
 

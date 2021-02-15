@@ -1,0 +1,16 @@
+/*
+-------------------------------------------
+* Buttons
+-------------------------------------------
+*/
+button {
+   padding: 10px 15px 10px 15px;
+   background-color: transparent;
+   color: white;
+   border: 1px solid white;
+}
+
+button:active,
+button:focus {
+   outline: none;
+}

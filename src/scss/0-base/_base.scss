@@ -1,10 +1,10 @@
 /*
 -------------------------------------------
-* Normalize
+* Imports
 -------------------------------------------
 */
 @import "./normalize";
-
+@import "../2-abstracts/abstracts";
 /*
 -------------------------------------------
 * Selectors
@@ -16,7 +16,12 @@ html {
       padding: 0px;
       box-sizing: border-box;
       font-size: 1em; // 16px
+      font-family: $font2;
    }
+}
+
+body {
+   background-color: black;
 }
 
 /*
@@ -24,6 +29,7 @@ html {
 * Typography Rules
 -------------------------------------------
 */
+
 h1,
 h2,
 h3,
@@ -31,6 +37,7 @@ h4,
 h5,
 h6 {
    font-size: 2.5em;
+   font-family: $font1;
 }
 
 a {

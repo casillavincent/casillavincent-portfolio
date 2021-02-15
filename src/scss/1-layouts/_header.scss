@@ -1,0 +1,59 @@
+// Imports
+@import "../2-abstracts/abstracts";
+
+header {
+   .headroom-wrapper {
+      // Content Wrapper
+      width: 100%;
+      font-size: 1em;
+      .headroom {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         align-items: center;
+         width: inherit;
+         height: 55px;
+         background-color: black;
+         color: white;
+         h1 {
+            font-size: 1.5em;
+         }
+
+         // Navigation
+         .main-nav {
+            display: none;
+         }
+      }
+   }
+}
+@media screen and (min-width: 50em) {
+   header {
+      .headroom-wrapper {
+         .headroom {
+            justify-content: space-around;
+            // Hide the hamburger button in desktop view
+            .hamburger-react {
+               display: none;
+            }
+         }
+      }
+   }
+
+   header {
+      .headroom-wrapper {
+         .headroom {
+            .main-nav {
+               width: 225px;
+               display: block;
+               &__ul {
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: space-between;
+                  align-items: center;
+                  text-transform: lowercase;
+               }
+            }
+         }
+      }
+   }
+}

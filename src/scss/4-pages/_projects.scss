@@ -1,0 +1,95 @@
+// Imports
+@import "../2-abstracts/abstracts";
+
+/*
+-------------------------------------------
+* Projects
+-------------------------------------------
+*/
+.projects {
+   width: 100%;
+   height: auto;
+   color: white;
+   font-size: 1em;
+}
+
+/*
+-------------------------------------------
+* Projects Articles
+-------------------------------------------
+*/
+.projects {
+   // Intro
+   &__intro {
+      height: 25vh;
+      padding: 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      h1 {
+         font-size: 2.5em;
+         margin-bottom: 10px;
+      }
+      blockquote {
+         font-size: 0.85em;
+      }
+
+      // Intro MQL
+      @media screen and (min-width: 800px) {
+         max-width: 800px;
+         margin: auto;
+         h1 {
+            font-size: 5em;
+         }
+         blockquote {
+            font-size: 0.95em;
+         }
+      }
+   }
+
+   // Highlights
+   &__highlights {
+      height: 65vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      .highlights-item-01,
+      .highlights-item-02,
+      .highlights-item-03,
+      .highlights-item-04 {
+         @include col-center-items;
+         svg {
+            margin-bottom: 15px;
+         }
+         h2 {
+            font-size: 0.75em;
+            text-align: center;
+         }
+      }
+
+      @media screen and (min-width: 25em) {
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         height: 40vh;
+         max-width: 800px;
+         margin: auto;
+      }
+
+      @media screen and (min-width: 50em) {
+         grid-template-columns: repeat(4, 1fr);
+         height: 50vh;
+         .highlights-item-01,
+         .highlights-item-02,
+         .highlights-item-03,
+         .highlights-item-04 {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            height: 10vh;
+         }
+      }
+   }
+}

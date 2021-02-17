@@ -9,14 +9,15 @@ const Footer = () => {
          <div className="footer__top-section">
             <h1>Like my work?</h1>
             <button type="button" className="button">
-               Contact Me
+               <a href="mailto:casillavincent@gmail.com?subject=Hello Vincent!">Contact Me</a>
             </button>
          </div>
 
          {/* Bottom Section */}
          <div className="footer__bottom-section">
+            <h2>Connect with me</h2>
             <div className="social-icons">
-               <IconContext.Provider value={{ color: "white", size: "1.75em" }}>
+               <IconContext.Provider value={{ color: "white", size: "1.25em" }}>
                   <FaTwitter title="Twitter Icon" />
                   <FaGithub title="Github Icon" />
                   <FaLinkedinIn title="Linked In Icon" />

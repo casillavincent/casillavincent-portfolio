@@ -1,21 +1,24 @@
 // React
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Homepage from "./components/Homepage";
 
 // Layouts
 import Header from "./components/layouts/Header";
 import Footer from "./components/layouts/Footer";
 
 // Pages
-
+import Splash from "./components/Splash";
+import Projects from "./components/Projects";
 function App() {
    return (
       <Router>
          <React.Fragment>
             <Header />
             <div className="wrapper">
-               <Homepage />
+               <main className="main main-page">
+                  <Splash />
+                  <Projects />
+               </main>
             </div>
             <Footer />
          </React.Fragment>

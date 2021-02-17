@@ -1,0 +1,48 @@
+/*
+-------------------------------------------
+* Scroll Down Icon
+-------------------------------------------
+*/
+@import "../2-abstracts/abstracts";
+
+.scroll-downs {
+   @include col-center-items;
+   &__label {
+      margin-top: 10px;
+      font-size: 0.75em;
+      text-align: center;
+      width: 100%;
+   }
+}
+.mousey {
+   width: 3px;
+   padding: 8px 10px;
+   height: 20px;
+   border: 2px solid #fff;
+   border-radius: 25px;
+   opacity: 0.75;
+   box-sizing: content-box;
+}
+.scroller {
+   width: 3px;
+   height: 10px;
+   border-radius: 25%;
+   background-color: #fff;
+   animation-name: scroll;
+   animation-duration: 2.2s;
+   animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+   animation-iteration-count: infinite;
+}
+@keyframes scroll {
+   0% {
+      opacity: 0;
+   }
+   10% {
+      transform: translateY(0);
+      opacity: 1;
+   }
+   100% {
+      transform: translateY(15px);
+      opacity: 0;
+   }
+}

@@ -16,7 +16,8 @@ header {
          background-color: black;
          color: white;
          h1 {
-            font-size: 1.5em;
+            font-size: 1.2em;
+            margin-left: 10px;
          }
 
          // Navigation
@@ -31,6 +32,9 @@ header {
       .headroom-wrapper {
          .headroom {
             justify-content: space-around;
+            h1 {
+               margin-left: 0px;
+            }
             // Hide the hamburger button in desktop view
             .hamburger-react {
                display: none;

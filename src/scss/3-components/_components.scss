@@ -4,7 +4,7 @@
 -------------------------------------------
 */
 button {
-   padding: 10px 15px 10px 15px;
+   padding: 7px 12px 7px 12px;
    background-color: transparent;
    color: white;
    border: 1px solid white;
@@ -21,3 +21,21 @@ button:focus {
 -------------------------------------------
 */
 @import "./scroll-down-icon";
+
+/*
+-------------------------------------------
+* Social Widgets
+-------------------------------------------
+*/
+.fixed-social-icons {
+   width: 100px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+
+   position: fixed;
+   right: 20px;
+   bottom: 20px;
+   transition: all 0.6s ease-out;
+}

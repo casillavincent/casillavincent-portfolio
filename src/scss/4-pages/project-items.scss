@@ -1,0 +1,72 @@
+// Imports
+@import "../2-abstracts/abstracts";
+
+/*
+-------------------------------------------
+* Global Project Items
+-------------------------------------------
+*/
+.project-item {
+   border: 1px solid red;
+   height: 100vh;
+   color: white;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   font-size: 1em;
+   padding: 0 15px 50px 15px;
+
+   // Title
+   &__title {
+      font-size: 2em;
+      margin-bottom: 10px;
+   }
+
+   // Excerpt
+   &__excerpt {
+      font-size: 1em;
+      margin-bottom: 25px;
+      max-width: 550px;
+      font-weight: bold;
+   }
+
+   &__cta {
+      button {
+         margin-right: 10px;
+         font-weight: bold;
+      }
+   }
+
+   // MQL
+   @media screen and (min-width: 550px) {
+      border: 1px solid green;
+      padding: 0 0 50px 50px;
+      height: 100vh;
+      &__title {
+         font-size: 3.25em;
+      }
+   }
+
+   @media screen and (min-width: 850px) {
+      padding: 0 0 120px 120px;
+   }
+}
+
+/*
+-------------------------------------------
+* Movie Application
+-------------------------------------------
+*/
+.movie-app-project {
+   border: 1px solid red;
+
+   background-image: url("https://www.themoviedb.org/t/p/original/qF8eaVidzEsXGMU9qp8owby4bzV.jpg");
+   @include normal-bg;
+   background-position: center-left;
+   * {
+      color: #ebcb87;
+   }
+   .cta-btn {
+      border: 1px solid #ebcb87;
+   }
+}

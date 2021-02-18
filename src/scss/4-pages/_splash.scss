@@ -39,5 +39,8 @@
 
    @media screen and (min-width: 800px) {
       max-width: 800px;
+      &__excerpt {
+         font-size: 1.2em;
+      }
    }
 }

@@ -8,7 +8,12 @@ import Footer from "./components/layouts/Footer";
 
 // Pages
 import Splash from "./components/Splash";
-import Projects from "./components/Projects";
+import Social from "./components/widgets/Social";
+import ProjectsSummary from "./components/ProjectsSummary";
+import MovieApp from "./components/projects/MovieApp";
+import DiscoverJapan from "./components/projects/DiscoverJapan";
+import Capstone from "./components/projects/Capstone";
+import Portfolio from "./components/projects/Portfolio";
 function App() {
    return (
       <Router>
@@ -17,9 +22,14 @@ function App() {
             <div className="wrapper">
                <main className="main main-page">
                   <Splash />
-                  <Projects />
+                  <ProjectsSummary />
+                  <MovieApp />
+                  <DiscoverJapan />
+                  <Capstone />
+                  <Portfolio />
                </main>
             </div>
+            <Social />
             <Footer />
          </React.Fragment>
       </Router>

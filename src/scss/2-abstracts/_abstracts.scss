@@ -7,6 +7,7 @@ $col1: #2d2327;
 $col2: #45364b;
 $col3: #8c93a8;
 $col4: #b5c2b6;
+$accent: #f73615;
 /*
 -------------------------------------------
 * Fonts
@@ -39,4 +40,11 @@ $font2: "Montserrat", sans-serif;
    flex-direction: row;
    justify-content: center;
    align-items: center;
+}
+
+@mixin normal-bg {
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
 }

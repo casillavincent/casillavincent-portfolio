@@ -14,13 +14,12 @@
       justify-content: center;
       align-items: center;
       height: 60%;
-      background: $col4;
 
       h1 {
-         font-size: 2.5em;
+         font-size: 2em;
          margin-bottom: 15px;
          @media screen and (min-width: 50em) {
-            font-size: 3em;
+            font-size: 2.5em;
          }
       }
    }
@@ -36,7 +35,8 @@
 
       // Connect with me
       h2 {
-         font-size: 1.5em;
+         font-size: 1.25em;
+         margin-bottom: 5px;
       }
 
       .copyright {

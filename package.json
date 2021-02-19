@@ -13,10 +13,12 @@
     "react-dom": "^17.0.1",
     "react-headroom": "^3.1.0",
     "react-icons": "^4.1.0",
+    "react-id-swiper": "^4.0.0",
     "react-parallax-tilt": "^1.4.83",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
     "react-tabs": "^3.1.2",
+    "swiper": "^6.4.15",
     "web-vitals": "^0.2.4"
   },
   "scripts": {

@@ -6,14 +6,13 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from "./components/layouts/Header";
 import Footer from "./components/layouts/Footer";
 
-// Pages
-import Splash from "./components/Splash";
+// Widgets
 import Social from "./components/widgets/Social";
-import ProjectsSummary from "./components/ProjectsSummary";
-import MovieApp from "./components/projects/MovieApp";
-import DiscoverJapan from "./components/projects/DiscoverJapan";
-import Capstone from "./components/projects/Capstone";
-import Portfolio from "./components/projects/Portfolio";
+
+// Pages
+import Homepage from "./components/Homepage";
+import About from "./components/About";
+
 function App() {
    return (
       <Router>
@@ -21,14 +20,13 @@ function App() {
             <Header />
             <div className="wrapper">
                <main className="main main-page">
-                  <Splash />
-                  <ProjectsSummary />
-                  <MovieApp />
-                  <DiscoverJapan />
-                  <Capstone />
-                  <Portfolio />
+                  <Switch>
+                     <Route path="/" exact component={Homepage} />
+                     <Route path="/about" component={About} />
+                  </Switch>
                </main>
             </div>
+
             <Social />
             <Footer />
          </React.Fragment>

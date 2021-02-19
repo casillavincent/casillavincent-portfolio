@@ -12,7 +12,14 @@ const Social = () => {
       }
    };
    return (
-      <aside className="fixed-social-icons">
+      <aside
+         className="fixed-social-icons"
+         data-aos="fade-left"
+         data-aos-anchor-placement="bottom-bottom"
+         data-aos-easing="ease-out"
+         data-aos-once="true"
+         data-aos-delay="500"
+      >
          <IconContext.Provider value={{ color: "white", size: "1.25em" }}>
             <a href="https://twitter.com/casillavincent" id="twitter-link">
                <FaTwitter title="Twitter Icon" />

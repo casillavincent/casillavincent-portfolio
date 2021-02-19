@@ -2,7 +2,14 @@ import React from "react";
 
 const ScrollDownIcon = () => {
    return (
-      <div class="scroll-downs">
+      <div
+         class="scroll-downs"
+         data-aos="fade-up"
+         data-aos-anchor-placement="center-bottom"
+         data-aos-easing="ease-out"
+         data-aos-once="true"
+         data-aos-duration="750"
+      >
          <div class="mousey">
             <div class="scroller"></div>
          </div>

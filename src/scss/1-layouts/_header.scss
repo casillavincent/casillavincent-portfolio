@@ -12,8 +12,9 @@ header {
          justify-content: space-between;
          align-items: center;
          width: inherit;
-         height: 55px;
-         background-color: black;
+         height: 60px;
+         background-color: rgba(black, 0.95);
+         backdrop-filter: blur(10px);
          color: white;
          h1 {
             font-size: 1.2em;
@@ -47,12 +48,12 @@ header {
       .headroom-wrapper {
          .headroom {
             .main-nav {
-               width: 225px;
+               width: 200px;
                display: block;
                &__ul {
                   display: flex;
                   flex-direction: row;
-                  justify-content: space-between;
+                  justify-content: space-around;
                   align-items: center;
                   text-transform: lowercase;
                }

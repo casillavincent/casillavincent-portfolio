@@ -10,7 +10,9 @@ const Header = () => {
    return (
       <header>
          <Headroom>
-            <h1 className="logo">Vincent Casilla</h1>
+            <Link to={"/"}>
+               <h1 className="logo">Vincent Casilla</h1>
+            </Link>
 
             {/* Hamburger Button */}
             <Hamburger toggled={isOpen} toggle={setIsOpen} size="25" />
@@ -18,9 +20,15 @@ const Header = () => {
             {/* Navigation */}
             <nav className="main-nav">
                <ul className="main-nav__ul">
-                  <li className="main-nav__list-item"> Home </li>
-                  <li className="main-nav__list-item"> Projects </li>
-                  <li className="main-nav__list-item"> About </li>
+                  <li className="main-nav__list-item">
+                     <Link to={"/"}>Home</Link>
+                  </li>
+                  <li className="main-nav__list-item">
+                     <Link to={"/about"}>About</Link>
+                  </li>
+                  <li className="main-nav__list-item">
+                     <a href="#footer"> Contact</a>
+                  </li>
                </ul>
             </nav>
          </Headroom>

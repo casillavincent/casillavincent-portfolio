@@ -4,7 +4,7 @@ import { IconContext } from "react-icons/lib";
 
 const Footer = () => {
    return (
-      <footer className="footer">
+      <footer className="footer" id="footer">
          {/* Top Section */}
          <div className="footer__top-section">
             <h1>Like my work?</h1>

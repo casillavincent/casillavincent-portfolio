@@ -5,6 +5,8 @@ import "aos/dist/aos.css";
 
 // Stylesheet
 import "./scss/styles.scss";
+// scss
+import "swiper/swiper.scss";
 
 ReactDOM.render(
    <React.StrictMode>

@@ -1,5 +1,6 @@
 import React from "react";
 import ScrollDownIcon from "./widgets/ScrollDownIcon";
+import { Link } from "react-router-dom";
 
 const Splash = () => {
    return (
@@ -9,7 +10,6 @@ const Splash = () => {
             <h1
                className="splash-text-container__tagline"
                data-aos="fade-right"
-               data-aos-anchor-placement="center-bottom"
                data-aos-easing="ease-out"
                data-aos-once="true"
                data-aos-duration="750"
@@ -19,7 +19,6 @@ const Splash = () => {
             <p
                className="splash-text-container__excerpt"
                data-aos="fade-right"
-               data-aos-anchor-placement="center-bottom"
                data-aos-easing="ease-out"
                data-aos-once="true"
                data-aos-delay="100"
@@ -31,13 +30,12 @@ const Splash = () => {
                type="button"
                className="splash-text-container__btn"
                data-aos="fade-right"
-               data-aos-anchor-placement="center-bottom"
                data-aos-easing="ease-out"
                data-aos-once="true"
                data-aos-delay="150"
                data-aos-duration="750"
             >
-               More about me
+               <Link to={"/about"}>More about me</Link>
             </button>
          </article>
 

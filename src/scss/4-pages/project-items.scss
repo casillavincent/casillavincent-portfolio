@@ -7,66 +7,82 @@
 -------------------------------------------
 */
 .project-item {
-   border: 1px solid red;
-   height: 100vh;
-   color: white;
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-end;
+   @include col-center-items;
    font-size: 1em;
-   padding: 0 15px 50px 15px;
+   height: auto;
+   padding: 45px 0px;
 
-   // Title
-   &__title {
-      font-size: 2em;
-      margin-bottom: 10px;
-   }
-
-   // Excerpt
-   &__excerpt {
-      font-size: 1em;
-      margin-bottom: 25px;
-      max-width: 550px;
-      font-weight: bold;
-   }
-
-   &__cta {
-      button {
-         margin-right: 10px;
-         font-weight: bold;
+   // Banner
+   &__banner {
+      &--mobile {
+         width: 60%;
+         max-width: 200px;
+      }
+      &--desktop {
+         display: none;
       }
    }
 
-   // MQL
-   @media screen and (min-width: 550px) {
-      border: 1px solid green;
-      padding: 0 0 50px 50px;
-      height: 100vh;
-      &__title {
-         font-size: 3.25em;
+   // Information
+   &__text-content {
+      color: white;
+      padding: 25px;
+      max-width: 450px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-start;
+
+      &__name {
+         font-size: 1.5em;
+         margin-bottom: 15px;
+      }
+      &__excerpt {
+         line-height: 17px;
+         margin-bottom: 20px;
+         font-size: 0.8em;
+      }
+      &__cta {
+         display: flex;
+         flex-direction: row;
+         .cta-btn {
+            margin-right: 5px;
+         }
       }
    }
 
-   @media screen and (min-width: 850px) {
-      padding: 0 0 120px 120px;
-   }
-}
+   @media screen and (min-width: 40em) {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      &__banner {
+         &--mobile {
+            margin-left: 20px;
+         }
+         &--desktop {
+            margin-left: 20px;
+         }
+      }
 
-/*
--------------------------------------------
-* Movie Application
--------------------------------------------
-*/
-.movie-app-project {
-   border: 1px solid red;
-
-   background-image: url("https://www.themoviedb.org/t/p/original/qF8eaVidzEsXGMU9qp8owby4bzV.jpg");
-   @include normal-bg;
-   background-position: center-left;
-   * {
-      color: #ebcb87;
+      &__text-content {
+         max-width: 500px;
+      }
    }
-   .cta-btn {
-      border: 1px solid #ebcb87;
+   @media screen and (min-width: 50em) {
+      height: 700px;
+      &__banner {
+         &--mobile {
+            display: none;
+         }
+         &--desktop {
+            display: block;
+            width: 50%;
+            max-width: 600px;
+            min-width: 400px;
+            height: auto;
+         }
+      }
    }
 }

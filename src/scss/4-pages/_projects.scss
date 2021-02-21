@@ -8,7 +8,7 @@
 */
 .projects {
    width: 100%;
-   min-height: 800px;
+   min-height: 750px;
    color: white;
    font-size: 1em;
 
@@ -26,10 +26,12 @@
 
 .projects {
    padding: 25px;
-   max-width: 800px;
+   // max-width: 800px;
    margin: auto;
+   @include col-center-items;
    &__intro {
       margin-bottom: 50px;
+      max-width: 800px;
       h1 {
          font-size: 4.25em;
          text-align: center;
@@ -64,6 +66,7 @@
 
    &__highlights {
       margin-bottom: 25px;
+      max-width: 800px;
       .highlights-item-01,
       .highlights-item-02,
       .highlights-item-03,

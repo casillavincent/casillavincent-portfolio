@@ -6,7 +6,6 @@
 @import "../2-abstracts/abstracts";
 .artillery {
    font-size: 1em;
-   background-color: $col1;
 
    // Target all selectors
    .col-development-stack,
@@ -14,8 +13,9 @@
       padding: 30px;
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
+      justify-content: center;
       align-items: center;
+      height: 300px;
       h3 {
          font-size: 1em;
          margin-bottom: 15px;
@@ -32,7 +32,7 @@
       }
 
       @media screen and (min-width: 50em) {
-         height: 300px;
+         height: 200px;
       }
    }
 
@@ -40,11 +40,10 @@
    .col-development-stack {
       ul {
          display: grid;
-         grid-template-columns: repeat(2, 100px);
+         grid-template-columns: repeat(3, 1fr);
          grid-gap: 10px;
          li {
             color: white;
-            width: 100px;
          }
 
          // MQL
@@ -76,6 +75,6 @@
       flex-direction: row;
       justify-content: center;
       align-items: center;
-      height: 50vh;
+      min-height: 500px;
    }
 }

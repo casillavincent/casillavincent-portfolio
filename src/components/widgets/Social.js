@@ -21,19 +21,23 @@ const Social = () => {
          data-aos-delay="500"
       >
          <IconContext.Provider value={{ color: "white", size: "1.25em" }}>
-            <a href="https://twitter.com/casillavincent" id="twitter-link">
+            <a href="https://twitter.com/casillavincent" target="_blank" id="twitter-link">
                <FaTwitter title="Twitter Icon" />
             </a>
 
-            <a href="https://github.com/casillavincent" id="github-link">
+            <a href="https://github.com/casillavincent" target="_blank" id="github-link">
                <FaGithub title="Github Icon" />
             </a>
 
-            <a href="https://www.linkedin.com/in/vcasilla/" id="linkedin-link">
+            <a href="https://www.linkedin.com/in/vcasilla/" target="_blank" id="linkedin-link">
                <FaLinkedinIn title="Linked In Icon" />
             </a>
 
-            <a href="mailto:casillavincent@gmail.com?subject=Hello Vincent!" id="e-mail-link">
+            <a
+               href="mailto:casillavincent@gmail.com?subject=Hello Vincent!"
+               target="_blank"
+               id="e-mail-link"
+            >
                <FaEnvelope title="E-mail Icon" />
             </a>
          </IconContext.Provider>

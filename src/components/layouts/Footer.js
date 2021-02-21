@@ -1,5 +1,5 @@
 import React from "react";
-import { FaTwitter, FaGithub, FaEnvelope, FaLinkedinIn } from "react-icons/fa";
+import { FaTwitter, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 
 const Footer = () => {
@@ -18,9 +18,21 @@ const Footer = () => {
             <h2>Connect with me</h2>
             <div className="social-icons">
                <IconContext.Provider value={{ color: "white", size: "1.25em" }}>
-                  <FaTwitter title="Twitter Icon" />
-                  <FaGithub title="Github Icon" />
-                  <FaLinkedinIn title="Linked In Icon" />
+                  <a href="https://twitter.com/casillavincent" target="_blank" id="twitter-link">
+                     <FaTwitter title="Twitter Icon" />
+                  </a>
+
+                  <a href="https://github.com/casillavincent" target="_blank" id="github-link">
+                     <FaGithub title="Github Icon" />
+                  </a>
+
+                  <a
+                     href="https://www.linkedin.com/in/vcasilla/"
+                     target="_blank"
+                     id="linkedin-link"
+                  >
+                     <FaLinkedinIn title="Linked In Icon" />
+                  </a>
                </IconContext.Provider>
             </div>
             <p className="copyright">&copy; Vincent Casilla 2020-2021</p>

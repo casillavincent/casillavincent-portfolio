@@ -7,7 +7,6 @@ import AOS from "aos";
 
 const About = () => {
    AOS.init();
-
    const params = {
       slidesPerView: 1,
       spaceBetween: 30,
@@ -28,7 +27,12 @@ const About = () => {
    return (
       <section className="section about">
          {/* My Summary */}
-         <article className="about-item my-summary">
+         <article
+            className="about-item my-summary"
+            data-aos="zoom-out-down"
+            data-aos-easing="ease-out-quart"
+            data-aos-once="true"
+         >
             {/* Text */}
             <div className="my-summary__text">
                <h1 className="name">Vincent Casilla</h1>
@@ -53,8 +57,8 @@ const About = () => {
          <article className="about-item artillery">
             {/* Development Stack */}
             <div className="col-development-stack">
-               <h3>Development Stack</h3>{" "}
-               <ul className="development-stack">
+               <h3>Development Stack</h3>
+               <ul className="development-stack" title="Scroll Me">
                   <li className="development-stack__item">React.JS</li>
                   <li className="development-stack__item">HTML5</li>
                   <li className="development-stack__item">CSS3</li>
@@ -86,7 +90,6 @@ const About = () => {
          </article>
 
          {/* My Inspirations */}
-
          <article className="about-item inspirations">
             <h4
                data-aos="fade-right"
@@ -107,14 +110,31 @@ const About = () => {
                data-aos-duration="500"
             >
                <Swiper {...params}>
-                  <li className="inspirations-list__item">Music</li>
-                  <li className="inspirations-list__item">Health</li>
-                  <li className="inspirations-list__item"> Travelling</li>
-                  <li className="inspirations-list__item">Video Games</li>
-                  <li className="inspirations-list__item">Superhero Films</li>
-                  <li className="inspirations-list__item">Stocks</li>
-                  <li className="inspirations-list__item">Desserts</li>
-                  <li className="inspirations-list__item">Photography</li>
+                  <li className="inspirations-list__item" title="Scroll Me">
+                     Music
+                  </li>
+                  <li className="inspirations-list__item" title="Scroll Me">
+                     Health
+                  </li>
+                  <li className="inspirations-list__item" title="Scroll Me">
+                     {" "}
+                     Travelling
+                  </li>
+                  <li className="inspirations-list__item" title="Scroll Me">
+                     Video Games
+                  </li>
+                  <li className="inspirations-list__item" title="Scroll Me">
+                     Superhero Films
+                  </li>
+                  <li className="inspirations-list__item" title="Scroll Me">
+                     Stocks
+                  </li>
+                  <li className="inspirations-list__item" title="Scroll Me">
+                     Desserts
+                  </li>
+                  <li className="inspirations-list__item" title="Scroll Me">
+                     Photography
+                  </li>
                </Swiper>
             </ul>
          </article>

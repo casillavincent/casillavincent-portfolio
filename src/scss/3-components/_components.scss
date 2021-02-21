@@ -8,6 +8,12 @@ button {
    background-color: transparent;
    color: white;
    border: 1px solid white;
+   transition: all 0.3s ease-out;
+   &:hover:not(.splash-text-container__btn) {
+      background-color: $accent;
+      cursor: pointer;
+      border: 1px solid $accent;
+   }
 }
 
 button:active,

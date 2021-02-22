@@ -1,5 +1,7 @@
 import React from "react";
 import Portrait from "../assets/portrait-placeholder.jpg";
+import { useKeenSlider } from "keen-slider/react";
+import "keen-slider/keen-slider.min.css";
 
 // Plugins
 import Swiper from "react-id-swiper";
@@ -7,23 +9,40 @@ import AOS from "aos";
 
 const About = () => {
    AOS.init();
-   const params = {
-      slidesPerView: 1,
-      spaceBetween: 30,
+   // <--- Keen Slider --->
+   const [pause, setPause] = React.useState(false);
+   const timer = React.useRef();
+   const [sliderRef, slider] = useKeenSlider({
       loop: true,
-      pagination: {
-         el: ".swiper-pagination",
-         clickable: true,
+      duration: 1250,
+      dragStart: () => {
+         setPause(true);
       },
-      navigation: {
-         nextEl: ".swiper-button-next",
-         prevEl: ".swiper-button-prev",
+      dragEnd: () => {
+         setPause(false);
       },
-      autoplay: {
-         delay: 1000,
-         disableOnInteraction: false,
-      },
-   };
+   });
+
+   React.useEffect(() => {
+      sliderRef.current.addEventListener("mouseover", () => {
+         setPause(true);
+      });
+      sliderRef.current.addEventListener("mouseout", () => {
+         setPause(false);
+      });
+   }, [sliderRef]);
+
+   React.useEffect(() => {
+      timer.current = setInterval(() => {
+         if (!pause && slider) {
+            slider.next();
+         }
+      }, 2000);
+      return () => {
+         clearInterval(timer.current);
+      };
+   }, [pause, slider]);
+   // <--- End of Keen Slider --->
    return (
       <section className="section about">
          {/* My Summary */}
@@ -54,7 +73,13 @@ const About = () => {
          </article>
 
          {/* Technical Skills */}
-         <article className="about-item artillery">
+         <article
+            className="about-item artillery"
+            data-aos="fade-up"
+            data-aos-easing="ease-out"
+            data-aos-once="true"
+            data-aos-duration="500"
+         >
             {/* Development Stack */}
             <div className="col-development-stack">
                <h3>Development Stack</h3>
@@ -91,51 +116,47 @@ const About = () => {
 
          {/* My Inspirations */}
          <article className="about-item inspirations">
-            <h4
-               data-aos="fade-right"
-               data-aos-anchor-placement="bottom-bottom"
-               data-aos-easing="ease-out"
-               data-aos-once="true"
-               data-aos-duration="500"
-            >
+            <h4 data-aos="fade-left" data-aos-easing="ease-out" data-aos-once="true">
                Here's some things that inspire me ...{" "}
             </h4>
 
             <ul
-               className="inspirations-list"
-               data-aos="fade-left"
-               data-aos-anchor-placement="bottom-bottom"
+               ref={sliderRef}
+               className="inspirations-list keen-slider"
+               data-aos="fade-right"
                data-aos-easing="ease-out"
                data-aos-once="true"
-               data-aos-duration="500"
             >
-               <Swiper {...params}>
-                  <li className="inspirations-list__item" title="Scroll Me">
-                     Music
-                  </li>
-                  <li className="inspirations-list__item" title="Scroll Me">
-                     Health
-                  </li>
-                  <li className="inspirations-list__item" title="Scroll Me">
-                     {" "}
-                     Travelling
-                  </li>
-                  <li className="inspirations-list__item" title="Scroll Me">
-                     Video Games
-                  </li>
-                  <li className="inspirations-list__item" title="Scroll Me">
-                     Superhero Films
-                  </li>
-                  <li className="inspirations-list__item" title="Scroll Me">
-                     Stocks
-                  </li>
-                  <li className="inspirations-list__item" title="Scroll Me">
-                     Desserts
-                  </li>
-                  <li className="inspirations-list__item" title="Scroll Me">
-                     Photography
-                  </li>
-               </Swiper>
+               <li
+                  className="inspirations-list__item keen-slider__slide number-slide1"
+                  title="Scroll Me"
+               >
+                  Music
+               </li>
+               <li
+                  className="inspirations-list__item keen-slider__slide number-slide1"
+                  title="Scroll Me"
+               >
+                  Technology
+               </li>
+               <li
+                  className="inspirations-list__item keen-slider__slide number-slide1"
+                  title="Scroll Me"
+               >
+                  Superhero Movies
+               </li>
+               <li
+                  className="inspirations-list__item keen-slider__slide number-slide1"
+                  title="Scroll Me"
+               >
+                  Fitness
+               </li>
+               <li
+                  className="inspirations-list__item keen-slider__slide number-slide1"
+                  title="Scroll Me"
+               >
+                  MMA
+               </li>
             </ul>
          </article>
       </section>

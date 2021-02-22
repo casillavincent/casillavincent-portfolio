@@ -42,8 +42,15 @@ header {
                // List Items
                .main-nav__ul .main-nav__list-item {
                   margin-bottom: 10px;
-                  font-size: 2.5em;
+                  font-size: 2em;
                   text-align: center;
+
+                  a {
+                     transition: all 0.5s ease-out;
+                     &:hover {
+                        color: $accent;
+                     }
+                  }
                }
             }
          }

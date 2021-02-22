@@ -1,12 +1,15 @@
 import React from "react";
 import { FaTwitter, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
+import ScrollTop from "../widgets/ScrollTop";
 
 const Footer = () => {
    return (
       <footer className="footer" id="footer">
          {/* Top Section */}
          <div className="footer__top-section">
+            <ScrollTop />
+
             <h1>Like my work?</h1>
             <button type="button" className="button">
                <a href="mailto:casillavincent@gmail.com?subject=Hello Vincent!">Contact Me</a>

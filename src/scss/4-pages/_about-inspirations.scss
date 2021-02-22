@@ -5,44 +5,31 @@
 */
 
 .inspirations {
-   padding: 15px;
-   font-size: 1em;
-   height: 60vh;
+   width: 100%;
+   height: 300px;
    display: flex;
    flex-direction: column;
    justify-content: center;
-   @media screen and (min-width: 50em) {
-      min-height: 100vh;
-      padding-top: 159px;
-      padding-bottom: 150px;
-   }
+   padding: 50px;
+   font-size: 1em;
+   max-width: 800px;
 
-   // Title
    h4 {
-      margin-bottom: 15px;
-      max-width: 800px;
-      @media screen and (min-width: 50em) {
-         margin: auto auto 0px auto;
-         font-size: 4.5em;
+      @media screen and (min-width: 55em) {
+         font-size: 4em;
       }
    }
 
    // Inspirations List
-   ul {
-      max-width: 800px;
-      @media screen and (min-width: 50em) {
-         margin: auto;
-      }
-
-      li {
+   .inspirations-list {
+      &__item {
          font-size: 3em;
-         width: 100%;
          color: $accent;
-         height: 200px;
-         cursor: grab;
-         @media screen and (min-width: 50em) {
-            font-size: 5em;
-         }
       }
+   }
+
+   @media screen and (min-width: 55em) {
+      margin: auto;
+      height: 750px;
    }
 }

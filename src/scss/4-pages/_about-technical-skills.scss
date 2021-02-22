@@ -6,16 +6,15 @@
 @import "../2-abstracts/abstracts";
 .artillery {
    font-size: 1em;
+   margin-top: 100px;
+   margin-bottom: 100px;
 
    // Target all selectors
    .col-development-stack,
    .col-technical-skills {
       padding: 30px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 300px;
+      @include col-center-items;
+      height: 250px;
       h3 {
          font-size: 1em;
          margin-bottom: 15px;
@@ -44,6 +43,10 @@
          grid-gap: 10px;
          li {
             color: white;
+            text-align: center;
+            @media screen and (min-width: 50em) {
+               text-align: left;
+            }
          }
 
          // MQL
@@ -60,10 +63,6 @@
    // Technical
    .col-technical-skills {
       ul {
-         display: flex;
-         flex-direction: column;
-         justify-content: flex-start;
-         align-items: flex-start;
          li {
             margin-bottom: 10px;
          }
@@ -76,5 +75,6 @@
       justify-content: center;
       align-items: center;
       min-height: 500px;
+      margin: 0px;
    }
 }

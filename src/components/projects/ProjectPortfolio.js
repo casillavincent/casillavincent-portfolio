@@ -46,7 +46,7 @@ const ProjectPortfolio = () => {
                   More Info
                </button>
                <button type="button" className="cta-btn">
-                  View Live Site
+                  View Github
                </button>
             </div>
          </article>

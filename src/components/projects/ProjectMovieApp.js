@@ -1,6 +1,7 @@
 import React from "react";
 import MobileBanner from "../../assets/discover-japan-mobile3.png";
 import DesktopBanner from "../../assets/discover-japan-desktop3.png";
+import { Link } from "react-router-dom";
 
 const ProjectMovieApp = () => {
    return (
@@ -42,10 +43,13 @@ const ProjectMovieApp = () => {
             </p>
             <div className="project-item__text-content__cta">
                <button type="button" className="cta-btn">
-                  More Info
+                  <Link to={"/butter-db"}>More Info</Link>
                </button>
                <button type="button" className="cta-btn">
-                  View Live Site
+                  <a href="https://vcasilla.com/butter-db/" target="_blank">
+                     {" "}
+                     View Live Site
+                  </a>
                </button>
             </div>
          </article>

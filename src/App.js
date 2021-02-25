@@ -13,6 +13,9 @@ import Social from "./components/widgets/Social";
 import Homepage from "./components/Homepage";
 import About from "./components/About";
 
+// More Info Pages for Projects
+import SingleMovieApp from "./components/projects/single-project-page/SingleMovieApp";
+
 function App() {
    return (
       <Router>
@@ -23,6 +26,7 @@ function App() {
                   <Switch>
                      <Route path="/" exact component={Homepage} />
                      <Route path="/about" component={About} />
+                     <Route path="/butter-db" component={SingleMovieApp} />
                   </Switch>
                </main>
             </div>

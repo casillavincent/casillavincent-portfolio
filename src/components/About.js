@@ -46,20 +46,43 @@ const About = () => {
    return (
       <section className="section about">
          {/* My Summary */}
-         <article
-            className="about-item my-summary"
-            data-aos="zoom-out-down"
-            data-aos-easing="ease-out-quart"
-            data-aos-once="true"
-         >
+         <article className="about-item my-summary">
             {/* Text */}
             <div className="my-summary__text">
-               <h1 className="name">Vincent Casilla</h1>
-               <h2 className="headline">
+               <h1
+                  className="name"
+                  data-aos="fade-right"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-once="true"
+                  data-aos-duration="750"
+               >
+                  Vincent Casilla
+               </h1>
+               <h2
+                  className="headline"
+                  data-aos="fade-right"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-once="true"
+                  data-aos-duration="750"
+                  data-aos-delay="250"
+               >
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                </h2>
-               <hr />
-               <p className="summary">
+               <hr
+                  data-aos="fade-right"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-once="true"
+                  data-aos-duration="750"
+                  data-aos-delay="500"
+               />
+               <p
+                  className="summary"
+                  data-aos="fade-right"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-once="true"
+                  data-aos-duration="750"
+                  data-aos-delay="750"
+               >
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos totam
                   consequatur dolores commodi labore quos modi eveniet provident facilis unde,
                   cumque impedit! Autem nihil assumenda officiis nam laborum ab distinctio.
@@ -68,17 +91,25 @@ const About = () => {
 
             {/* Portrait */}
             <div className="my-summary__portrait">
-               <img src={Portrait} alt="My Portrait" />
+               <img
+                  src={Portrait}
+                  alt="My Portrait"
+                  data-aos="fade-left"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-once="true"
+                  data-aos-duration="750"
+               />
             </div>
          </article>
 
          {/* Technical Skills */}
          <article
             className="about-item artillery"
-            data-aos="fade-up"
+            data-aos="fade-down"
             data-aos-easing="ease-out"
             data-aos-once="true"
-            data-aos-duration="500"
+            data-aos-duration="750"
+            data-aos-anchor-placement="center-bottom"
          >
             {/* Development Stack */}
             <div className="col-development-stack">
@@ -115,18 +146,16 @@ const About = () => {
          </article>
 
          {/* My Inspirations */}
-         <article className="about-item inspirations">
-            <h4 data-aos="fade-left" data-aos-easing="ease-out" data-aos-once="true">
-               Here's some things that inspire me ...{" "}
-            </h4>
+         <article
+            className="about-item inspirations"
+            data-aos="fade-down"
+            data-aos-easing="ease-out-cubic"
+            data-aos-once="true"
+            data-aos-duration="750"
+         >
+            <h4>Here's some things that inspire me ... </h4>
 
-            <ul
-               ref={sliderRef}
-               className="inspirations-list keen-slider"
-               data-aos="fade-right"
-               data-aos-easing="ease-out"
-               data-aos-once="true"
-            >
+            <ul ref={sliderRef} className="inspirations-list keen-slider">
                <li
                   className="inspirations-list__item keen-slider__slide number-slide1"
                   title="Scroll Me"

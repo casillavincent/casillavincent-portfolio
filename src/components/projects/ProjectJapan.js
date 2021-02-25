@@ -45,7 +45,10 @@ const ProjectJapan = () => {
                   More Info
                </button>
                <button type="button" className="cta-btn">
-                  View Live Site
+                  <a href="https://vcasilla.com/discover-japan/" target="_blank">
+                     {" "}
+                     View Live Site
+                  </a>
                </button>
             </div>
          </article>

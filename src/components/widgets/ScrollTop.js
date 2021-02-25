@@ -15,7 +15,7 @@ const ScrollTop = () => {
             scrollTop();
          }}
       >
-         <RiArrowUpSLine size="3em" />
+         <RiArrowUpSLine size="2em" />
       </button>
    );
 };

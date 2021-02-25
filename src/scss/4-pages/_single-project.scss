@@ -1,0 +1,40 @@
+/*
+-------------------------------------------
+* Title
+-------------------------------------------
+*/
+.single-project-info__title {
+   color: white;
+   border: 1px solid red;
+   width: 100%;
+   height: 50vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   align-items: flex-start;
+   padding: 15px;
+   font-size: 1em;
+   h1 {
+      font-size: 2em;
+      margin-bottom: 5px;
+   }
+
+   hr {
+      background: $accent;
+      width: 40px;
+      height: 3px;
+      border: 3px solid $accent;
+      margin: 20px 0px;
+   }
+
+   p {
+      font-size: 1em;
+   }
+
+   .single-project-info__cta {
+      button {
+         width: 125px;
+         margin-right: 5px;
+      }
+   }
+}

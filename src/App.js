@@ -15,6 +15,9 @@ import About from "./components/About";
 
 // More Info Pages for Projects
 import SingleMovieApp from "./components/projects/single-project-page/SingleMovieApp";
+import SingleDiscoverJapan from "./components/projects/single-project-page/SingleDiscoverJapan";
+import SingleCapstone from "./components/projects/single-project-page/SingleCapstone";
+import SinglePortfolio from "./components/projects/single-project-page/SinglePortfolio";
 
 function App() {
    return (
@@ -27,10 +30,12 @@ function App() {
                      <Route path="/" exact component={Homepage} />
                      <Route path="/about" component={About} />
                      <Route path="/butter-db" component={SingleMovieApp} />
+                     <Route path="/discover-japan" component={SingleDiscoverJapan} />
+                     <Route path="/the-rolling-pin" component={SingleCapstone} />
+                     <Route path="/personal-portfolio" component={SinglePortfolio} />
                   </Switch>
                </main>
             </div>
-
             <Social />
             <Footer />
          </React.Fragment>

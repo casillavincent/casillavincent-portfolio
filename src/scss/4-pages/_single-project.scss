@@ -1,3 +1,18 @@
+.single-project-info {
+   height: auto;
+   color: white;
+   hr {
+      border: 1px solid $accent;
+      width: 50px;
+      height: 5px;
+      background: $accent;
+      margin: 15px 0px;
+   }
+
+   p {
+      line-height: 24px;
+   }
+}
 /*
 -------------------------------------------
 * Title
@@ -5,36 +20,502 @@
 */
 .single-project-info__title {
    color: white;
-   border: 1px solid red;
    width: 100%;
-   height: 50vh;
+   height: 45vh;
    display: flex;
    flex-direction: column;
-   justify-content: flex-end;
-   align-items: flex-start;
+   justify-content: center;
+   align-items: center;
    padding: 15px;
    font-size: 1em;
+   margin-bottom: 195px;
    h1 {
-      font-size: 2em;
+      font-size: 2.5em;
       margin-bottom: 5px;
-   }
-
-   hr {
-      background: $accent;
-      width: 40px;
-      height: 3px;
-      border: 3px solid $accent;
-      margin: 20px 0px;
+      text-align: center;
    }
 
    p {
       font-size: 1em;
+      text-align: center;
    }
 
-   .single-project-info__cta {
+   @media screen and (min-width: 45em) {
+      h1 {
+         font-size: 3em;
+      }
+   }
+}
+
+/*
+-------------------------------------------
+* Overview
+-------------------------------------------
+*/
+.single-project-overview {
+   margin: auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   font-size: 1em;
+   // Banner
+   &--mobile-banner {
+      width: 60%;
+      position: relative;
+      top: -150px;
+      max-width: 200px;
+      @include mobile-banner-border;
+   }
+   &--desktop-banner {
+      display: none;
+   }
+
+   @media screen and (min-width: 50em) {
+      &--mobile-banner {
+         display: none;
+      }
+      &--desktop-banner {
+         display: block;
+         width: 75%;
+         max-width: 750px;
+         position: relative;
+         top: -150px;
+         @include desktop-banner-border;
+      }
+   }
+
+   // Content
+   &__content {
+      position: relative;
+      top: -125px;
+      font-size: 1em;
+      padding: 35px;
+      width: 100%;
+      max-width: 900px;
+      height: auto;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      // Content MQL
+      @media screen and (min-width: 50em) {
+         display: grid;
+         grid-template-areas:
+            "scope devTeam"
+            "scope roles"
+            "scope tools";
+         grid-gap: 25px;
+
+         height: auto;
+         align-items: flex-start;
+         justify-items: center;
+         top: -110px;
+         padding: 20px;
+      }
+
+      // Overview Children
+      .scope,
+      .dev-team,
+      .role,
+      .tools {
+         font-size: 1em;
+         margin-bottom: 35px;
+         width: 100%;
+         max-width: 400px;
+         @media screen and (min-width: 50em) {
+            margin: 0px;
+         }
+
+         h2 {
+            font-size: 1.25em;
+            margin-bottom: 10px;
+         }
+
+         p,
+         ul li {
+            font-size: 0.85em;
+         }
+
+         ul {
+            li {
+               margin-bottom: 5px;
+            }
+         }
+      }
+
+      // Single
+      .scope {
+         grid-area: scope;
+      }
+      .dev-team {
+         grid-area: devTeam;
+      }
+      .role {
+         grid-area: roles;
+      }
+
+      .tools {
+         grid-area: tools;
+         @media screen and (min-width: 50em) {
+            ul {
+               display: grid;
+               grid-template-columns: repeat(3, 100px);
+               grid-gap: 10px;
+            }
+         }
+      }
+   }
+
+   // CTA
+   &__cta {
+      position: relative;
+      top: -125px;
+      width: 100%;
+      @include col-center-items;
       button {
-         width: 125px;
-         margin-right: 5px;
+         padding: 15px;
+         margin: 10px;
+         width: 200px;
+      }
+
+      @media screen and (min-width: 50em) {
+         @include row-center-items;
+         top: -50px;
+      }
+   }
+}
+
+/*
+-------------------------------------------
+* Design & Development
+-------------------------------------------
+*/
+
+.single-project-design {
+   width: 100%;
+   max-width: 950px;
+   @include row-center-items;
+   font-size: 1em;
+   margin: auto;
+   @media screen and (min-width: 50em) {
+      height: 600px;
+   }
+   &__container {
+      padding: 35px;
+      max-width: 600px;
+      p {
+         line-height: 24px;
+         font-size: 0.8em;
+      }
+      @media screen and (min-width: 50em) {
+         h3 {
+            font-size: 3em;
+         }
+         p {
+            font-size: 0.95em;
+         }
+      }
+   }
+}
+.single-project-development {
+   width: 100%;
+   max-width: 950px;
+   @include row-center-items;
+   font-size: 1em;
+   margin: auto;
+   @media screen and (min-width: 50em) {
+      height: 600px;
+   }
+   &__container {
+      padding: 35px;
+      max-width: 600px;
+      p {
+         line-height: 24px;
+         font-size: 0.8em;
+      }
+      @media screen and (min-width: 50em) {
+         h3 {
+            font-size: 3em;
+         }
+         p {
+            font-size: 0.95em;
+         }
+      }
+   }
+}
+
+/*
+-------------------------------------------
+* Colors
+-------------------------------------------
+*/
+.single-project-info-colors {
+   padding: 35px;
+   width: 100%;
+   max-width: 600px;
+   margin: auto;
+
+   height: 350px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+
+   .color-items {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .color-item {
+         margin-right: 15px;
+         .color-swatch {
+            width: 65px;
+            height: 65px;
+            background: $accent;
+            margin-bottom: 10px;
+         }
+
+         p {
+            font-size: 0.75em;
+         }
+      }
+   }
+
+   @media screen and (min-width: 50em) {
+      @include col-center-items;
+      height: 700px;
+
+      .color-items {
+         width: 100%;
+         @include row-center-items;
+         .color-item {
+            margin: 25px;
+            .color-swatch {
+               width: 125px;
+               height: 125px;
+            }
+         }
+      }
+   }
+}
+
+/*
+-------------------------------------------
+* Gallery
+-------------------------------------------
+*/
+.single-project-info {
+   .design-gallery {
+      div {
+         width: 90%;
+         margin: auto;
+         @include col-center-items;
+         img {
+            width: 100%;
+            max-width: 1000px;
+            margin-bottom: 50px;
+         }
+      }
+   }
+}
+
+.final-project-gallery--mobile {
+   padding: 35px;
+   max-width: 600px;
+   margin: auto;
+
+   @media screen and (min-width: 50em) {
+      max-width: 90%;
+      @include col-center-items;
+   }
+
+   // The gallery content
+   div {
+      width: 100%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+
+      img {
+         width: 100%;
+         max-width: 250px;
+         height: auto;
+         margin-bottom: 25px;
+         @include mobile-border;
+      }
+      @media screen and (min-width: 630px) {
+         display: grid;
+         grid-template-columns: repeat(2, 250px);
+         justify-items: center;
+         align-items: center;
+         img {
+            height: 375px;
+            width: auto;
+         }
+      }
+
+      @media screen and (min-width: 50em) {
+         width: 90%;
+         @include row-center-items;
+         flex-wrap: wrap;
+         img {
+            margin: 10px 10px;
+         }
+      }
+      // .end of div container
+   }
+   // .end of single mobile gallery
+}
+
+.final-project-gallery--desktop {
+   padding: 35px;
+   margin: auto;
+
+   @media screen and (min-width: 50em) {
+      @include col-center-items;
+   }
+   // Gallery Container
+   div {
+      img {
+         width: 100%;
+         height: auto;
+         max-width: 1000px;
+         margin-bottom: 100px;
+         @include desktop-border-sm;
+         @include col-center-items;
+         @media screen and (min-width: 50em) {
+            @include desktop-border-lg;
+         }
+      }
+   }
+}
+/*
+-------------------------------------------
+* Challenges
+-------------------------------------------
+*/
+@import "./single-project-challenges";
+
+/*
+-------------------------------------------
+* Code Snippet
+-------------------------------------------
+*/
+.code-snippet {
+   width: 100%;
+   padding: 35px;
+   max-width: 800px;
+   margin: auto;
+
+   &__excerpt {
+      font-size: 1.25em;
+      margin-bottom: 5px;
+      @media screen and (min-width: 50em) {
+         font-size: 1.5em;
+         margin-bottom: 10px;
+      }
+   }
+   img {
+      width: 100%;
+   }
+}
+
+/*
+-------------------------------------------
+* Japan
+-------------------------------------------
+*/
+@import "./single-project-japan";
+
+/*
+-------------------------------------------
+* Bottom CTAs
+-------------------------------------------
+*/
+.single-project-info__navigate-projects {
+   width: 100%;
+   max-width: 1000px;
+   height: 250px;
+   font-size: 1em;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+   margin: auto;
+
+   @media screen and (min-width: 650px) {
+      flex-direction: row;
+   }
+   .go-back-home,
+   .next-project {
+      width: 200px;
+      transition: all 0.4s ease-out;
+      p {
+         font-size: 0.75em;
+      }
+
+      &:hover {
+         color: $accent;
+      }
+   }
+
+   // Back Home
+   .go-back-home {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-items: center;
+   }
+
+   // Porject CTA
+   .project-cta {
+      @include col-center-items;
+      @media screen and (min-width: 50em) {
+         @include row-center-items;
+      }
+
+      button {
+         width: 175px;
+         margin: 10px;
+         @media screen and (min-width: 650px) {
+            margin: 5px;
+         }
+      }
+   }
+
+   // Next Project
+   .next-project {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      align-items: center;
+   }
+}
+
+/*
+-------------------------------------------
+* Single Capstone
+-------------------------------------------
+*/
+@import "./single-project-capstone";
+
+/*
+-------------------------------------------
+* Coming Soon
+-------------------------------------------
+*/
+.single-page-info {
+   &__coming-soon {
+      height: 45em;
+      font-size: 1em;
+      @include col-center-items;
+      h3 {
+         margin-bottom: 10px;
+      }
+      @media screen and (min-width: 50em) {
+         h3 {
+            font-size: 3em;
+         }
       }
    }
 }

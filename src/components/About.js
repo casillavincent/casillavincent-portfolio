@@ -2,12 +2,16 @@ import React from "react";
 import Portrait from "../assets/portrait-placeholder.jpg";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
+import { useEffect } from "react";
 
 // Plugins
-import Swiper from "react-id-swiper";
 import AOS from "aos";
 
 const About = () => {
+   useEffect(() => {
+      window.scrollTo(0, 0);
+   }, []);
+
    AOS.init();
    // <--- Keen Slider --->
    const [pause, setPause] = React.useState(false);

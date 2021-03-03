@@ -23,6 +23,8 @@ html {
 
 body {
    background-color: black;
+   min-width: 300px;
+   width: 100%;
 }
 
 /*
@@ -48,4 +50,11 @@ a {
 
 li {
    list-style-type: none;
+}
+
+p {
+   line-height: 17px;
+}
+img {
+   border-radius: 2px;
 }

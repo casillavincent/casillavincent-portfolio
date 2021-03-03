@@ -9,7 +9,9 @@
     "aos": "^3.0.0-beta.6",
     "hamburger-react": "^2.4.0",
     "keen-slider": "^5.4.0",
+    "p5": "^1.2.0",
     "react": "^17.0.1",
+    "react-compare-image": "^3.1.0",
     "react-dom": "^17.0.1",
     "react-headroom": "^3.1.0",
     "react-icons": "^4.1.0",
@@ -18,7 +20,10 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
     "react-tabs": "^3.1.2",
+    "react-tooltip": "^4.2.15",
+    "simple-react-lightbox": "^3.6.3",
     "swiper": "^6.4.15",
+    "vanta": "^0.5.21",
     "web-vitals": "^0.2.4"
   },
   "scripts": {

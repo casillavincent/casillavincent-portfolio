@@ -13,7 +13,7 @@ const ScrollDownIcon = () => {
          <div class="mousey">
             <div class="scroller"></div>
          </div>
-         <p className="scroll-downs__label"> Take a look around my page</p>
+         <p className="scroll-downs__label"> scroll down to explore my page</p>
       </div>
    );
 };

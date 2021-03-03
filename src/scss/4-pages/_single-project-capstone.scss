@@ -1,0 +1,46 @@
+.single-project-info .single-project-info__process {
+   font-size: 1em;
+   width: 100%;
+   max-width: 800px;
+   margin: auto;
+   padding: 35px;
+
+   // Global for all images in this selector
+   img {
+      width: 100%;
+      height: auto;
+      margin: auto;
+      margin-bottom: 50px;
+   }
+
+   // Line
+   .timeline {
+      width: 5px;
+      height: 50px;
+      background: $accent;
+      margin: 75px auto;
+   }
+
+   // Global For all sections in selector
+   .process-item {
+      margin-top: 50px;
+      h4 {
+         font-size: 1.5em;
+         margin-bottom: 15px;
+      }
+
+      p.excerpt {
+         margin-bottom: 50px;
+      }
+
+      &__gallery {
+         div {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+         }
+      }
+      // .end of gallery
+   }
+}

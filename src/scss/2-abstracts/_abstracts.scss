@@ -8,6 +8,8 @@ $col2: #45364b;
 $col3: #8c93a8;
 $col4: #b5c2b6;
 $accent: #f73615;
+$galleryBorder: #2a2d3e;
+$bannerBorder: rgb(190, 190, 190);
 /*
 -------------------------------------------
 * Fonts
@@ -47,4 +49,34 @@ $font2: "Montserrat", sans-serif;
    background-repeat: no-repeat;
    background-size: cover;
    background-attachment: fixed;
+}
+
+@mixin mobile-border {
+   border: 10px solid $galleryBorder;
+   border-top: 15px solid $galleryBorder;
+   border-bottom: 40px solid $galleryBorder;
+   border-radius: 10px;
+}
+
+@mixin desktop-border-sm {
+   border: 10px solid $galleryBorder;
+   border-bottom: 25px solid $galleryBorder;
+   border-radius: 5px;
+}
+
+@mixin desktop-border-lg {
+   border: 15px solid $galleryBorder;
+   border-bottom: 40px solid $galleryBorder;
+}
+
+@mixin mobile-banner-border {
+   border: 10px solid $bannerBorder;
+   border-top: 15px solid $bannerBorder;
+   border-bottom: 40px solid $bannerBorder;
+   border-radius: 10px;
+}
+
+@mixin desktop-banner-border {
+   border: 10px solid $bannerBorder;
+   border-bottom: 35px solid $bannerBorder;
 }

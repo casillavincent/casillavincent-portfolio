@@ -21,6 +21,10 @@ button:focus {
    outline: none;
 }
 
+a {
+   padding: 7px 12px 7px 12px;
+}
+
 /*
 -------------------------------------------
 * Scroll Down Icon
@@ -41,8 +45,9 @@ button:focus {
    align-items: center;
 
    position: fixed;
-   right: 20px;
+   right: 100px;
    bottom: 20px;
+   z-index: 9999;
    transition: all 0.6s ease-out;
 }
 

@@ -11,18 +11,20 @@ const Splash = () => {
                className="splash-text-container__tagline"
                data-aos="fade-right"
                data-aos-easing="ease-out"
-               data-aos-once="true"
+               data-aos-once="false"
                data-aos-duration="750"
+               data-aos-mirror="true"
             >
-               I use innovative tools to transform ideas into dynamic websites.{" "}
+               I build websites using innovative tools.
             </h1>
             <p
                className="splash-text-container__excerpt"
                data-aos="fade-right"
                data-aos-easing="ease-out"
-               data-aos-once="true"
+               data-aos-once="false"
                data-aos-delay="100"
                data-aos-duration="750"
+               data-aos-mirror="true"
             >
                Web designer and frontend web developer based in Vancouver, BC.
             </p>
@@ -31,11 +33,12 @@ const Splash = () => {
                className="splash-text-container__btn"
                data-aos="fade-right"
                data-aos-easing="ease-out"
-               data-aos-once="true"
+               data-aos-once="false"
                data-aos-delay="150"
                data-aos-duration="750"
+               data-aos-mirror="true"
             >
-               <Link to={"/about"}>More about me</Link>
+               <Link to={"/about"}>Read More About Me</Link>
             </button>
          </article>
 

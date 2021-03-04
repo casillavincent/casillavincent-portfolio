@@ -59,16 +59,12 @@ const SPOverview = ({
 
          {/* CTA Buttons */}
          <div className="single-project-overview__cta">
-            <button type="button" title="Live Site">
-               <a href={livesiteLink} target="_blank" rel="noopener noreferrer">
-                  {livesiteLink === undefined ? "Coming Soon" : "View Live Site"}
-               </a>
-            </button>
-            <button type="button" title="Github Repo">
-               <a href={githubLink} target="_blank" rel="noopener noreferrer">
-                  {githubLink === undefined ? "Coming Soon" : "View on Github"}
-               </a>
-            </button>
+            <a href={livesiteLink} target="_blank" rel="noopener noreferrer" title="Live Site">
+               {livesiteLink === undefined ? "Coming Soon" : "View Live Site"}
+            </a>
+            <a href={githubLink} target="_blank" rel="noopener noreferrer" title="Github Repo">
+               {githubLink === undefined ? "Coming Soon" : "View on Github"}
+            </a>
          </div>
       </article>
    );

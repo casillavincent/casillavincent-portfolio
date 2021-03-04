@@ -5,7 +5,6 @@ const ScrollDownIcon = () => {
       <div
          className="scroll-downs"
          data-aos="fade-up"
-         data-aos-anchor-placement="center-bottom"
          data-aos-easing="ease-out-quart"
          data-aos-once="false"
          data-aos-duration="850"

@@ -5,20 +5,20 @@ import ScrollTop from "../widgets/ScrollTop";
 
 const Footer = () => {
    return (
-      <footer className="footer" id="footer">
+      <footer className="footer" id="contact">
          {/* Top Section */}
          <div className="footer__top-section">
             <ScrollTop />
 
             <h1>Like My Work?</h1>
-            <button type="button" className="button">
-               <a
-                  href="mailto:casillavincent@gmail.com?subject=Hello Vincent!"
-                  rel="noopener noreferrer"
-               >
-                  Contact Me
-               </a>
-            </button>
+
+            <a
+               href="mailto:casillavincent@gmail.com?subject=Hello Vincent!"
+               rel="noopener noreferrer"
+               className="button"
+            >
+               Contact Me
+            </a>
          </div>
 
          {/* Bottom Section */}

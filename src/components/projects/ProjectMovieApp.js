@@ -13,8 +13,7 @@ const ProjectMovieApp = () => {
             className="project-item__banner--mobile"
             data-aos="zoom-out-down"
             data-aos-easing="ease-out-quart"
-            data-aos-once="false"
-            data-aos-mirror="true"
+            data-aos-once="true"
             data-aos-duration="600"
          />
          <img
@@ -23,8 +22,7 @@ const ProjectMovieApp = () => {
             className="project-item__banner--desktop"
             data-aos="zoom-out-up"
             data-aos-easing="ease-out-quart"
-            data-aos-once="false"
-            data-aos-mirror="true"
+            data-aos-once="true"
             data-aos-duration="600"
          />
 
@@ -33,10 +31,8 @@ const ProjectMovieApp = () => {
             className="project-item__text-content"
             data-aos="fade-up"
             data-aos-easing="ease-out-quart"
-            data-aos-once="false"
-            data-aos-mirror="true"
+            data-aos-once="true"
             data-aos-duration="600"
-            data-aos-delay="50"
          >
             <h2 className="project-item__text-content__name">
                Butter.DB<div className="accent-bar"></div>
@@ -47,19 +43,17 @@ const ProjectMovieApp = () => {
                React and the TMDB Rest API.
             </p>
             <div className="project-item__text-content__cta">
-               <button type="button" className="cta-btn">
-                  <Link to={"/butter-db"}>More Info</Link>
-               </button>
-               <button type="button" className="cta-btn">
-                  <a
-                     href="https://vcasilla.com/butter-db/"
-                     target="_blank"
-                     rel="noopener noreferrer"
-                  >
-                     {" "}
-                     View Live Site
-                  </a>
-               </button>
+               <Link to={"/butter-db"} className="cta-btn">
+                  More Info
+               </Link>
+               <a
+                  href="https://vcasilla.com/butter-db/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="cta-btn"
+               >
+                  View Live Site
+               </a>
             </div>
          </article>
       </section>

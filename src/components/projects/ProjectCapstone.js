@@ -13,8 +13,7 @@ const ProjectCapstone = () => {
             className="project-item__banner--mobile"
             data-aos="zoom-out-down"
             data-aos-easing="ease-out-quart"
-            data-aos-once="false"
-            data-aos-mirror="true"
+            data-aos-once="true"
             data-aos-duration="600"
          />
          <img
@@ -23,8 +22,7 @@ const ProjectCapstone = () => {
             className="project-item__banner--desktop"
             data-aos="zoom-out-up"
             data-aos-easing="ease-out-quart"
-            data-aos-once="false"
-            data-aos-mirror="true"
+            data-aos-once="true"
             data-aos-duration="600"
          />
 
@@ -33,10 +31,8 @@ const ProjectCapstone = () => {
             className="project-item__text-content"
             data-aos="fade-up"
             data-aos-easing="ease-out-quart"
-            data-aos-once="false"
-            data-aos-mirror="true"
+            data-aos-once="true"
             data-aos-duration="600"
-            data-aos-delay="50"
          >
             <h2 className="project-item__text-content__name">
                The Rolling Pin (Coming Soon)<div className="accent-bar"></div>
@@ -47,12 +43,12 @@ const ProjectCapstone = () => {
                a work in progress.
             </p>
             <div className="project-item__text-content__cta">
-               <button type="button" className="cta-btn">
-                  <Link to={"/the-rolling-pin"}> More Info</Link>
-               </button>
-               <button type="button" className="cta-btn" style={{ cursor: "not-allowed" }}>
+               <Link to={"/the-rolling-pin"} className="cta-btn">
+                  More Info
+               </Link>
+               <a href="#0" className="cta-btn" style={{ cursor: "not-allowed" }}>
                   Coming Soon
-               </button>
+               </a>
             </div>
          </article>
       </section>

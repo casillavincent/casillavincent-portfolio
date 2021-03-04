@@ -167,7 +167,7 @@
    &__cta {
       width: 100%;
       @include col-center-items;
-      button {
+      a {
          padding: 15px;
          margin: 10px;
          width: 200px;
@@ -441,12 +441,14 @@
    .next-project {
       width: 200px;
       transition: all 0.4s ease-out;
+      border-style: none;
       p {
          font-size: 0.75em;
       }
 
       &:hover {
          color: $accent;
+         background: none;
       }
    }
 
@@ -465,7 +467,7 @@
          @include row-center-items;
       }
 
-      button {
+      a {
          width: 175px;
          margin: 10px;
          @media screen and (min-width: 650px) {

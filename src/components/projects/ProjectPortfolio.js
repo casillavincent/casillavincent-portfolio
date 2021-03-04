@@ -13,8 +13,7 @@ const ProjectPortfolio = () => {
             className="project-item__banner--mobile"
             data-aos="zoom-out-down"
             data-aos-easing="ease-out-quart"
-            data-aos-once="false"
-            data-aos-mirror="true"
+            data-aos-once="true"
             data-aos-duration="600"
          />
          <img
@@ -23,8 +22,7 @@ const ProjectPortfolio = () => {
             className="project-item__banner--desktop"
             data-aos="zoom-out-up"
             data-aos-easing="ease-out-quart"
-            data-aos-once="false"
-            data-aos-mirror="true"
+            data-aos-once="true"
             data-aos-duration="600"
          />
 
@@ -33,10 +31,8 @@ const ProjectPortfolio = () => {
             className="project-item__text-content"
             data-aos="fade-up"
             data-aos-easing="ease-out-quart"
-            data-aos-once="false"
-            data-aos-mirror="true"
+            data-aos-once="true"
             data-aos-duration="600"
-            data-aos-delay="50"
          >
             <h2 className="project-item__text-content__name">
                Personal Portfolio (Coming Soon)<div className="accent-bar"></div>
@@ -47,18 +43,18 @@ const ProjectPortfolio = () => {
                who I am outside of development.
             </p>
             <div className="project-item__text-content__cta">
-               <button type="button" className="cta-btn">
-                  <Link to={"/personal-portfolio"}>More Info</Link>
-               </button>
-               <button type="button" className="cta-btn">
-                  <a
-                     href="https://github.com/casillavincent/casillavincent-portfolio"
-                     target="_blank"
-                     rel="noopener noreferrer"
-                  >
-                     View on Github
-                  </a>
-               </button>
+               <Link to={"/personal-portfolio"} className="cta-btn">
+                  More Info
+               </Link>
+
+               <a
+                  href="https://github.com/casillavincent/casillavincent-portfolio"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="cta-btn"
+               >
+                  View on Github
+               </a>
             </div>
          </article>
       </section>

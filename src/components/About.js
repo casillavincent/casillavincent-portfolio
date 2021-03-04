@@ -70,7 +70,7 @@ const About = () => {
                   data-aos-duration="750"
                   data-aos-delay="250"
                >
-                  Creativity Simplified
+                  Web designer and Frontend developer
                </h2>
                <hr
                   data-aos="fade-right"
@@ -92,9 +92,9 @@ const About = () => {
                   recognize that the only prerequisite to successfully learning how to code is to be
                   inquisitive. As someone who is esteemed to challenges and solving problems,
                   frontend development has certainly found a way to engage my creativity and
-                  structured way of thinking. As a developer, my goal is to constantly get inspired
-                  by new technologies and develop my ideas with like minded individuals to create
-                  robust and meaningful web applications.
+                  structured way of thinking. My goal is to continouosly get inspired by new
+                  technologies and develop my ideas with like minded individuals to create robust
+                  and meaningful web applications.
                </p>
                <p
                   className="summary2"
@@ -102,7 +102,7 @@ const About = () => {
                   data-aos-easing="ease-out-cubic"
                   data-aos-once="true"
                   data-aos-duration="750"
-                  data-aos-delay="750"
+                  data-aos-delay="950"
                >
                   My life isn't just writing code. When I’m not sitting in front of my laptop,
                   you’ll most likely find me first in line at a new boba place, in front of my phone

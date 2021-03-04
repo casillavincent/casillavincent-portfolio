@@ -8,15 +8,18 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
    const [isOpen, setIsOpen] = useState(false);
+
    const toggleNavigation = () => {
       const navigation = document.querySelector("nav.main-nav");
-      const splash = document.querySelector(".splash");
+      const socialIcons = document.querySelector("aside.fixed-social-icons");
+
+      console.log(socialIcons);
       if (!isOpen) {
          navigation.classList.add("main-nav--active");
-         splash.style.display = "none";
+         socialIcons.style.display = "none";
       } else {
          navigation.classList.remove("main-nav--active");
-         splash.style.display = "flex";
+         socialIcons.style.display = "flex";
       }
    };
 
@@ -64,7 +67,7 @@ const Header = () => {
                      <Link to={"/about"}>about</Link>
                   </li>
                   <li className="main-nav__list-item">
-                     <a href="#footer"> contact</a>
+                     <a href="#contact"> contact</a>
                   </li>
                </ul>
                <hr className="menu-break" />

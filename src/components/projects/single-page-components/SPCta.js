@@ -13,16 +13,12 @@ const SPCta = ({ home, nextProject, livesite, github }) => {
 
          {/* Project CTAs */}
          <div className="project-cta">
-            <button className="live-site">
-               <a href={livesite} target="_blank" rel="noopener noreferrer">
-                  View Live Site
-               </a>
-            </button>
-            <button>
-               <a href={github} target="_blank" rel="noopener noreferrer">
-                  View on Github
-               </a>
-            </button>
+            <a href={livesite} target="_blank" rel="noopener noreferrer" className="live-site">
+               View Live Site
+            </a>
+            <a href={github} target="_blank" rel="noopener noreferrer" className="live-site">
+               View on Github
+            </a>
          </div>
 
          {/* Next Project */}

@@ -3,6 +3,26 @@
 * Buttons
 -------------------------------------------
 */
+a {
+   padding: 7px 12px 7px 12px;
+   background-color: transparent;
+   color: white;
+   border: 1px solid white;
+   transition: all 0.3s ease-out;
+   text-align: center;
+   &:hover {
+      background: $accent;
+
+      cursor: pointer;
+      border: 1px solid $accent;
+   }
+}
+
+a:active,
+a:focus {
+   outline: none;
+}
+
 button {
    padding: 7px 12px 7px 12px;
    background-color: transparent;
@@ -10,8 +30,7 @@ button {
    border: 1px solid white;
    transition: all 0.3s ease-out;
    &:hover {
-      background: rgb(254, 69, 113);
-      background: linear-gradient(90deg, rgba(254, 69, 113, 1) 0%, rgba(254, 66, 81, 1) 60%);
+      background: $accent;
 
       cursor: pointer;
       border: 1px solid $accent;
@@ -21,10 +40,6 @@ button {
 button:active,
 button:focus {
    outline: none;
-}
-
-a {
-   padding: 7px 12px 7px 12px;
 }
 
 /*
@@ -50,6 +65,12 @@ a {
    bottom: 10px;
    z-index: 9999;
    transition: all 0.6s ease-out;
+   a {
+      border-style: none;
+      &:hover {
+         background: none;
+      }
+   }
    @media screen and (min-width: 50em) {
       right: 20px;
       bottom: 20px;

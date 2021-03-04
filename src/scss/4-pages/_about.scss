@@ -57,7 +57,7 @@
       &__portrait {
          @include col-center-items;
          img {
-            width: 60%;
+            width: 100%;
             max-width: 750px;
             height: auto;
             margin: auto;
@@ -71,6 +71,8 @@
          justify-items: center;
          align-items: center;
          margin: auto;
+         height: 100vh;
+         min-height: 50em;
          &__text,
          &__portrait {
             height: 100%;

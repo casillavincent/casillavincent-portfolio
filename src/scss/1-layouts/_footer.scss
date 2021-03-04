@@ -26,7 +26,12 @@
 
    // Bottom Section
    &__bottom-section {
-      background: #d63558;
+      background: #bc2540;
+      .social-icons {
+         a {
+            border-style: none;
+         }
+      }
 
       height: 25%;
       @include col-center-items;

@@ -112,7 +112,7 @@ const SingleMovieApp = () => {
                {/* New Design */}
                <div className="new-mobile">
                   <img src={newMobileGif} alt="New Discover Japan Mobile" />
-                  <h4>Refactored Design (React)</h4>
+                  <h4>New Design (React)</h4>
                </div>
             </article>
             {/* Compare desktop designs */}

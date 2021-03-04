@@ -7,12 +7,40 @@ const ProjectPortfolio = () => {
    return (
       <section className="project-item" id="project-portfolio">
          {/* Left Column */}
-         <img src={MobileBanner} alt="Project Banner" className="project-item__banner--mobile" />
-         <img src={DesktopBanner} alt="Project Banner" className="project-item__banner--desktop" />
+         <img
+            src={MobileBanner}
+            alt="Project Banner"
+            className="project-item__banner--mobile"
+            data-aos="zoom-out-down"
+            data-aos-easing="ease-out-quart"
+            data-aos-once="false"
+            data-aos-mirror="true"
+            data-aos-duration="600"
+         />
+         <img
+            src={DesktopBanner}
+            alt="Project Banner"
+            className="project-item__banner--desktop"
+            data-aos="zoom-out-up"
+            data-aos-easing="ease-out-quart"
+            data-aos-once="false"
+            data-aos-mirror="true"
+            data-aos-duration="600"
+         />
 
          {/* Right Column */}
-         <article className="project-item__text-content">
-            <h2 className="project-item__text-content__name">Personal Portfolio (Coming Soon)</h2>
+         <article
+            className="project-item__text-content"
+            data-aos="fade-up"
+            data-aos-easing="ease-out-quart"
+            data-aos-once="false"
+            data-aos-mirror="true"
+            data-aos-duration="600"
+            data-aos-delay="50"
+         >
+            <h2 className="project-item__text-content__name">
+               Personal Portfolio (Coming Soon)<div className="accent-bar"></div>
+            </h2>
             <p className="project-item__text-content__excerpt">
                My magnum opus that encompasses everything I have learned so far with frontend
                development. This project showcases my abilities and who I am as a developer but also
@@ -26,6 +54,7 @@ const ProjectPortfolio = () => {
                   <a
                      href="https://github.com/casillavincent/casillavincent-portfolio"
                      target="_blank"
+                     rel="noopener noreferrer"
                   >
                      View on Github
                   </a>

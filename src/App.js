@@ -24,6 +24,7 @@ function App() {
       <Router>
          <React.Fragment>
             <Header />
+
             <div className="wrapper">
                <main className="main main-page">
                   <Switch>
@@ -33,6 +34,7 @@ function App() {
                      <Route path="/discover-japan" component={SingleDiscoverJapan} />
                      <Route path="/the-rolling-pin" component={SingleCapstone} />
                      <Route path="/personal-portfolio" component={SinglePortfolio} />
+                     <Route path="*" component={Homepage} />
                   </Switch>
                </main>
             </div>

@@ -16,20 +16,35 @@ const Social = () => {
          className="fixed-social-icons"
          data-aos="fade-left"
          data-aos-anchor-placement="bottom-bottom"
-         data-aos-easing="ease-out"
+         data-aos-easing="ease-out-quart"
          data-aos-once="true"
          data-aos-delay="500"
       >
-         <IconContext.Provider value={{ color: "white", size: "1.25em" }}>
-            <a href="https://twitter.com/casillavincent" target="_blank" id="twitter-link">
+         <IconContext.Provider value={{ color: "white", size: "1em" }}>
+            <a
+               href="https://twitter.com/casillavincent"
+               target="_blank"
+               rel="noopener noreferrer"
+               id="twitter-link"
+            >
                <FaTwitter title="Twitter Icon" />
             </a>
 
-            <a href="https://github.com/casillavincent" target="_blank" id="github-link">
+            <a
+               href="https://github.com/casillavincent"
+               target="_blank"
+               rel="noopener noreferrer"
+               id="github-link"
+            >
                <FaGithub title="Github Icon" />
             </a>
 
-            <a href="https://www.linkedin.com/in/vcasilla/" target="_blank" id="linkedin-link">
+            <a
+               href="https://www.linkedin.com/in/vcasilla/"
+               target="_blank"
+               rel="noopener noreferrer"
+               id="linkedin-link"
+            >
                <FaLinkedinIn title="Linked In Icon" />
             </a>
 
@@ -37,6 +52,7 @@ const Social = () => {
                href="mailto:casillavincent@gmail.com?subject=Hello Vincent!"
                target="_blank"
                id="e-mail-link"
+               rel="noopener noreferrer"
             >
                <FaEnvelope title="E-mail Icon" />
             </a>

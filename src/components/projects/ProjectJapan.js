@@ -7,12 +7,40 @@ const ProjectJapan = () => {
    return (
       <section className="project-item" id="project-japan">
          {/* Left Column */}
-         <img src={MobileBanner} alt="Project Banner" className="project-item__banner--mobile" />
-         <img src={DesktopBanner} alt="Project Banner" className="project-item__banner--desktop" />
+         <img
+            src={MobileBanner}
+            alt="Project Banner"
+            className="project-item__banner--mobile"
+            data-aos="zoom-out-down"
+            data-aos-easing="ease-out-quart"
+            data-aos-once="false"
+            data-aos-mirror="true"
+            data-aos-duration="600"
+         />
+         <img
+            src={DesktopBanner}
+            alt="Project Banner"
+            className="project-item__banner--desktop"
+            data-aos="zoom-out-up"
+            data-aos-easing="ease-out-quart"
+            data-aos-once="false"
+            data-aos-mirror="true"
+            data-aos-duration="600"
+         />
 
          {/* Right Column */}
-         <article className="project-item__text-content">
-            <h2 className="project-item__text-content__name">Discover Japan</h2>
+         <article
+            className="project-item__text-content"
+            data-aos="fade-up"
+            data-aos-easing="ease-out-quart"
+            data-aos-once="false"
+            data-aos-mirror="true"
+            data-aos-duration="600"
+            data-aos-delay="50"
+         >
+            <h2 className="project-item__text-content__name">
+               Discover Japan<div className="accent-bar"></div>
+            </h2>
             <p className="project-item__text-content__excerpt">
                A small scale business travel brochure for Japan that highlights it's rich culture.
                This is the first project I completed at BCIT.
@@ -22,7 +50,11 @@ const ProjectJapan = () => {
                   <Link to={"/discover-japan"}>More Info</Link>
                </button>
                <button type="button" className="cta-btn">
-                  <a href="https://vcasilla.com/discover-japan/" target="_blank">
+                  <a
+                     href="https://vcasilla.com/discover-japan/"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                  >
                      {" "}
                      View Live Site
                   </a>

@@ -4,7 +4,7 @@
    color: white;
    width: 100%;
    font-size: 1em;
-   height: 450px;
+   height: 45em;
 
    // Top Section
    &__top-section {
@@ -13,21 +13,22 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 70%;
+      height: 75%;
 
       h1 {
          font-size: 2.25em;
-         margin-bottom: 15px;
+         margin-bottom: 20px;
          @media screen and (min-width: 50em) {
-            font-size: 2.5em;
+            font-size: 3.5em;
          }
       }
    }
 
    // Bottom Section
    &__bottom-section {
-      background-color: $accent;
-      height: 30%;
+      background: #d63558;
+
+      height: 25%;
       @include col-center-items;
       svg {
          margin: 5px;

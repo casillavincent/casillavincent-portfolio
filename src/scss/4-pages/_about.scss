@@ -8,104 +8,87 @@
    height: auto;
    color: white;
    font-size: 1em;
+   // Global HR
+   hr {
+      border: 1px solid $accent;
+      width: 50px;
+      height: 5px;
+      background: $accent;
+      margin: 15px 0px;
+   }
 
+   // My Summary
    .my-summary {
-      width: inherit;
-      min-height: 100vh;
       display: flex;
       flex-direction: column-reverse;
-      justify-content: flex-end;
+      align-items: center;
+
+      &__text,
       &__portrait {
-         img {
-            width: 100%;
-            height: auto;
-         }
+         max-width: 550px;
+         padding: 35px;
       }
 
+      // Text Content
       &__text {
-         padding: 25px;
-         @media screen and (min-width: 550px) {
-            max-width: 700px;
-         }
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+
          .name {
-            font-size: 2em;
-            margin-bottom: 5px;
+            font-size: 1.5em;
+            margin-bottom: 10px;
          }
 
          .headline {
-            font-size: 1.25em;
+            font-family: $font2;
+            font-size: 0.85em;
+            font-style: italic;
          }
 
-         hr {
-            width: 55px;
-            height: 5px;
-            border: 1px solid $accent;
-            background-color: $accent;
-            margin: 25px 0px;
-         }
-
-         .summary {
-            line-height: 1.25em;
+         .summary,
+         .summary2 {
+            font-size: 0.8em;
+            margin-bottom: 15px;
          }
       }
 
-      @media screen and (min-width: 600px) {
-         &__text {
-            padding: 25px;
-            .name {
-               font-size: 3em;
-            }
+      // Portrait
+      &__portrait {
+         @include col-center-items;
+         img {
+            width: 60%;
+            max-width: 750px;
+            height: auto;
+            margin: auto;
          }
       }
 
-      @media screen and (min-width: 750px) {
-         &__text {
-            padding: 45px;
-            .name {
-               font-size: 3em;
-            }
-         }
-      }
-
-      @media screen and (min-width: 50em) {
+      @media screen and (min-width: 75em) {
+         max-width: 1150px;
          display: grid;
          grid-template-columns: repeat(2, 1fr);
-         min-height: 800px;
-         height: 100vh;
-
-         &__text {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding: 50px;
-            .name,
-            .headline,
-            .summary {
-               max-width: 600px;
-            }
-
-            .name {
-               font-size: 3em;
-            }
-
-            .headline {
-               font-size: 1.25em;
-            }
-
-            .summary {
-               font-size: 0.9em;
-            }
+         justify-items: center;
+         align-items: center;
+         margin: auto;
+         &__text,
+         &__portrait {
+            height: 100%;
          }
 
-         &__portrait {
-            img {
-               height: 100%;
-               min-height: 100vh;
-               object-fit: cover;
+         &__text {
+            .name {
+               font-size: 3.5em;
+            }
+            .summary,
+            .summary2 {
+               font-size: 0.9em;
             }
          }
       }
    }
+   // .end of my summary
+
    // Artillery
    @import "./about-technical-skills";
 

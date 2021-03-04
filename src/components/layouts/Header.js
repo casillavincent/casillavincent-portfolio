@@ -1,7 +1,7 @@
 import React from "react";
 import Headroom from "react-headroom";
 import { Spin as Hamburger } from "hamburger-react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { FaTwitter, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 import { Link } from "react-router-dom";
@@ -10,10 +10,13 @@ const Header = () => {
    const [isOpen, setIsOpen] = useState(false);
    const toggleNavigation = () => {
       const navigation = document.querySelector("nav.main-nav");
+      const splash = document.querySelector(".splash");
       if (!isOpen) {
          navigation.classList.add("main-nav--active");
+         splash.style.display = "none";
       } else {
          navigation.classList.remove("main-nav--active");
+         splash.style.display = "flex";
       }
    };
 
@@ -42,7 +45,7 @@ const Header = () => {
                   toggleNavigation();
                }}
             >
-               <Hamburger toggled={isOpen} toggle={setIsOpen} size="25" />
+               <Hamburger toggled={isOpen} toggle={setIsOpen} size="24" />
             </div>
 
             {/* Navigation */}
@@ -55,29 +58,40 @@ const Header = () => {
             >
                <ul className="main-nav__ul">
                   <li className="main-nav__list-item">
-                     <Link to={"/"}>Home</Link>
+                     <Link to={"/"}>home</Link>
                   </li>
                   <li className="main-nav__list-item">
-                     <Link to={"/about"}>About</Link>
+                     <Link to={"/about"}>about</Link>
                   </li>
                   <li className="main-nav__list-item">
-                     <a href="#footer"> Contact</a>
+                     <a href="#footer"> contact</a>
                   </li>
                </ul>
                <hr className="menu-break" />
                <div className="menu-social-icons">
                   <IconContext.Provider value={{ color: "white", size: "1.75em" }}>
-                     <a href="https://twitter.com/casillavincent" target="_blank" id="twitter-link">
+                     <a
+                        href="https://twitter.com/casillavincent"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        id="twitter-link"
+                     >
                         <FaTwitter title="Twitter Icon" />
                      </a>
 
-                     <a href="https://github.com/casillavincent" target="_blank" id="github-link">
+                     <a
+                        href="https://github.com/casillavincent"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        id="github-link"
+                     >
                         <FaGithub title="Github Icon" />
                      </a>
 
                      <a
                         href="https://www.linkedin.com/in/vcasilla/"
                         target="_blank"
+                        rel="noopener noreferrer"
                         id="linkedin-link"
                      >
                         <FaLinkedinIn title="Linked In Icon" />

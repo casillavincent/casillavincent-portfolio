@@ -1,5 +1,5 @@
 import React from "react";
-import Portrait from "../assets/portrait-placeholder.jpg";
+import Portrait from "../assets/portrait.jpg";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import { useEffect } from "react";
@@ -70,7 +70,7 @@ const About = () => {
                   data-aos-duration="750"
                   data-aos-delay="250"
                >
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Creativity Simplified
                </h2>
                <hr
                   data-aos="fade-right"
@@ -87,9 +87,26 @@ const About = () => {
                   data-aos-duration="750"
                   data-aos-delay="750"
                >
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos totam
-                  consequatur dolores commodi labore quos modi eveniet provident facilis unde,
-                  cumque impedit! Autem nihil assumenda officiis nam laborum ab distinctio.
+                  There was a time I thought writing code was strictly for people who are
+                  exceptionally intelligent. Diving into web development, I am beginning to
+                  recognize that the only prerequisite to successfully learning how to code is to be
+                  inquisitive. As someone who is esteemed to challenges and solving problems,
+                  frontend development has certainly found a way to engage my creativity and
+                  structured way of thinking. As a developer, my goal is to constantly get inspired
+                  by new technologies and develop my ideas with like minded individuals to create
+                  robust and meaningful web applications.
+               </p>
+               <p
+                  className="summary2"
+                  data-aos="fade-right"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-once="true"
+                  data-aos-duration="750"
+                  data-aos-delay="750"
+               >
+                  My life isn't just writing code. When I’m not sitting in front of my laptop,
+                  you’ll most likely find me first in line at a new boba place, in front of my phone
+                  watching my stocks, boxing or making mixtapes in my bedroom.
                </p>
             </div>
 
@@ -109,15 +126,15 @@ const About = () => {
          {/* Technical Skills */}
          <article
             className="about-item artillery"
-            data-aos="fade-down"
-            data-aos-easing="ease-out"
+            data-aos="zoom-out-up"
+            data-aos-easing="ease-out-quart"
             data-aos-once="true"
-            data-aos-duration="750"
-            data-aos-anchor-placement="center-bottom"
+            data-aos-duration="700"
          >
             {/* Development Stack */}
             <div className="col-development-stack">
                <h3>Development Stack</h3>
+               <hr />
                <ul className="development-stack" title="Scroll Me">
                   <li className="development-stack__item">React.JS</li>
                   <li className="development-stack__item">HTML5</li>
@@ -136,15 +153,20 @@ const About = () => {
             {/* Technical Skills */}
             <div className="col-technical-skills">
                <h3>Technical Skills</h3>
+               <hr />
                <ul className="technical-skills">
-                  <li className="technical-skills__item">Fully responsive web design</li>
+                  <li className="technical-skills__item">
+                     Fully responsive web design (mobile first)
+                  </li>
                   <li className="technical-skills__item">
                      Wireframing and high-fidelity prototyping
                   </li>
                   <li className="technical-skills__item">
                      Search Engine Optimization (SEO) and Analytics
                   </li>
-                  <li className="technical-skills__item">Develop single page web applications</li>
+                  <li className="technical-skills__item">Single page web applications</li>
+                  <li className="technical-skills__item">Frontend frameworks</li>
+                  <li className="technical-skills__item">CMS Development</li>
                </ul>
             </div>
          </article>
@@ -152,10 +174,10 @@ const About = () => {
          {/* My Inspirations */}
          <article
             className="about-item inspirations"
-            data-aos="fade-down"
-            data-aos-easing="ease-out-cubic"
+            data-aos="zoom-out-up"
+            data-aos-easing="ease-out-quart"
             data-aos-once="true"
-            data-aos-duration="750"
+            data-aos-duration="700"
          >
             <h4>Here's some things that inspire me ... </h4>
 

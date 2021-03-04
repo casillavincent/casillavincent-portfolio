@@ -1,8 +1,5 @@
 import React from "react";
 
-// Globals
-import { MY_PROJECTS } from "../../../globals/project-info";
-
 const SPOverview = ({
    scope,
    devTeam,
@@ -63,12 +60,12 @@ const SPOverview = ({
          {/* CTA Buttons */}
          <div className="single-project-overview__cta">
             <button type="button" title="Live Site">
-               <a href={livesiteLink} target="_blank">
+               <a href={livesiteLink} target="_blank" rel="noopener noreferrer">
                   {livesiteLink === undefined ? "Coming Soon" : "View Live Site"}
                </a>
             </button>
             <button type="button" title="Github Repo">
-               <a href={githubLink} target="_blank">
+               <a href={githubLink} target="_blank" rel="noopener noreferrer">
                   {githubLink === undefined ? "Coming Soon" : "View on Github"}
                </a>
             </button>

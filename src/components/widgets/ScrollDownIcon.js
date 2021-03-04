@@ -3,15 +3,16 @@ import React from "react";
 const ScrollDownIcon = () => {
    return (
       <div
-         class="scroll-downs"
+         className="scroll-downs"
          data-aos="fade-up"
          data-aos-anchor-placement="center-bottom"
-         data-aos-easing="ease-out"
-         data-aos-once="true"
-         data-aos-duration="750"
+         data-aos-easing="ease-out-quart"
+         data-aos-once="false"
+         data-aos-duration="850"
+         data-aos-mirror="true"
       >
-         <div class="mousey">
-            <div class="scroller"></div>
+         <div className="mousey">
+            <div className="scroller"></div>
          </div>
          <p className="scroll-downs__label"> scroll down to explore my page</p>
       </div>

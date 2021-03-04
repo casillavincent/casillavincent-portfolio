@@ -1,5 +1,5 @@
 import React from "react";
-import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox";
+import SimpleReactLightbox from "simple-react-lightbox";
 import { useEffect } from "react";
 
 // Components
@@ -24,25 +24,6 @@ const SingleMovieApp = () => {
       window.scrollTo(0, 0);
    }, []);
 
-   const options = {
-      settings: {
-         overlayColor: "black",
-         lightboxTransitionSpeed: 0.1,
-      },
-      caption: {
-         captionColor: "#f73615",
-      },
-      buttons: {
-         showAutoplayButton: false,
-         showCloseButton: true,
-         showDownloadButton: false,
-         showFullscreenButton: false,
-         showNextButton: true,
-         showPrevButton: true,
-         showThumbnailsButton: true,
-         size: "40px",
-      },
-   };
    return (
       <section className="single-project-info">
          <SimpleReactLightbox>

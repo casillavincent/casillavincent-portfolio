@@ -1,7 +1,7 @@
 export const MY_PROJECTS = [
    {
       title: "Butter.DB",
-      tagline: "A dynamic movie application made with React",
+      tagline: "A dynamic movie application made with React.",
       scope:
          "Butter.DB is a small, full stack application that allows users to get information on movies based on what’s trending, popular, upcoming and new releases. This application fetches data from the TMDB Rest API that outputs and updates them realtime onto a  component making it completely dynamic. This is definitely one of the more challenging projects during my time at BCIT, but this project made me fall in love with React and Javascript.",
       developmentTeam: ["Vincent Casilla"],
@@ -20,7 +20,7 @@ export const MY_PROJECTS = [
 
    {
       title: "The Rolling Pin",
-      tagline: "A WordPress e-commerce site for a local bakery",
+      tagline: "A WordPress e-commerce site for a local bakery.",
       scope:
          "The Rolling Pin is a fictional e-commerce project that encompasses everything we have learned in frontend web development. This is a collaborative project consisting of 4 team members including myself where we are involved with team meetings, project management, branding & design, content architecture, development planning and user experience research. This project utilizes WordPress and WooCommerce.",
       developmentTeam: "Vincent Casilla. Seraphina W., Robyn A., Olivia F.",
@@ -41,7 +41,7 @@ export const MY_PROJECTS = [
    },
    {
       title: "Discover Japan",
-      tagline: "A fictional travel brochure for Japan",
+      tagline: "A fictional travel brochure for Japan.",
       scope:
          "This was the first fictional travel brochure website created using HTML and CSS . Discover Japan stood out to me because I remember the late nights working on this project and feeling enigmatic seeing my ideas come to life. I was beginning to appreciate HTML and CSS, and loving the idea that I can build something that fulfill my thirst for being extremely technical while exploring my creativity.  For this reason, I decided to recreate Discover Japan using React.",
       developmentTeam: ["Vincent Casilla"],
@@ -58,7 +58,7 @@ export const MY_PROJECTS = [
 
    {
       title: "Personal Portfolio",
-      tagline: "A React app that highlights my current projects",
+      tagline: "A React app that highlights my current projects.",
       scope:
          "The site you’re seeing … I made it! My portfolio project is ultimately my opportunity to spotlight my technical abilities and show the world a little piece of me. For this project, I decided to use my favourite framework - React. I love the balance between writing code and reusing existing components.",
       developmentTeam: "Vincent Casilla",

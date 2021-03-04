@@ -36,19 +36,47 @@
       align-items: flex-start;
 
       &__name {
-         font-size: 1.5em;
-         margin-bottom: 5px;
+         font-size: 1.25em;
+         margin-bottom: 10px;
+         display: flex;
+         flex-direction: row;
+         align-items: flex-end;
+         .accent-bar {
+            display: none;
+            @media screen and (min-width: 500px) {
+               display: block;
+               width: 30px;
+               height: 3px;
+               background: $accent;
+               margin-left: 5px;
+            }
+         }
       }
       &__excerpt {
-         line-height: 17px;
          margin-bottom: 20px;
          font-size: 0.8em;
       }
       &__cta {
          display: flex;
-         flex-direction: row;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         width: 100%;
+
          .cta-btn {
-            margin-right: 5px;
+            width: 100%;
+            max-width: 250px;
+            font-size: 0.9em;
+            margin: 5px 0px;
+         }
+
+         @media screen and (min-width: 450px) {
+            flex-direction: row;
+            justify-content: flex-start;
+            .cta-btn {
+               width: auto;
+               margin: 0px 10px 0px 0px;
+            }
          }
       }
    }

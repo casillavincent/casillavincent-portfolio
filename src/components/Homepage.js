@@ -14,10 +14,22 @@ const Homepage = () => {
    return (
       <React.Fragment>
          <Splash />
+
          <ProjectsSummary />
+
+         <div
+            className="home-page-line-break"
+            data-aos="fade-down"
+            data-aos-easing="ease-in-quad"
+            data-aos-once="true"
+         ></div>
+
          <ProjectMovieApp />
+
          <ProjectCapstone />
+
          <ProjectPortfolio />
+
          <ProjectJapan />
       </React.Fragment>
    );

@@ -10,6 +10,7 @@ import SPTitle from "../single-page-components/SPTitle";
 // import SPColors from "../single-page-components/SPColors";
 // import SPChallenges from "../single-page-components/SPChallenges";
 import SPCta from "../single-page-components/SPCta";
+import SPComingSoon from "../single-page-components/SPComingSoon";
 
 // Project Info
 import { MY_PROJECTS } from "../../../globals/project-info";
@@ -172,6 +173,8 @@ const SingleMovieApp = () => {
                <hr />
                <SRLWrapper options={options}></SRLWrapper>
             </article> */}
+
+            <SPComingSoon />
 
             {/* Component for CTA */}
             <SPCta

@@ -10,9 +10,14 @@ const Footer = () => {
          <div className="footer__top-section">
             <ScrollTop />
 
-            <h1>Like my work?</h1>
+            <h1>Like My Work?</h1>
             <button type="button" className="button">
-               <a href="mailto:casillavincent@gmail.com?subject=Hello Vincent!">Contact Me</a>
+               <a
+                  href="mailto:casillavincent@gmail.com?subject=Hello Vincent!"
+                  rel="noopener noreferrer"
+               >
+                  Contact Me
+               </a>
             </button>
          </div>
 
@@ -21,11 +26,21 @@ const Footer = () => {
             <h2>Connect with me</h2>
             <div className="social-icons">
                <IconContext.Provider value={{ color: "white", size: "1.25em" }}>
-                  <a href="https://twitter.com/casillavincent" target="_blank" id="twitter-link">
+                  <a
+                     href="https://twitter.com/casillavincent"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     id="twitter-link"
+                  >
                      <FaTwitter title="Twitter Icon" />
                   </a>
 
-                  <a href="https://github.com/casillavincent" target="_blank" id="github-link">
+                  <a
+                     href="https://github.com/casillavincent"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     id="github-link"
+                  >
                      <FaGithub title="Github Icon" />
                   </a>
 
@@ -33,6 +48,7 @@ const Footer = () => {
                      href="https://www.linkedin.com/in/vcasilla/"
                      target="_blank"
                      id="linkedin-link"
+                     rel="noopener noreferrer"
                   >
                      <FaLinkedinIn title="Linked In Icon" />
                   </a>

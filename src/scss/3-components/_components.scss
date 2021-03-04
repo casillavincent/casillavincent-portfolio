@@ -10,7 +10,9 @@ button {
    border: 1px solid white;
    transition: all 0.3s ease-out;
    &:hover {
-      background-color: $accent;
+      background: rgb(254, 69, 113);
+      background: linear-gradient(90deg, rgba(254, 69, 113, 1) 0%, rgba(254, 66, 81, 1) 60%);
+
       cursor: pointer;
       border: 1px solid $accent;
    }
@@ -38,17 +40,20 @@ a {
 -------------------------------------------
 */
 .fixed-social-icons {
-   width: 100px;
    display: flex;
    flex-direction: row;
    justify-content: space-between;
    align-items: center;
-
+   width: auto;
    position: fixed;
-   right: 100px;
-   bottom: 20px;
+   right: 10px;
+   bottom: 10px;
    z-index: 9999;
    transition: all 0.6s ease-out;
+   @media screen and (min-width: 50em) {
+      right: 20px;
+      bottom: 20px;
+   }
 }
 
 /*
@@ -58,6 +63,7 @@ a {
 */
 button.scroll-to-top-btn {
    border-style: none;
+   margin-bottom: 45px;
    &:hover {
       border-style: none;
    }

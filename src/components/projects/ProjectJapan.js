@@ -15,6 +15,7 @@ const ProjectJapan = () => {
             data-aos-easing="ease-out-quart"
             data-aos-once="true"
             data-aos-duration="600"
+            data-aos-anchor-placement="center-bottom"
          />
          <img
             src={DesktopBanner}
@@ -24,6 +25,7 @@ const ProjectJapan = () => {
             data-aos-easing="ease-out-quart"
             data-aos-once="true"
             data-aos-duration="600"
+            data-aos-anchor-placement="center-bottom"
          />
 
          {/* Right Column */}
@@ -33,6 +35,7 @@ const ProjectJapan = () => {
             data-aos-easing="ease-out-quart"
             data-aos-once="true"
             data-aos-duration="600"
+            data-aos-anchor-placement="center-bottom"
          >
             <h2 className="project-item__text-content__name">
                Discover Japan<div className="accent-bar"></div>

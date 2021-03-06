@@ -18,15 +18,26 @@
       h1 {
          font-size: 2.25em;
          margin-bottom: 20px;
+         color: white;
          @media screen and (min-width: 50em) {
             font-size: 3.5em;
          }
+      }
+      button svg {
+         fill: #ec2341;
+         &:hover {
+            fill: white;
+            color: white;
+         }
+      }
+      a {
+         padding: 15px 40px;
       }
    }
 
    // Bottom Section
    &__bottom-section {
-      background: #bc2540;
+      background: #ec2341;
       .social-icons {
          a {
             border-style: none;

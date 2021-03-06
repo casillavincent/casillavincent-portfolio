@@ -9,10 +9,11 @@ const ScrollDownIcon = () => {
          data-aos-once="false"
          data-aos-duration="850"
          data-aos-mirror="true"
+         data-aos-anchor-placement="top-bottom"
       >
-         <div className="mousey">
+         <a href="#my-work" className="mousey">
             <div className="scroller"></div>
-         </div>
+         </a>
          <p className="scroll-downs__label"> scroll down to explore my page</p>
       </div>
    );

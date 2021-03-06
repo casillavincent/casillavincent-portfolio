@@ -1,6 +1,6 @@
 import React from "react";
 import Headroom from "react-headroom";
-import { Spin as Hamburger } from "hamburger-react";
+import { Squash as Hamburger } from "hamburger-react";
 import { useState } from "react";
 import { FaTwitter, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
@@ -17,6 +17,7 @@ const Header = () => {
       if (!isOpen) {
          navigation.classList.add("main-nav--active");
          socialIcons.style.display = "none";
+         window.scrollBy(0, 50);
       } else {
          navigation.classList.remove("main-nav--active");
          socialIcons.style.display = "flex";
@@ -57,6 +58,7 @@ const Header = () => {
                style={{ display: "none" }}
                onClick={() => {
                   disableNavigation();
+                  window.scrollBy(0, -50);
                }}
             >
                <ul className="main-nav__ul">

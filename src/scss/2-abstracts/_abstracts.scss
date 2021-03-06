@@ -7,8 +7,9 @@ $col1: #2d2327;
 $col2: #45364b;
 $col3: #8c93a8;
 $col4: #b5c2b6;
-$accent: #bc2540;
-$galleryBorder: #2a2d3e;
+$accent: #ec2341;
+
+$galleryBorder: #202225;
 $bannerBorder: rgb(190, 190, 190);
 /*
 -------------------------------------------
@@ -77,8 +78,9 @@ $font2: "Montserrat", sans-serif;
 }
 
 @mixin desktop-banner-border {
-   border: 10px solid $bannerBorder;
-   border-bottom: 25px solid $bannerBorder;
+   border: 10px solid $galleryBorder;
+   border-bottom: 25px solid $galleryBorder;
+   border-radius: 5px;
 }
 
 @mixin vertical-line {

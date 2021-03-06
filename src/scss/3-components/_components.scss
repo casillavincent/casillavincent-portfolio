@@ -11,8 +11,8 @@ a {
    transition: all 0.3s ease-out;
    text-align: center;
    &:hover {
-      background: $accent;
-
+      // background: $accent;
+      background: #ec2341;
       cursor: pointer;
       border: 1px solid $accent;
    }

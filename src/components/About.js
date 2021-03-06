@@ -2,16 +2,26 @@ import React from "react";
 import Portrait from "../assets/portrait.jpg";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 // Plugins
 import AOS from "aos";
 
 const About = () => {
+   const [isDesktop, setIsDesktop] = useState(null);
+
    useEffect(() => {
       window.scrollTo(0, 0);
+      if (window.innerWidth >= 800) {
+         setIsDesktop(true);
+      } else {
+         setIsDesktop(false);
+      }
    }, []);
 
+   console.log(isDesktop);
+
+   // AOS Plugin initiate
    AOS.init();
    // <--- Keen Slider --->
    const [pause, setPause] = React.useState(false);
@@ -87,22 +97,32 @@ const About = () => {
                   data-aos-duration="750"
                   data-aos-delay="750"
                >
-                  There was a time I thought writing code was strictly for people who are
-                  exceptionally intelligent. Diving into web development, I am beginning to
-                  recognize that the only prerequisite to successfully learning how to code is to be
-                  inquisitive. As someone who is esteemed to challenges and solving problems,
-                  frontend development has certainly found a way to engage my creativity and
-                  structured way of thinking. My goal is to continouosly get inspired by new
-                  technologies and develop my ideas with like minded individuals to create robust
-                  and meaningful web applications.
+                  There was a time I thought writing code was strictly for people who are wildly
+                  intelligent. Diving into web development, I am beginning to recognize that the
+                  only prerequisite to successfully learning how to write code is to be inquisitive.
+                  As someone who is esteemed to challenges and solving problems, web development has
+                  certainly found a way to engage my creativity and structured way of thinking.
                </p>
                <p
-                  className="summary2"
+                  className="summary"
+                  data-aos="fade-right"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-once="true"
+                  data-aos-duration="750"
+                  data-aos-delay="850"
+               >
+                  As I start venturing further into web development, I aim to keep getting inspired
+                  by new technologies and continue to develop my ideas with like minded individuals
+                  to create robust web applications that are tailored to client's goals.
+               </p>
+               <p
+                  className="summary"
                   data-aos="fade-right"
                   data-aos-easing="ease-out-cubic"
                   data-aos-once="true"
                   data-aos-duration="750"
                   data-aos-delay="950"
+                  data-aos-anchor-placement="bottom-bottom"
                >
                   My life isn't just writing code. When I’m not sitting in front of my laptop,
                   you’ll most likely find me first in line at a new boba place, in front of my phone
@@ -115,7 +135,7 @@ const About = () => {
                <img
                   src={Portrait}
                   alt="My Portrait"
-                  data-aos="fade-left"
+                  data-aos={isDesktop === true ? "fade-left" : "zoom-out-down"}
                   data-aos-easing="ease-out-cubic"
                   data-aos-once="true"
                   data-aos-duration="750"
@@ -124,15 +144,16 @@ const About = () => {
          </article>
 
          {/* Technical Skills */}
-         <article
-            className="about-item artillery"
-            data-aos="zoom-out-up"
-            data-aos-easing="ease-out-quart"
-            data-aos-once="true"
-            data-aos-duration="700"
-         >
+         <article className="about-item artillery">
             {/* Development Stack */}
-            <div className="col-development-stack">
+            <div
+               className="col-development-stack"
+               data-aos="zoom-out-up"
+               data-aos-easing="ease-out-quart"
+               data-aos-once="true"
+               data-aos-duration="700"
+               data-aos-anchor-placement="bottom-bottom"
+            >
                <h3>Development Stack</h3>
                <hr />
                <ul className="development-stack" title="Scroll Me">
@@ -147,11 +168,19 @@ const About = () => {
                   <li className="development-stack__item">Adobe XD</li>
                   <li className="development-stack__item">Photshop</li>
                   <li className="development-stack__item">Github</li>
+                  <li className="development-stack__item">MySQL</li>
                </ul>
             </div>
 
             {/* Technical Skills */}
-            <div className="col-technical-skills">
+            <div
+               className="col-technical-skills"
+               data-aos="zoom-out-up"
+               data-aos-easing="ease-out-quart"
+               data-aos-once="true"
+               data-aos-duration="700"
+               data-aos-anchor-placement="bottom-bottom"
+            >
                <h3>Technical Skills</h3>
                <hr />
                <ul className="technical-skills">
@@ -172,16 +201,27 @@ const About = () => {
          </article>
 
          {/* My Inspirations */}
-         <article
-            className="about-item inspirations"
-            data-aos="zoom-out-up"
-            data-aos-easing="ease-out-quart"
-            data-aos-once="true"
-            data-aos-duration="700"
-         >
-            <h4>Here's some things that inspire me ... </h4>
+         <article className="about-item inspirations">
+            <h4
+               data-aos="zoom-out-up"
+               data-aos-easing="ease-out-quart"
+               data-aos-once="true"
+               data-aos-duration="700"
+               data-aos-anchor-placement="bottom-bottom"
+            >
+               Here's some things that inspire me ...{" "}
+            </h4>
 
-            <ul ref={sliderRef} className="inspirations-list keen-slider">
+            <ul
+               ref={sliderRef}
+               className="inspirations-list keen-slider"
+               data-aos="zoom-out-up"
+               data-aos-easing="ease-out-quart"
+               data-aos-once="true"
+               data-aos-duration="700"
+               data-aos-dalay="50"
+               data-aos-anchor-placement="bottom-bottom"
+            >
                <li
                   className="inspirations-list__item keen-slider__slide number-slide1"
                   title="Scroll Me"
@@ -198,19 +238,25 @@ const About = () => {
                   className="inspirations-list__item keen-slider__slide number-slide1"
                   title="Scroll Me"
                >
-                  Superhero Movies
+                  Comic Book Films
                </li>
                <li
                   className="inspirations-list__item keen-slider__slide number-slide1"
                   title="Scroll Me"
                >
-                  Fitness
+                  Fitness/Health
                </li>
                <li
                   className="inspirations-list__item keen-slider__slide number-slide1"
                   title="Scroll Me"
                >
                   MMA
+               </li>
+               <li
+                  className="inspirations-list__item keen-slider__slide number-slide1"
+                  title="Scroll Me"
+               >
+                  Stocks
                </li>
             </ul>
          </article>

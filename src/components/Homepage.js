@@ -22,6 +22,7 @@ const Homepage = () => {
             data-aos="fade-down"
             data-aos-easing="ease-in-quad"
             data-aos-once="true"
+            data-aos-anchor-placement="center-center"
          ></div>
 
          <ProjectMovieApp />

@@ -35,6 +35,9 @@ import desktopBanner from "../../../assets/banners/movie-desktop.jpg";
 
 import movieCodeSnippet from "../../../assets/movie-app-final/movie-app-code-snippet.png";
 
+// AOS
+import AOS from "aos";
+
 const SingleMovieApp = () => {
    useEffect(() => {
       window.scrollTo(0, 0);
@@ -59,6 +62,9 @@ const SingleMovieApp = () => {
          size: "40px",
       },
    };
+
+   // AOS Plugin
+   AOS.init();
 
    return (
       <section className="single-project-info">

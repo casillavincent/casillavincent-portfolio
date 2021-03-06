@@ -35,10 +35,16 @@ import wireframe2 from "../../../assets/capstone-imgs/wireframes2.jpg";
 import wireframe3 from "../../../assets/capstone-imgs/wireframes3.jpg";
 import wireframe4 from "../../../assets/capstone-imgs/wireframes4.jpg";
 
+// AOS
+import AOS from "aos";
+
 const SingleMovieApp = () => {
    useEffect(() => {
       window.scrollTo(0, 0);
    }, []);
+
+   // AOS Plugin
+   AOS.init();
 
    const options = {
       settings: {
@@ -76,8 +82,21 @@ const SingleMovieApp = () => {
             />
 
             <article className="single-project-info__process">
-               <h3>Planning</h3>
-               <hr />
+               <h3
+                  data-aos="fade-down"
+                  data-aos-easing="ease-out-sine"
+                  data-aos-once="false"
+                  data-aos-duration="700"
+               >
+                  Planning
+               </h3>
+               <hr
+                  data-aos="fade-right"
+                  data-aos-easing="ease-out-sine"
+                  data-aos-once="false"
+                  data-aos-duration="700"
+                  data-aos-delay="250"
+               />
 
                {/* Discovery Meeting */}
                <div className="process-item discovery-meeting">
@@ -177,12 +196,7 @@ const SingleMovieApp = () => {
             <SPComingSoon />
 
             {/* Component for CTA */}
-            <SPCta
-               home="/"
-               nextProject="/discover-japan"
-               livesite={MY_PROJECTS[0].liveSite}
-               github={MY_PROJECTS[0].github}
-            />
+            <SPCta home="/" nextProject="/discover-japan" livesite={"none"} github={"none"} />
          </SimpleReactLightbox>
       </section>
    );

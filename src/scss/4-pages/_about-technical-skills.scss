@@ -15,12 +15,6 @@
    display: flex;
    flex-direction: column;
    justify-content: center;
-   hr {
-      border: 1px solid $accent;
-      width: 20px;
-      height: 4px;
-      background: $accent;
-   }
 
    // Target all selectors
    .col-development-stack,
@@ -30,13 +24,25 @@
       flex-direction: column;
       justify-content: flex-start;
       height: 275px;
+      hr {
+         width: 25px;
+         height: 2px;
+         background: $accent;
+      }
       h3 {
          font-size: 1em;
+         @media screen and (min-width: 50em) {
+            font-size: 1.25em;
+         }
       }
+
       ul {
          li {
             font-size: 0.8em;
             text-align: left;
+            @media screen and (min-width: 50em) {
+               font-size: 0.85em;
+            }
          }
       }
    }

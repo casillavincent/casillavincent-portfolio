@@ -15,7 +15,7 @@
    // Banner
    &__banner {
       &--mobile {
-         width: 60%;
+         width: 45%;
          max-width: 200px;
          @include mobile-banner-border;
       }
@@ -30,10 +30,11 @@
       padding: 25px;
       max-width: 450px;
       width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      align-items: flex-start;
+      @include col-center-items;
+      @media screen and (min-width: 450px) {
+         justify-content: flex-start;
+         align-items: flex-start;
+      }
 
       &__name {
          font-size: 1.25em;
@@ -43,7 +44,7 @@
          align-items: flex-end;
          .accent-bar {
             display: none;
-            @media screen and (min-width: 500px) {
+            @media screen and (min-width: 450px) {
                display: block;
                width: 30px;
                height: 3px;
@@ -100,7 +101,7 @@
       }
    }
    @media screen and (min-width: 75em) {
-      height: 700px;
+      height: 500px;
       &__banner {
          &--mobile {
             display: none;

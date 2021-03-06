@@ -17,8 +17,8 @@ const Splash = () => {
             >
                I build websites using innovative tools.
             </h1>
+
             <p
-               className="splash-text-container__excerpt"
                data-aos="fade-right"
                data-aos-easing="ease-out-quart"
                data-aos-once="false"
@@ -28,6 +28,7 @@ const Splash = () => {
             >
                Web designer and frontend web developer based in Vancouver, BC.
             </p>
+
             <div
                className="splash-button-container"
                data-aos="fade-right"
@@ -37,9 +38,7 @@ const Splash = () => {
                data-aos-duration="850"
                data-aos-mirror="true"
             >
-               <Link to={"/about"} className="splash-text-container__btn">
-                  More About Me
-               </Link>
+               <Link to={"/about"}>More About Me</Link>
             </div>
          </article>
 

@@ -19,10 +19,16 @@ import mobileBanner from "../../../assets/banners/portfolio-mobile.jpg";
 import desktopBanner from "../../../assets/banners/portfolio-desktop.jpg";
 import SPComingSoon from "../single-page-components/SPComingSoon";
 
+// AOS
+import AOS from "aos";
+
 const SingleMovieApp = () => {
    useEffect(() => {
       window.scrollTo(0, 0);
    }, []);
+
+   // AOS Plugin
+   AOS.init();
 
    return (
       <section className="single-project-info">

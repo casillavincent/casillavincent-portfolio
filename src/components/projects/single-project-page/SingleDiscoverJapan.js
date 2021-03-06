@@ -42,10 +42,16 @@ import desktopBanner from "../../../assets/banners/japan-desktop.jpg";
 import Bem1 from "../../../assets/discover-japan/bem-code-snippet-1.png";
 import Bem2 from "../../../assets/discover-japan/bem-code-snippet-2.png";
 
+// AOS
+import AOS from "aos";
+
 const SingleMovieApp = () => {
    useEffect(() => {
       window.scrollTo(0, 0);
    }, []);
+
+   // AOS Plugin
+   AOS.init();
 
    // Options for Gallery component
    const options = {

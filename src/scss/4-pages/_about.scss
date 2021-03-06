@@ -69,10 +69,10 @@
          display: grid;
          grid-template-columns: repeat(2, 1fr);
          justify-items: center;
-         align-items: center;
+         align-items: flex-start;
          margin: auto;
-         height: 100vh;
-         min-height: 50em;
+         height: 650px;
+         border: 1px solid red;
          &__text,
          &__portrait {
             height: 100%;

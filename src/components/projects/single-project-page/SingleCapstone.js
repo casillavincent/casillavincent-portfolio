@@ -98,10 +98,28 @@ const SingleMovieApp = () => {
                   data-aos-delay="250"
                />
 
+               <div className="timeline"></div>
+
                {/* Discovery Meeting */}
                <div className="process-item discovery-meeting">
-                  <h4> Discovery Meeting </h4>
-                  <p className="excerpt">
+                  <h4
+                     data-aos="fade-right"
+                     data-aos-easing="ease-out-sine"
+                     data-aos-once="false"
+                     data-aos-duration="700"
+                     data-aos-anchor-placement="bottom-bottom"
+                  >
+                     {" "}
+                     Discovery Meeting{" "}
+                  </h4>
+                  <p
+                     className="excerpt"
+                     data-aos="fade-right"
+                     data-aos-easing="ease-out-sine"
+                     data-aos-once="false"
+                     data-aos-duration="700"
+                     data-aos-anchor-placement="bottom-bottom"
+                  >
                      The purpose of this meeting was to discuss with a fictional client regarding
                      the website's primary goals, potential competition, products and services
                      offered, ideal audience, website inspirations and brainstorm ideas pertaining
@@ -113,6 +131,15 @@ const SingleMovieApp = () => {
                         <img src={archetypes1} alt="Ideal User - Angela Johnson" />
                         <img src={archetypes2} alt="Ideal User - Jessica Campbell" />
                         <img src={Journey} alt="Journey Map" />
+                        <p className="journey-map-excerpt">
+                           In order to help our team decide on the the content architecture and
+                           features of this website, we had to first understand the target
+                           audience's primary goals for visiting this website. Creating a journey
+                           map allowed our team to identify where user's pain points are and
+                           visualize their experience. This was super helpful for our development
+                           team as this information will guide us into what aspects of the website
+                           are significant.
+                        </p>
                      </SRLWrapper>
                   </div>
                </div>
@@ -121,19 +148,35 @@ const SingleMovieApp = () => {
 
                {/* Content Plan */}
                <div className="process-item information-architecture">
-                  <h4> Information Architecture </h4>
+                  <h4
+                     data-aos="fade-right"
+                     data-aos-easing="ease-out-sine"
+                     data-aos-once="false"
+                     data-aos-duration="700"
+                     data-aos-anchor-placement="bottom-bottom"
+                  >
+                     {" "}
+                     Information Architecture{" "}
+                  </h4>
                   <div className="process-item__gallery">
                      <SRLWrapper options={options}>
                         <img src={contentPlan} alt="Content Plan" />
                      </SRLWrapper>
                   </div>
                </div>
-
                <div className="timeline"></div>
-
                {/* Content Plan */}
                <div className="process-item wireframes">
-                  <h4> Wireframing </h4>
+                  <h4
+                     data-aos="fade-right"
+                     data-aos-easing="ease-out-sine"
+                     data-aos-once="false"
+                     data-aos-duration="700"
+                     data-aos-anchor-placement="bottom-bottom"
+                  >
+                     {" "}
+                     Wireframing{" "}
+                  </h4>
                   <div className="process-item__gallery">
                      <SRLWrapper options={options}>
                         <img src={wireframe1} alt="The Rolling Pin Wireframes" />
@@ -148,21 +191,37 @@ const SingleMovieApp = () => {
 
                {/* Development Plan */}
                <div className="process-item development-plan">
-                  <h4> Development Plan </h4>
+                  <h4
+                     data-aos="fade-right"
+                     data-aos-easing="ease-out-sine"
+                     data-aos-once="false"
+                     data-aos-duration="700"
+                     data-aos-anchor-placement="bottom-bottom"
+                  >
+                     {" "}
+                     Development Plan{" "}
+                  </h4>
                   <SRLWrapper options={options}>
                      <img src={infoArchitecture} alt="Information Architecture" />
                   </SRLWrapper>
                </div>
-
                <div className="timeline"></div>
-
                {/* Functional Website */}
                <div className="process-item discovery-meeting">
-                  <h4> Functional Website </h4>
+                  <h4
+                     data-aos="fade-right"
+                     data-aos-easing="ease-out-sine"
+                     data-aos-once="false"
+                     data-aos-duration="700"
+                     data-aos-anchor-placement="bottom-bottom"
+                  >
+                     {" "}
+                     Functional Website{" "}
+                  </h4>
                   <p className="excerpt">
-                     After creating a detailed development plan, our team moved on to writing the
-                     HTML and PHP markup of our website. At this point we have a functional website
-                     needing styling and content.
+                     After creating a detailed development plan, our team moved on to building our
+                     content via backend WordPress and HTML/PHP. At this point we have a functional
+                     website needing styling and content.
                   </p>
                </div>
             </article>

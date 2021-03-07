@@ -8,12 +8,13 @@ a {
    background-color: transparent;
    color: white;
    border: 1px solid white;
-   transition: all 0.3s ease-out;
+   transition: all 0.5s ease-out;
    text-align: center;
    &:hover {
       // background: $accent;
       background: #ec2341;
-      cursor: pointer;
+      cursor: url("../../assets/cursor.png"), auto;
+
       border: 1px solid $accent;
    }
 }
@@ -28,11 +29,10 @@ button {
    background-color: transparent;
    color: white;
    border: 1px solid white;
-   transition: all 0.3s ease-out;
+   transition: all 0.5s ease-out;
    &:hover {
       background: $accent;
-
-      cursor: pointer;
+      cursor: url("../../assets/cursor.png"), auto;
       border: 1px solid $accent;
    }
 }
@@ -64,11 +64,12 @@ button:focus {
    right: 10px;
    bottom: 10px;
    z-index: 9999;
-   transition: all 0.6s ease-out;
+   transition: all 0.5s ease-out;
    a {
       border-style: none;
       &:hover {
          background: none;
+         cursor: url("../../assets/cursor.png"), auto;
       }
    }
    @media screen and (min-width: 50em) {
@@ -87,5 +88,6 @@ button.scroll-to-top-btn {
    margin-bottom: 45px;
    &:hover {
       border-style: none;
+      cursor: url("../../assets/cursor.png"), auto;
    }
 }

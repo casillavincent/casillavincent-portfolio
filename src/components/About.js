@@ -19,8 +19,6 @@ const About = () => {
       }
    }, []);
 
-   console.log(isDesktop);
-
    // AOS Plugin initiate
    AOS.init();
    // <--- Keen Slider --->

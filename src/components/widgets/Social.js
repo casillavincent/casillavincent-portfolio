@@ -11,6 +11,7 @@ const Social = () => {
          socialIcons.style.display = "flex";
       }
    };
+
    return (
       <aside
          className="fixed-social-icons"

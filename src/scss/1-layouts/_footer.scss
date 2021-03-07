@@ -28,6 +28,7 @@
          &:hover {
             fill: white;
             color: white;
+            cursor: url("../../assets/cursor.png"), auto;
          }
       }
       a {
@@ -41,6 +42,9 @@
       .social-icons {
          a {
             border-style: none;
+            &:hover {
+               background: none;
+            }
          }
       }
 
@@ -57,7 +61,7 @@
       }
 
       .copyright {
-         font-size: 0.65em;
+         font-size: 0.75em;
       }
    }
 }

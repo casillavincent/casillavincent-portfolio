@@ -19,7 +19,6 @@ const ProjectsSummary = () => {
          setIsDesktop(false);
       }
    }, []);
-   console.log(isDesktop);
 
    // AOS Plugin
    AOS.init();

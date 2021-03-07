@@ -1,6 +1,7 @@
 // React
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 // Layouts
 import Header from "./components/layouts/Header";
@@ -20,10 +21,40 @@ import SingleCapstone from "./components/projects/single-project-page/SingleCaps
 import SinglePortfolio from "./components/projects/single-project-page/SinglePortfolio";
 
 function App() {
+   const [isDesktop, setIsDesktop] = useState(true);
+   // Custom Cursor
+   useEffect(() => {
+      // Check if the user is on window or mobile
+      toggleCursor();
+      const cursor = document.querySelector(".cursor");
+      document.addEventListener("mousemove", (e) => {
+         cursor.setAttribute(
+            "style",
+            "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;"
+         );
+      });
+      document.addEventListener("click", () => {
+         cursor.classList.add("expand");
+         setTimeout(() => {
+            cursor.classList.remove("expand");
+         }, 500);
+      });
+   }, []);
+
+   const toggleCursor = () => {
+      if (window.innerWidth >= 800) {
+         setIsDesktop(true);
+      } else {
+         setIsDesktop(false);
+      }
+   };
+
    return (
       <Router>
          <React.Fragment>
             <Header />
+            {/* Custom Cursor */}
+            {isDesktop === true && <div className="cursor"></div>}
 
             <div className="wrapper">
                <main className="main main-page">

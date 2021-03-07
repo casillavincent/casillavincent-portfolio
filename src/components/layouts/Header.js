@@ -13,7 +13,6 @@ const Header = () => {
       const navigation = document.querySelector("nav.main-nav");
       const socialIcons = document.querySelector("aside.fixed-social-icons");
 
-      console.log(socialIcons);
       if (!isOpen) {
          navigation.classList.add("main-nav--active");
          socialIcons.style.display = "none";
@@ -74,7 +73,7 @@ const Header = () => {
                </ul>
                <hr className="menu-break" />
                <div className="menu-social-icons">
-                  <IconContext.Provider value={{ color: "white", size: "1.75em" }}>
+                  <IconContext.Provider value={{ color: "white", size: "1.45em" }}>
                      <a
                         href="https://twitter.com/casillavincent"
                         target="_blank"

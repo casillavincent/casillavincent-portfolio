@@ -8,6 +8,7 @@
 .scroll-downs {
    @include col-center-items;
    &:hover {
+      cursor: url("../../assets/cursor.png"), auto;
       * {
          color: $accent;
          border-color: $accent;
@@ -22,21 +23,25 @@
 }
 .mousey {
    width: 3px;
-   padding: 8px 10px;
+   padding: 5px 8px;
    height: 20px;
    border: 2px solid #fff;
    border-radius: 25px;
    opacity: 0.75;
    box-sizing: content-box;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
    &:hover {
       background: transparent;
       border: 2px solid $accent;
+      cursor: url("../../assets/cursor.png"), auto;
    }
 }
 .scroller {
-   width: 3px;
-   height: 10px;
-   border-radius: 25%;
+   width: 5px;
+   height: 5px;
+   border-radius: 50%;
    background-color: $accent;
    animation-name: scroll;
    animation-duration: 2.2s;

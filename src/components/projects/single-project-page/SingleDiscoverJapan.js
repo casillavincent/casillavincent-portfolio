@@ -38,10 +38,6 @@ import finalDesktop5 from "../../../assets/discover-japan/final-design/japan-fin
 import mobileBanner from "../../../assets/banners/japan-mobile.jpg";
 import desktopBanner from "../../../assets/banners/japan-desktop.jpg";
 
-// COde Snippet
-import Bem1 from "../../../assets/discover-japan/bem-code-snippet-1.png";
-import Bem2 from "../../../assets/discover-japan/bem-code-snippet-2.png";
-
 // AOS
 import AOS from "aos";
 
@@ -175,25 +171,53 @@ const SingleMovieApp = () => {
                <div className="bem-code-snippet__text">
                   <h4>Why I chose BEM as a methodology?</h4>
                   <p>
-                     For those who aren't familiar with BEM, it is an abbreviation for{" "}
-                     <span className="bem-bold">Block, Element and Modifier</span>. It's a CSS
-                     methodology that allows stylesheets to have a standardized structure that
-                     provides scope and reduce style conflicts when working with CSS
+                     If you aren't familiar with BEM, it means;
+                     <span className="bem-bold"> Block, Element and Modifier</span>. It is simply
+                     one of many CSS methodology that allows stylesheets to have a standardized
+                     structure that provides scope and reduce style conflicts when working with CSS
                   </p>
                   <p>
-                     {" "}
-                     I decided to use this methodology for this project because I wanted to get
-                     comfortable with using a different architecture for my stylesheets. I think
-                     getting familiar with a different methodology comes in handy when I eventually
-                     tackle bigger projects where scalability is crucial.
+                     I decided to use this methodology for this project because I wanted to
+                     experiment with methods to organize my stylesheets and CSS properties.
+                     Employing BEM and SMACSS methodologies has greatly improved the efficiency of
+                     reading my code when working on larger and more complicated projects. I think
+                     getting comfortable with exploring different methodologies will come in handy
+                     when tackling projects where scalability is crucial.
                   </p>
                </div>
 
-               <div className="bem-code-snippet__imgs">
-                  <SRLWrapper options={options}>
-                     <img src={Bem2} alt="BEM in HTML" />
-                     <img src={Bem1} alt="BEM in Sass" />
-                  </SRLWrapper>
+               <div className="bem-code-snippet__code">
+                  <iframe
+                     height="265"
+                     scrolling="no"
+                     title="Discover Japan React"
+                     src="https://codepen.io/casillavincent/embed/RwoYBON?height=265&theme-id=dark&default-tab=js"
+                     frameborder="no"
+                     loading="lazy"
+                     allowtransparency="true"
+                  >
+                     See the Pen{" "}
+                     <a href="https://codepen.io/casillavincent/pen/RwoYBON">
+                        Discover Japan React
+                     </a>{" "}
+                     by Vincent Casilla (
+                     <a href="https://codepen.io/casillavincent">@casillavincent</a>) on{" "}
+                     <a href="https://codepen.io">CodePen</a>.
+                  </iframe>
+                  <iframe
+                     height="265"
+                     scrolling="no"
+                     title="yLVxqWp"
+                     src="https://codepen.io/casillavincent/embed/yLVxqWp?height=265&theme-id=dark&default-tab=css"
+                     frameborder="no"
+                     loading="lazy"
+                     allowtransparency="true"
+                  >
+                     See the Pen <a href="https://codepen.io/casillavincent/pen/yLVxqWp">yLVxqWp</a>{" "}
+                     by Vincent Casilla (
+                     <a href="https://codepen.io/casillavincent">@casillavincent</a>) on{" "}
+                     <a href="https://codepen.io">CodePen</a>.
+                  </iframe>
                </div>
             </article>
 

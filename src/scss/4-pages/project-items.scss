@@ -55,7 +55,9 @@
       }
       &__excerpt {
          margin-bottom: 20px;
-         font-size: 0.8em;
+         @media screen and (min-width: 50em) {
+            font-size: 0.95em;
+         }
       }
       &__cta {
          display: flex;

@@ -61,6 +61,12 @@
             max-width: 750px;
             height: auto;
             margin: auto;
+            box-shadow: 10px 10px #ec2341, -10px -10px #af1036;
+
+            // MQL
+            @media screen and (min-width: 50em) {
+               box-shadow: 35px 30px rgba(#ec2341, 0.2), -35px -25px rgba(#af1036, 0.75);
+            }
          }
       }
 
@@ -72,7 +78,6 @@
          align-items: flex-start;
          margin: auto;
          height: 650px;
-         border: 1px solid red;
          &__text,
          &__portrait {
             height: 100%;

@@ -7,17 +7,17 @@ import SPOverview from "../single-page-components/SPOverview";
 // import SPDesign from "../single-page-components/SPDesign";
 // import SPDevelopment from "../single-page-components/SPDevelopment";
 import SPTitle from "../single-page-components/SPTitle";
-// import SPColors from "../single-page-components/SPColors";
+import SPColors from "../single-page-components/SPColors";
 // import SPChallenges from "../single-page-components/SPChallenges";
 import SPCta from "../single-page-components/SPCta";
-
-// Project Info
-import { MY_PROJECTS } from "../../../globals/project-info";
 
 // Photos
 import mobileBanner from "../../../assets/banners/portfolio-mobile.jpg";
 import desktopBanner from "../../../assets/banners/portfolio-desktop.jpg";
 import SPComingSoon from "../single-page-components/SPComingSoon";
+
+// Project Info
+import { MY_PROJECTS } from "../../../globals/project-info";
 
 // AOS
 import AOS from "aos";
@@ -46,6 +46,11 @@ const SingleMovieApp = () => {
                livesiteLink={MY_PROJECTS[3].liveSite}
                mobileBanner={mobileBanner}
                desktopBanner={desktopBanner}
+            />
+            <SPColors
+               col1={MY_PROJECTS[3].colors[0]}
+               col2={MY_PROJECTS[3].colors[1]}
+               col3={MY_PROJECTS[3].colors[2]}
             />
 
             <SPComingSoon />

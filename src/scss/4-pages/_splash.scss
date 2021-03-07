@@ -12,10 +12,10 @@
    padding: 0px 35px;
    width: 100%;
    margin: auto;
-   height: 35em;
-   @media screen and (min-width: 50em) {
-      height: 45em;
-   }
+   height: 100vh;
+   min-height: 50em;
+
+   // MQL
 }
 
 .splash .splash-text-container {
@@ -28,7 +28,7 @@
    flex-direction: column;
    justify-content: flex-start;
    align-items: flex-start;
-   padding-left: 25px;
+   padding-left: 20px;
 
    // Long tagline text container
    &__tagline {
@@ -47,7 +47,16 @@
    .splash-button-container {
       a {
          font-size: 0.75em;
+         &:hover {
+            cursor: url("../../assets/cursor.png"), auto;
+         }
       }
+   }
+
+   // MQL for text container
+   @media screen and (min-width: 500px) {
+      padding-left: 15%;
+      margin-bottom: 150px;
    }
 
    @media screen and (min-width: 25em) {
@@ -66,10 +75,19 @@
    }
 
    @media screen and (min-width: 50em) {
-      max-width: 750px;
-      padding-left: 125px;
+      max-width: 900px;
+      padding: 0px 0px 0px 10%;
       &__tagline {
          font-size: 3em;
       }
    }
-}
+
+   @media screen and (min-width: 80em) {
+      margin-bottom: 250px;
+      max-width: 1250px;
+      &__tagline {
+         font-size: 4em;
+         width: 100%;
+      }
+   }
+} // end of text content container

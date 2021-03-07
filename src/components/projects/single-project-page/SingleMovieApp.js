@@ -33,8 +33,6 @@ import movieFinalDesktop4 from "../../../assets/movie-app-final/desktop/butter-d
 import mobileBanner from "../../../assets/banners/movie-mobile.jpg";
 import desktopBanner from "../../../assets/banners/movie-desktop.jpg";
 
-import movieCodeSnippet from "../../../assets/movie-app-final/movie-app-code-snippet.png";
-
 // AOS
 import AOS from "aos";
 
@@ -58,7 +56,7 @@ const SingleMovieApp = () => {
          showFullscreenButton: false,
          showNextButton: true,
          showPrevButton: true,
-         showThumbnailsButton: true,
+         showThumbnailsButton: false,
          size: "40px",
       },
    };
@@ -125,14 +123,56 @@ const SingleMovieApp = () => {
             {/* Component for Challenges */}
             <SPChallenges challenge={MY_PROJECTS[0].challenge} />
 
+            {/* Fetch API code snippet */}
             <article className="code-snippet">
-               <h4 className="code-snippet__excerpt">Heres what it looks like</h4>
-               <SRLWrapper options={options}>
-                  <img
-                     src={movieCodeSnippet}
-                     alt="Async function for fetching data from a rest api"
-                  />
-               </SRLWrapper>
+               <h4 className="code-snippet__excerpt">
+                  Here is how I fetch the popular movies from the Rest API
+               </h4>
+               <iframe
+                  height="335"
+                  scrolling="no"
+                  title="React Fetch Movie Example"
+                  src="https://codepen.io/casillavincent/embed/eYBLjNW?height=335&theme-id=dark&default-tab=js"
+                  frameborder="no"
+                  loading="lazy"
+                  allowtransparency="true"
+                  allowfullscreen="true"
+                  className="code-snippet__code"
+               >
+                  See the Pen{" "}
+                  <a href="https://codepen.io/casillavincent/pen/eYBLjNW">
+                     React Fetch Movie Example
+                  </a>{" "}
+                  by Vincent Casilla (
+                  <a href="https://codepen.io/casillavincent">@casillavincent</a>) on{" "}
+                  <a href="https://codepen.io">CodePen</a>.
+               </iframe>
+            </article>
+
+            {/* Add to Likes local storage Snippet */}
+            <article className="code-snippet">
+               <h4 className="code-snippet__excerpt">
+                  This application utilizes the local storage to save favourite movies
+               </h4>
+               <iframe
+                  height="302"
+                  scrolling="no"
+                  title="Adding likes to Local Storage"
+                  src="https://codepen.io/casillavincent/embed/GRNXBmV?height=302&theme-id=dark&default-tab=js"
+                  frameborder="no"
+                  loading="lazy"
+                  allowtransparency="true"
+                  allowfullscreen="true"
+                  className="code-snippet__code"
+               >
+                  See the Pen{" "}
+                  <a href="https://codepen.io/casillavincent/pen/GRNXBmV">
+                     Adding likes to Local Storage
+                  </a>{" "}
+                  by Vincent Casilla (
+                  <a href="https://codepen.io/casillavincent">@casillavincent</a>) on{" "}
+                  <a href="https://codepen.io">CodePen</a>.
+               </iframe>
             </article>
 
             {/* Component for CTA */}

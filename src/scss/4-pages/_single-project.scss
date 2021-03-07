@@ -110,7 +110,7 @@
          max-width: 800px;
       }
 
-      // Overview Children
+      // Overview containers (all selectors)
       .scope,
       .dev-team,
       .role,
@@ -126,6 +126,7 @@
          h2 {
             font-size: 1.25em;
             margin-bottom: 10px;
+            color: $accent;
          }
 
          p,
@@ -153,7 +154,7 @@
 
       .tools {
          grid-area: tools;
-         @media screen and (min-width: 50em) {
+         @media screen and (min-width: 25em) {
             ul {
                display: grid;
                grid-template-columns: repeat(3, 100px);
@@ -191,6 +192,7 @@
    @include row-center-items;
    font-size: 1em;
    margin: auto;
+   height: 35em;
    @media screen and (min-width: 50em) {
       height: 600px;
    }
@@ -216,6 +218,8 @@
    @include row-center-items;
    font-size: 1em;
    margin: auto;
+   height: 35em;
+
    @media screen and (min-width: 50em) {
       height: 600px;
    }
@@ -273,7 +277,7 @@
 
    @media screen and (min-width: 50em) {
       @include col-center-items;
-      height: 700px;
+      height: 40em;
 
       .color-items {
          width: 100%;
@@ -313,6 +317,12 @@
    padding: 35px;
    max-width: 600px;
    margin: auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   h3 {
+      font-size: 1.75em;
+   }
 
    @media screen and (min-width: 50em) {
       max-width: 90%;
@@ -326,6 +336,7 @@
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
+      align-items: center;
 
       img {
          width: 100%;
@@ -361,6 +372,12 @@
 .final-project-gallery--desktop {
    padding: 35px;
    margin: auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   h3 {
+      font-size: 1.75em;
+   }
 
    @media screen and (min-width: 50em) {
       @include col-center-items;
@@ -399,15 +416,18 @@
    margin: auto;
 
    &__excerpt {
-      font-size: 1.25em;
-      margin-bottom: 5px;
+      font-size: 1em;
+      margin-bottom: 10px;
       @media screen and (min-width: 50em) {
-         font-size: 1.5em;
-         margin-bottom: 10px;
+         font-size: 1.25em;
+         margin-bottom: 20px;
       }
    }
-   img {
+
+   &__code {
       width: 100%;
+      height: 40em;
+      background-repeat: 20px;
    }
 }
 

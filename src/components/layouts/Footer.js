@@ -3,14 +3,17 @@ import { FaTwitter, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 import ScrollTop from "../widgets/ScrollTop";
 
+// Plugins
+import AOS from "aos";
 const Footer = () => {
+   AOS.init();
    return (
       <footer className="footer" id="contact">
          {/* Top Section */}
          <div className="footer__top-section">
             <ScrollTop />
 
-            <h1>Like My Work?</h1>
+            <h1>Like my work?</h1>
 
             <a
                href="mailto:casillavincent@gmail.com?subject=Hello Vincent!"

@@ -10,7 +10,6 @@ const SPOverview = ({
    mobileBanner,
    desktopBanner,
 }) => {
-   console.log(livesiteLink);
    return (
       <article className="single-project-overview">
          <img

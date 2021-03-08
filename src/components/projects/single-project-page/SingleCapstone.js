@@ -135,10 +135,10 @@ const SingleMovieApp = () => {
                            In order to help our team decide on the the content architecture and
                            features of this website, we had to first understand the target
                            audience's primary goals for visiting this website. Creating a journey
-                           map allowed our team to identify where user's pain points are and
-                           visualize their experience. This was super helpful for our development
-                           team as this information will guide us into what aspects of the website
-                           are significant.
+                           map allowed our team to identify where user's pain points and develop
+                           solutions to improve user experience. This was super helpful for our
+                           development team because this information guided us on what aspects of
+                           the website are crucial.
                         </p>
                      </SRLWrapper>
                   </div>

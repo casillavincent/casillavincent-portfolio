@@ -42,7 +42,7 @@ const ProjectJapan = () => {
             </h2>
             <p className="project-item__text-content__excerpt">
                A small scale business travel brochure for Japan that highlights it's rich culture.
-               This is the first project I completed at BCIT.
+               This is my first HTML5 & CSS3 project that I re-made using React.
             </p>
             <div className="project-item__text-content__cta">
                <Link to={"/discover-japan-project"} className="cta-btn">

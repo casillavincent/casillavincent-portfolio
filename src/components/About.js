@@ -95,10 +95,10 @@ const About = () => {
                   data-aos-duration="750"
                   data-aos-delay="750"
                >
-                  There was a time I thought writing code was strictly for people who are wildly
+                  There was a time I thought writing code was strictly for those who are wildly
                   intelligent. Diving into web development, I am beginning to recognize that the
-                  only prerequisite to successfully learning how to write code is to be inquisitive.
-                  As someone who is esteemed to challenges and solving problems, web development has
+                  only prerequisite to successfully learning how to code is to be inquisitive. As
+                  someone who is esteemed to challenges and solving problems, web development has
                   certainly found a way to engage my creativity and structured way of thinking.
                </p>
                <p
@@ -109,9 +109,9 @@ const About = () => {
                   data-aos-duration="750"
                   data-aos-delay="850"
                >
-                  As I start venturing further into web development, I aim to keep getting inspired
-                  by new technologies and continue to develop my ideas with like minded individuals
-                  to create robust web applications that are tailored to client's goals.
+                  As I venture further into web development, I aim to keep getting inspired by new
+                  technologies and continue to develop my ideas with like minded individuals to
+                  create robust web applications that are tailored to client's goals.
                </p>
                <p
                   className="summary"
@@ -123,8 +123,8 @@ const About = () => {
                   data-aos-anchor-placement="bottom-bottom"
                >
                   My life isn't just writing code. When I’m not sitting in front of my laptop,
-                  you’ll most likely find me first in line at a new boba place, in front of my phone
-                  watching my stocks, boxing or making mixtapes in my bedroom.
+                  you’ll most likely find me first in line at a new boba place, watching my stocks
+                  crumble, boxing or create mixtapes in my bedroom.
                </p>
             </div>
 
@@ -163,6 +163,7 @@ const About = () => {
                   <li className="development-stack__item">jQuery</li>
                   <li className="development-stack__item">PHP</li>
                   <li className="development-stack__item">Wordpress</li>
+                  <li className="development-stack__item">WooCommerce</li>
                   <li className="development-stack__item">Adobe XD</li>
                   <li className="development-stack__item">Photshop</li>
                   <li className="development-stack__item">Github</li>

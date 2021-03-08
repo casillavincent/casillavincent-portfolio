@@ -41,9 +41,9 @@ const ProjectCapstone = () => {
                The Rolling Pin (Coming Soon)<div className="accent-bar"></div>
             </h2>
             <p className="project-item__text-content__excerpt">
-               A robust and fully functional e-commerce website that utilizes WordPress, PHP and
-               WooCommerce. This is a collaborative project consisting of 4 members and it is still
-               a work in progress.
+               A fully functional eCommerce website that utilizes WordPress and WooCommerce to
+               display a bakery's products. This is a collaborative project consisting of 4 members
+               and it is still a work in progress.
             </p>
             <div className="project-item__text-content__cta">
                <Link to={"/the-rolling-pin"} className="cta-btn">

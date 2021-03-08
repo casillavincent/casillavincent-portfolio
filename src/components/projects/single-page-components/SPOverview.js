@@ -27,7 +27,7 @@ const SPOverview = ({
          <section className="single-project-overview__content">
             {/* Scope */}
             <div className="scope">
-               <h2>Scope</h2>
+               <h2>Overview</h2>
                <p>{scope}</p>
             </div>
 

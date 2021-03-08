@@ -23,7 +23,7 @@ export const MY_PROJECTS = [
       tagline: "A WordPress eCommerce site for a fictional bakery.",
       scope:
          "The Rolling Pin is a fictional eCommerce project that encompasses everything we have learned in frontend web development. This is a collaborative project consisting of 4 team members including myself where we were involved in team meetings, project management, branding & UX/UI design, content architecture, development planning and user experience research. This project utilizes WordPress and WooCommerce.",
-      developmentTeam: "Vincent Casilla. Seraphina W., Robyn A., Olivia F.",
+      developmentTeam: "Vincent Casilla, Seraphina White, Robyn Abe, Olivia Feilden",
       role: "Front-end Developer",
       tools: [
          "WordPress",
@@ -43,7 +43,7 @@ export const MY_PROJECTS = [
       title: "Discover Japan",
       tagline: "A fictional travel brochure for Japan.",
       scope:
-         "This was the first fictional travel brochure website created using HTML and CSS . Discover Japan stood out to me because I remember the late nights working on this project and feeling enigmatic seeing my ideas come to life. I was beginning to appreciate HTML and CSS, and loving the idea that I can build something that fulfill my thirst for being extremely technical while exploring my creativity.  For this reason, I decided to recreate Discover Japan using React.",
+         "Discover Japan is a fictional travel brochure for a Japan. This was an introductory project to web development fundamentals and  HTML5/CSS3.",
       developmentTeam: ["Vincent Casilla"],
       role: "UI/UX Designer, Front-end Developer",
       tools: ["HTML5", "CSS3", "Sass", "React", "Javascript", "AOS JS Library", "Github"],
@@ -58,14 +58,14 @@ export const MY_PROJECTS = [
 
    {
       title: "Personal Portfolio",
-      tagline: "A React app that highlights my current projects.",
+      tagline: "A React app that highlights my technical projects.",
       scope:
-         "The site you’re seeing … I made it! My portfolio project is ultimately my opportunity to spotlight my technical abilities and show , I decided to use my favourite framework - React. I love the balance between writing code and reusing existing components.",
+         "The site you’re seeing … I made it! My portfolio project is ultimately my opportunity to spotlight my technical abilities and express a fragment of myself through my work. In the end, I decided to build my portfolio using React (my favourite language) because I knew my portfolio would be a piece I would need to update regularly. The ability to build and reuse components has made the development of my portfolio effortless.",
       developmentTeam: "Vincent Casilla",
       role: "UI/UX Designer, Front-end Developer",
       tools: ["React", "Javascript", "HTML5", "CSS3", "Github", "Adobe XD"],
       github: "https://github.com/casillavincent/casillavincent-portfolio",
       liveSite: "https://vcasilla.com/",
-      colors: ["#EC2341", "#FFFFFF", "#EF3D6F"],
+      colors: ["#EC2341", "#FFFFFF", "#0C0C0E"],
    },
 ];

@@ -41,9 +41,8 @@ const ProjectPortfolio = () => {
                Personal Portfolio (Coming Soon)<div className="accent-bar"></div>
             </h2>
             <p className="project-item__text-content__excerpt">
-               My magnum opus that encompasses everything I have learned so far with frontend
-               development. This project showcases my abilities and who I am as a developer but also
-               who I am outside of development.
+               My magnum opus that combine everything I have learned so far as a front-end
+               developer. This project showcases all my most prominent technical projects
             </p>
             <div className="project-item__text-content__cta">
                <Link to={"/personal-portfolio"} className="cta-btn">

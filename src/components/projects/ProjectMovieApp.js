@@ -46,7 +46,7 @@ const ProjectMovieApp = () => {
                React and the TMDB Rest API.
             </p>
             <div className="project-item__text-content__cta">
-               <Link to={"/butter-db"} className="cta-btn">
+               <Link to={"/butter-db-project"} className="cta-btn">
                   More Info
                </Link>
                <a

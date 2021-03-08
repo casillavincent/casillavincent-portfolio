@@ -13,22 +13,25 @@
    width: 100%;
    margin: auto;
    height: 100vh;
-   min-height: 50em;
+   min-height: 25em;
 
    // MQL
+   @media screen and (min-width: 50em) {
+      height: 45em;
+   }
 }
 
 .splash .splash-text-container {
    width: 100%;
    height: 12em;
    max-width: 500px;
-   margin-bottom: 100px;
 
    display: flex;
    flex-direction: column;
    justify-content: flex-start;
    align-items: flex-start;
    padding-left: 20px;
+   margin-bottom: 15%;
 
    // Long tagline text container
    &__tagline {
@@ -83,7 +86,6 @@
    }
 
    @media screen and (min-width: 80em) {
-      margin-bottom: 250px;
       max-width: 1250px;
       &__tagline {
          font-size: 4em;

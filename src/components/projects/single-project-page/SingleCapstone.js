@@ -255,7 +255,12 @@ const SingleMovieApp = () => {
             <SPComingSoon />
 
             {/* Component for CTA */}
-            <SPCta home="/" nextProject="/discover-japan" livesite={"none"} github={"none"} />
+            <SPCta
+               home="/"
+               nextProject="/discover-japan-project"
+               livesite={"none"}
+               github={"none"}
+            />
          </SimpleReactLightbox>
       </section>
    );

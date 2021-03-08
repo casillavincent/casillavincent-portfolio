@@ -38,7 +38,8 @@
 
    // Bottom Section
    &__bottom-section {
-      background: #ec2341;
+      // background: #ec2341;
+      background: $accent2;
       .social-icons {
          a {
             border-style: none;

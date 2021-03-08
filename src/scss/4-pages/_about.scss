@@ -57,15 +57,15 @@
       &__portrait {
          @include col-center-items;
          img {
-            width: 100%;
-            max-width: 750px;
+            width: 75%;
+            max-width: 550px;
             height: auto;
             margin: auto;
-            box-shadow: 10px 10px #ec2341, -10px -10px #af1036;
+            box-shadow: 10px 10px rgba(#ec2341, 0.2), -10px -10px rgba(#af1036, 0.75);
 
             // MQL
             @media screen and (min-width: 50em) {
-               box-shadow: 35px 30px rgba(#ec2341, 0.2), -35px -25px rgba(#af1036, 0.75);
+               box-shadow: 25px 30px rgba(#ec2341, 0.2), -35px -15px rgba(#af1036, 0.75);
             }
          }
       }

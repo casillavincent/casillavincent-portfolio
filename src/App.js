@@ -61,8 +61,8 @@ function App() {
                   <Switch>
                      <Route path="/" exact component={Homepage} />
                      <Route path="/about" component={About} />
-                     <Route path="/butter-db" component={SingleMovieApp} />
-                     <Route path="/discover-japan" component={SingleDiscoverJapan} />
+                     <Route path="/butter-db-project" component={SingleMovieApp} />
+                     <Route path="/discover-japan-project" component={SingleDiscoverJapan} />
                      <Route path="/the-rolling-pin" component={SingleCapstone} />
                      <Route path="/personal-portfolio" component={SinglePortfolio} />
                      <Route path="*" component={Homepage} />

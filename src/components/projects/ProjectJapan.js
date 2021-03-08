@@ -45,7 +45,7 @@ const ProjectJapan = () => {
                This is the first project I completed at BCIT.
             </p>
             <div className="project-item__text-content__cta">
-               <Link to={"/discover-japan"} className="cta-btn">
+               <Link to={"/discover-japan-project"} className="cta-btn">
                   More Info
                </Link>
                <a

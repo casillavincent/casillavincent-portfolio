@@ -142,3 +142,11 @@ img {
    @include vertical-line;
    margin: 17% auto 10% auto;
 }
+
+// Line
+.timeline {
+   width: 5px;
+   height: 50px;
+   background: $accent;
+   margin: 75px auto;
+}

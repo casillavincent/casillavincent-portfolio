@@ -1,0 +1,56 @@
+.single-project-info-portfolio {
+   font-size: 1em;
+   // Inspo
+   .inspo-gallery {
+      padding: 35px;
+      width: 100%;
+      height: auto;
+      @include col-center-items;
+      @media screen and (min-width: 50em) {
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+         grid-gap: 20px;
+         max-width: 1350px;
+         margin: auto;
+      }
+
+      img {
+         width: 100%;
+         max-width: 600px;
+         margin-bottom: 15px;
+      }
+   } // end of gallery
+
+   .portfolio-goals {
+      width: 100%;
+      max-width: 800px;
+      margin: auto;
+      padding: 35px;
+      height: 30em;
+      @include col-center-items;
+      &__excerpt {
+         font-size: 1em;
+         line-height: 1.25em;
+         margin-bottom: 10px;
+      }
+
+      &__list {
+         width: 100%;
+         max-width: 500px;
+         margin: 0px auto;
+         li {
+            margin: 10px;
+            list-style-type: disc;
+            line-height: 1.25em;
+            @media screen and (min-width: 50em) {
+               margin: 30px auto;
+            }
+            span {
+               font-family: $font1;
+               color: $accent;
+               font-size: 1.25em;
+            }
+         }
+      }
+   }
+}

@@ -10,6 +10,7 @@ import SPDevelopment from "../single-page-components/SPDevelopment";
 import SPTitle from "../single-page-components/SPTitle";
 import SPColors from "../single-page-components/SPColors";
 import SPCta from "../single-page-components/SPCta";
+import SPTypography from "../single-page-components/SPTypography";
 
 // Project Info
 import { MY_PROJECTS } from "../../../globals/project-info";
@@ -103,6 +104,15 @@ const SingleMovieApp = () => {
                col2={MY_PROJECTS[2].colors[1]}
                col3={MY_PROJECTS[2].colors[2]}
             />
+
+            {/* Component for typography */}
+            <SPTypography
+               f1="Bebas Neue, cursive"
+               f2="Montserrat, sans-serif"
+               fam1="Bebas Neue, cursive"
+               fam2="Montserrat, sans-serif"
+            />
+
             {/* Compare mobile designs */}
             <article className="discover-japan-compare--mobile">
                {/* Old Design */}

@@ -35,6 +35,7 @@ import desktopBanner from "../../../assets/banners/movie-desktop.jpg";
 
 // AOS
 import AOS from "aos";
+import SPTypography from "../single-page-components/SPTypography";
 
 const SingleMovieApp = () => {
    useEffect(() => {
@@ -97,6 +98,10 @@ const SingleMovieApp = () => {
                col2={MY_PROJECTS[0].colors[1]}
                col3={MY_PROJECTS[0].colors[2]}
             />
+
+            {/* Component for typography */}
+            <SPTypography f1="Montserrat, sans-serif" f2="" fam1="Montserrat, sans-serif" fam2="" />
+
             {/* Component for Development Summary */}
             <SPDevelopment text={MY_PROJECTS[0].development} />
             <article className="final-project-gallery--mobile">

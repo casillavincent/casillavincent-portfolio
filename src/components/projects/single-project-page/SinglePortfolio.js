@@ -10,11 +10,16 @@ import SPTitle from "../single-page-components/SPTitle";
 import SPColors from "../single-page-components/SPColors";
 // import SPChallenges from "../single-page-components/SPChallenges";
 import SPCta from "../single-page-components/SPCta";
+import SPTypography from "../single-page-components/SPTypography";
+import SPComingSoon from "../single-page-components/SPComingSoon";
 
 // Photos
 import mobileBanner from "../../../assets/banners/portfolio-mobile.jpg";
 import desktopBanner from "../../../assets/banners/portfolio-desktop.jpg";
-import SPComingSoon from "../single-page-components/SPComingSoon";
+
+import inspo01 from "../../../assets/portfolio/portfolio-inspo1.jpg";
+import inspo02 from "../../../assets/portfolio/portfolio-inspo2.jpg";
+import inspo03 from "../../../assets/portfolio/portfolio-inspo3.jpg";
 
 // Project Info
 import { MY_PROJECTS } from "../../../globals/project-info";
@@ -30,12 +35,32 @@ const SingleMovieApp = () => {
    // AOS Plugin
    AOS.init();
 
+   // Options for Lightbox
+   const options = {
+      settings: {
+         overlayColor: "black",
+         lightboxTransitionSpeed: 0.1,
+      },
+      caption: {
+         captionColor: "#f73615",
+      },
+      buttons: {
+         showAutoplayButton: false,
+         showCloseButton: true,
+         showDownloadButton: false,
+         showFullscreenButton: false,
+         showNextButton: true,
+         showPrevButton: true,
+         showThumbnailsButton: false,
+         size: "40px",
+      },
+   };
+
    return (
-      <section className="single-project-info">
+      <section className="single-project-info single-project-info-portfolio">
          <SimpleReactLightbox>
             {/* Component for outputting the title and tagline */}
             <SPTitle title={MY_PROJECTS[3].title} tagline={MY_PROJECTS[3].tagline} />
-
             {/* Component for outputting the overview */}
             <SPOverview
                scope={MY_PROJECTS[3].scope}
@@ -47,14 +72,87 @@ const SingleMovieApp = () => {
                mobileBanner={mobileBanner}
                desktopBanner={desktopBanner}
             />
+            {/* Planning */}
+            <article className="single-project-planning">
+               <section className="single-project-planning__container">
+                  <h3
+                     data-aos="fade-down"
+                     data-aos-easing="ease-out-sine"
+                     data-aos-once="false"
+                     data-aos-duration="700"
+                  >
+                     Planning
+                  </h3>
+                  <hr
+                     data-aos="fade-right"
+                     data-aos-easing="ease-out-sine"
+                     data-aos-once="false"
+                     data-aos-duration="700"
+                     data-aos-delay="250"
+                  />
+                  <p
+                     data-aos="fade-right"
+                     data-aos-easing="ease-out-sine"
+                     data-aos-once="false"
+                     data-aos-duration="700"
+                     data-aos-delay="450"
+                  >
+                     When starting this my portfolio piece, I had the slightest clue of what a
+                     quality web developer portfolio should contain. During the initial stages, I
+                     was only collecting inspiration from other developer’s portfolios with the goal
+                     to take notes of what each portfolio had in common and record each of their
+                     strengths.
+                  </p>
+               </section>
+            </article>
+            {/* Inspo Gallery */}
+            <div className="inspo-gallery">
+               <img src={inspo01} alt="Portfolio Inspiration 1" width="150" />
+               <img src={inspo02} alt="Portfolio Inspiration 2" width="150" />
+               <img src={inspo03} alt="Portfolio Inspiration 3" width="150" />
+            </div>
+            <div className="portfolio-goals">
+               <h4 className="portfolio-goals__excerpt">
+                  {" "}
+                  After gathering my inspirations I wrote down my priorities when building my
+                  portfolio ...
+               </h4>
+               <ol className="portfolio-goals__list">
+                  <li>
+                     <span>Prioritize User Experience</span> - ensure visitors can easily navigate
+                     through all pages and content by using logical call to action buttons.
+                  </li>
+                  <li>
+                     <span>Design Fundamentals</span> - choose a palette and typeface that doesn't
+                     take focus away from my content and create a layout that is natural and follow
+                     a visual hierarchy.
+                  </li>
+                  <li>
+                     <span>Performance</span> - keep my page load time below 5.0s and page size is
+                     below 3.0Mb
+                  </li>
+               </ol>
+            </div>
+
+            <div className="timeline"></div>
+
+            <article className="content-plan">
+               <img src="" alt="" />
+            </article>
+
             <SPColors
                col1={MY_PROJECTS[3].colors[0]}
                col2={MY_PROJECTS[3].colors[1]}
                col3={MY_PROJECTS[3].colors[2]}
             />
-
+            {/* Component for typography */}
+            <SPTypography
+               f1="Ubuntu, sans-serif"
+               f2="Montserrat, sans-serif"
+               fam1="Ubuntu, sans-serif"
+               fam2="Montserrat, sans-serif"
+            />
             <SPComingSoon />
-
             {/* Component for Design Summary */}
             {/* <SPDesign text={} />
             <div className="design-gallery">
@@ -80,7 +178,6 @@ const SingleMovieApp = () => {
             </article> */}
             {/* Component for Challenges */}
             {/* <SPChallenges challenge={MY_PROJECTS[0].challenge} /> */}
-
             {/* <article className="code-snippet">
                <h4 className="code-snippet__excerpt">Heres what it looks like</h4>
                <SRLWrapper options={options}>
@@ -90,7 +187,6 @@ const SingleMovieApp = () => {
                   />
                </SRLWrapper>
             </article> */}
-
             {/* Component for CTA */}
             <SPCta
                home="/"

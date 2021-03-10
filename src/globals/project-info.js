@@ -60,7 +60,7 @@ export const MY_PROJECTS = [
       title: "Personal Portfolio",
       tagline: "A React app that highlights my technical projects.",
       scope:
-         "The site you’re seeing … I made it! My portfolio project is ultimately my opportunity to spotlight my technical abilities and express a fragment of myself through my work. In the end, I decided to build my portfolio using React (my favourite language) because I knew my portfolio would be a piece I would need to update regularly. The ability to build and reuse components has made the development of my portfolio effortless.",
+         "The site you’re seeing … I made it! My portfolio project is ultimately my opportunity to spotlight my technical abilities and present the process of building websites. In the end, I decided to build my portfolio using React (my favourite language) because I knew my portfolio would be a piece I would need to update regularly. The ability to build and reuse components has made the development of my portfolio effortless.",
       developmentTeam: "Vincent Casilla",
       role: "UI/UX Designer, Front-end Developer",
       tools: ["React", "Javascript", "HTML5", "CSS3", "Github", "Adobe XD"],

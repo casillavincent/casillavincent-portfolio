@@ -13,11 +13,13 @@
    width: 100%;
    margin: auto;
    height: 100vh;
-   min-height: 25em;
+   min-height: 30em;
+   padding-bottom: 20%;
 
    // MQL
    @media screen and (min-width: 50em) {
-      height: 45em;
+      height: 100vh;
+      padding-bottom: 0%;
    }
 }
 

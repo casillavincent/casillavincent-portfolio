@@ -17,6 +17,9 @@
    justify-content: flex-start;
    align-items: center;
    background: $accent2;
+   @media screen and (min-width: 50em) {
+      height: 100vh;
+   }
 }
 
 /*
@@ -24,7 +27,6 @@
 * Projects Articles
 -------------------------------------------
 */
-
 .projects {
    padding: 35px;
    margin: auto;

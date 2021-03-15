@@ -67,5 +67,9 @@ export const MY_PROJECTS = [
       github: "https://github.com/casillavincent/casillavincent-portfolio",
       liveSite: "https://vcasilla.com/",
       colors: ["#EC2341", "#FFFFFF", "#0C0C0E"],
+      design:
+         "When I was coming up with the design of my portfolio, I knew I wanted to keep it extremely minimal. My aim was to showcase more of my abilities as a developer but still maintain a tasteful design. A way I accomplished this is making use of a lot of white space. The purpose of doing this is to present my information seamlessly and really consider the natural way users read content. I must admit, my initial wireframes were a bit ambitious but the general layout I established is exactly what I envisioned for the final product.",
+      development:
+         "When I began with development, I wanted to maintain a central idea of scalability and reusable components. I knew that all my projects included the same topic with different content. To get around making this easier for myself, I created child components for each topic that I eventually prop drill. Building each page was simply calling all the necessary components.",
    },
 ];

@@ -41,6 +41,7 @@ const SingleMovieApp = () => {
    useEffect(() => {
       window.scrollTo(0, 0);
    }, []);
+
    // Options for Lightbox
    const options = {
       settings: {
@@ -92,6 +93,7 @@ const SingleMovieApp = () => {
                   <img src={movieMockup3} alt="Single Page" width="150" />
                </SRLWrapper>
             </div>
+
             {/* Component for colors used */}
             <SPColors
                col1={MY_PROJECTS[0].colors[0]}
@@ -104,6 +106,8 @@ const SingleMovieApp = () => {
 
             {/* Component for Development Summary */}
             <SPDevelopment text={MY_PROJECTS[0].development} />
+
+            {/* Complete project images */}
             <article className="final-project-gallery--mobile">
                <h3>Mobile</h3>
                <hr />
@@ -115,6 +119,7 @@ const SingleMovieApp = () => {
                   <img src={movieFinalMobile5} alt="Butter DB Final Live Site" height="350" />
                </SRLWrapper>
             </article>
+
             <article className="final-project-gallery--desktop">
                <h3>Desktop</h3>
                <hr />
@@ -125,6 +130,7 @@ const SingleMovieApp = () => {
                   <img src={movieFinalDesktop4} alt="Butter DB Final Live Site" width="150" />
                </SRLWrapper>
             </article>
+
             {/* Component for Challenges */}
             <SPChallenges challenge={MY_PROJECTS[0].challenge} />
 

@@ -1,17 +1,16 @@
 import React from "react";
-import SimpleReactLightbox from "simple-react-lightbox";
+import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox";
 import { useEffect } from "react";
 
 // Components
 import SPOverview from "../single-page-components/SPOverview";
-// import SPDesign from "../single-page-components/SPDesign";
-// import SPDevelopment from "../single-page-components/SPDevelopment";
+import SPDevelopment from "../single-page-components/SPDevelopment";
 import SPTitle from "../single-page-components/SPTitle";
 import SPColors from "../single-page-components/SPColors";
 // import SPChallenges from "../single-page-components/SPChallenges";
 import SPCta from "../single-page-components/SPCta";
 import SPTypography from "../single-page-components/SPTypography";
-import SPComingSoon from "../single-page-components/SPComingSoon";
+import SPDesign from "../single-page-components/SPDesign";
 
 // Photos
 import mobileBanner from "../../../assets/banners/portfolio-mobile.jpg";
@@ -20,6 +19,15 @@ import desktopBanner from "../../../assets/banners/portfolio-desktop.jpg";
 import inspo01 from "../../../assets/portfolio/portfolio-inspo1.jpg";
 import inspo02 from "../../../assets/portfolio/portfolio-inspo2.jpg";
 import inspo03 from "../../../assets/portfolio/portfolio-inspo3.jpg";
+
+import contentPlan from "../../../assets/portfolio/content-plan.jpg";
+
+import WF1 from "../../../assets/portfolio/portfolio-wireframes/portfolio-wireframe0.png";
+import WF2 from "../../../assets/portfolio/portfolio-wireframes/portfolio-wireframe1.png";
+import WF3 from "../../../assets/portfolio/portfolio-wireframes/portfolio-wireframe2.png";
+import WF4 from "../../../assets/portfolio/portfolio-wireframes/portfolio-wireframe3.png";
+import WF5 from "../../../assets/portfolio/portfolio-wireframes/portfolio-wireframe4.png";
+import WF6 from "../../../assets/portfolio/portfolio-wireframes/portfolio-wireframe5.png";
 
 // Project Info
 import { MY_PROJECTS } from "../../../globals/project-info";
@@ -98,14 +106,18 @@ const SingleMovieApp = () => {
                      data-aos-delay="450"
                   >
                      When starting this my portfolio piece, I had the slightest clue of what a
-                     quality web developer portfolio should contain. During the initial stages, I
-                     was only collecting inspiration from other developer’s portfolios with the goal
-                     to take notes of what each portfolio had in common and record each of their
+                     quality web developer portfolio should be. During the initial stages, I was
+                     only collecting inspiration from other developer’s portfolios. My goal was to
+                     take notes of their underlying similarities and also record each of their
                      strengths.
                   </p>
                </section>
             </article>
             {/* Inspo Gallery */}
+            <div className="inspo-gallery-text">
+               <h4>Inspirations</h4>
+               <hr />
+            </div>
             <div className="inspo-gallery">
                <img src={inspo01} alt="Portfolio Inspiration 1" width="150" />
                <img src={inspo02} alt="Portfolio Inspiration 2" width="150" />
@@ -114,19 +126,22 @@ const SingleMovieApp = () => {
             <div className="portfolio-goals">
                <h4 className="portfolio-goals__excerpt">
                   {" "}
-                  After gathering my inspirations I wrote down my priorities when building my
-                  portfolio ...
+                  After gathering my inspirations I created a list of what I need to prioritize when
+                  I design my portfolio ...
                </h4>
+
                <ol className="portfolio-goals__list">
                   <li>
-                     <span>Prioritize User Experience</span> - ensure visitors can easily navigate
-                     through all pages and content by using logical call to action buttons.
+                     <span>User Experience</span> - ensure visitors can easily navigate through all
+                     pages and content by using logical call to action buttons.
                   </li>
+
                   <li>
                      <span>Design Fundamentals</span> - choose a palette and typeface that doesn't
-                     take focus away from my content and create a layout that is natural and follow
-                     a visual hierarchy.
+                     take away from my content and create a layout that is natural and follow a
+                     visual hierarchy.
                   </li>
+
                   <li>
                      <span>Performance</span> - keep my page load time below 5.0s and page size is
                      below 3.0Mb
@@ -137,7 +152,47 @@ const SingleMovieApp = () => {
             <div className="timeline"></div>
 
             <article className="content-plan">
-               <img src="" alt="" />
+               <h4 className="content-plan__title">Information Architecture & Content Plan</h4>
+               <hr />
+               <p className="content-plan__excerpt">
+                  The next step is to create a simple information architecture of how I would break
+                  up my pages and content. I then created a detailed content plan for what all the
+                  necessary information I wanted to present for each project and sections.
+               </p>
+               <img src={contentPlan} alt="Content Plan" width="250" />
+               <div className="content-plan__sample">
+                  <h5> Content Plan for Single Page Project</h5>
+                  <ul>
+                     <li>Name of website/application</li>
+                     <li>
+                        A short summary of what the website does and why it's significant to me
+                     </li>
+                     <li>Requirements</li>
+                     <li>Reason for making the website</li>
+                     <li>Design/Development Tools</li>
+                     <li>Planning, reasearch, wireframes, mockups, style guides(if available)</li>
+                     <li>Code Snippet</li>
+                     <li>Challenges and solutions</li>
+                     <li>CTA Buttons - Live site, GitHub, next project, previous project</li>
+                  </ul>
+               </div>
+            </article>
+
+            <div className="timeline"></div>
+
+            {/* Component For Design */}
+            <SPDesign text={MY_PROJECTS[3].design} />
+
+            <article className="portfolio-wireframes">
+               <h4>Wireframes (click to enlarge)</h4>
+               <SRLWrapper options={options}>
+                  <img src={WF1} alt="Portfolio Wireframes" width="150" />
+                  <img src={WF2} alt="Portfolio Wireframes" width="150" />
+                  <img src={WF3} alt="Portfolio Wireframes" width="150" />
+                  <img src={WF4} alt="Portfolio Wireframes" width="150" />
+                  <img src={WF5} alt="Portfolio Wireframes" width="150" />
+                  <img src={WF6} alt="Portfolio Wireframes" width="150" />
+               </SRLWrapper>
             </article>
 
             <SPColors
@@ -152,41 +207,60 @@ const SingleMovieApp = () => {
                fam1="Ubuntu, sans-serif"
                fam2="Montserrat, sans-serif"
             />
-            <SPComingSoon />
-            {/* Component for Design Summary */}
-            {/* <SPDesign text={} />
-            <div className="design-gallery">
-               <SRLWrapper options={options}></SRLWrapper>
-            </div> */}
-            {/* Component for colors used */}
-            {/* <SPColors
-               col1={MY_PROJECTS[0].colors[0]}
-               col2={MY_PROJECTS[0].colors[1]}
-               col3={MY_PROJECTS[0].colors[2]}
-            /> */}
-            {/* Component for Development Summary */}
-            {/* <SPDevelopment text={MY_PROJECTS[0].development} /> */}
-            {/* <article className="final-project-gallery--mobile">
-               <h3>Mobile</h3>
-               <hr />
-               <SRLWrapper options={options}></SRLWrapper>
-            </article> */}
-            {/* <article className="final-project-gallery--desktop">
-               <h3>Desktop</h3>
-               <hr />
-               <SRLWrapper options={options}></SRLWrapper>
-            </article> */}
-            {/* Component for Challenges */}
-            {/* <SPChallenges challenge={MY_PROJECTS[0].challenge} /> */}
-            {/* <article className="code-snippet">
-               <h4 className="code-snippet__excerpt">Heres what it looks like</h4>
-               <SRLWrapper options={options}>
-                  <img
-                     src={movieCodeSnippet}
-                     alt="Async function for fetching data from a rest api"
-                  />
-               </SRLWrapper>
-            </article> */}
+
+            <div className="timeline"></div>
+
+            {/* Component for Development */}
+            <SPDevelopment text={MY_PROJECTS[3].development} />
+
+            {/* Code Snippets */}
+            <div className="development-example">
+               <h4 className="development-example__caption">
+                  This is how I build my Single Movie App page using resusable components
+               </h4>
+               <iframe
+                  className="code-snippet"
+                  height="500"
+                  scrolling="no"
+                  style={{ width: "100%" }}
+                  title="Prop Drilling Example"
+                  src="https://codepen.io/casillavincent/embed/mdOamZq?height=265&theme-id=dark&default-tab=js"
+                  frameborder="no"
+                  loading="lazy"
+                  allowtransparency="true"
+                  allowfullscreen="true"
+               >
+                  See the Pen{" "}
+                  <a href="https://codepen.io/casillavincent/pen/mdOamZq">Prop Drilling Example</a>{" "}
+                  by Vincent Casilla (
+                  <a href="https://codepen.io/casillavincent">@casillavincent</a>) on{" "}
+                  <a href="https://codepen.io">CodePen</a>.
+               </iframe>
+            </div>
+
+            <div className="development-example">
+               <h4 className="development-example__caption">Responsive Header</h4>
+               <iframe
+                  className="code-snippet"
+                  height="500"
+                  scrolling="no"
+                  title="Responsive Header for Portfolio"
+                  src="https://codepen.io/casillavincent/embed/NWbegjm?height=359&theme-id=dark&default-tab=js"
+                  frameborder="no"
+                  loading="lazy"
+                  allowtransparency="true"
+                  allowfullscreen="true"
+               >
+                  See the Pen{" "}
+                  <a href="https://codepen.io/casillavincent/pen/NWbegjm">
+                     Responsive Header for Portfolio
+                  </a>{" "}
+                  by Vincent Casilla (
+                  <a href="https://codepen.io/casillavincent">@casillavincent</a>) on{" "}
+                  <a href="https://codepen.io">CodePen</a>.
+               </iframe>
+            </div>
+
             {/* Component for CTA */}
             <SPCta
                home="/"

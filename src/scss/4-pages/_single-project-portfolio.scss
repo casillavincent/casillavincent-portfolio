@@ -1,6 +1,16 @@
 .single-project-info-portfolio {
    font-size: 1em;
+
    // Inspo
+   div.inspo-gallery-text {
+      width: 100%;
+      max-width: 800px;
+      margin: auto;
+      h4 {
+         font-size: 1.5em;
+      }
+      @include col-center-items;
+   }
    .inspo-gallery {
       padding: 35px;
       width: 100%;
@@ -28,8 +38,11 @@
       padding: 35px;
       height: 30em;
       @include col-center-items;
+      @media screen and (min-width: 50em) {
+         height: 40em;
+      }
       &__excerpt {
-         font-size: 1em;
+         font-size: 1.5em;
          line-height: 1.25em;
          margin-bottom: 10px;
       }
@@ -39,8 +52,7 @@
          max-width: 500px;
          margin: 0px auto;
          li {
-            margin: 10px;
-            list-style-type: disc;
+            margin: 25px auto;
             line-height: 1.25em;
             @media screen and (min-width: 50em) {
                margin: 30px auto;
@@ -48,9 +60,97 @@
             span {
                font-family: $font1;
                color: $accent;
-               font-size: 1.25em;
+               font-size: 1.5em;
+            }
+         }
+      }
+   } // end of goals
+
+   // Content Plan
+   .content-plan {
+      @include col-center-items;
+      max-width: 800px;
+      margin: auto;
+      padding: 35px;
+      h4 {
+         text-align: center;
+         font-size: 1.5em;
+      }
+      p {
+         max-width: 750px;
+         margin: 0px auto 25px auto;
+      }
+
+      img {
+         width: 100%;
+         max-width: 750px;
+      }
+
+      // Example of content plan
+      &__sample {
+         max-width: 750px;
+         margin: auto;
+         @media screen and (min-width: 50em) {
+            padding: 25px;
+         }
+         h5 {
+            font-size: 1.2em;
+            margin-bottom: 5px;
+         }
+         ul {
+            padding-left: 30px;
+            li {
+               list-style-type: lower-roman;
+               margin-bottom: 5px;
+            }
+         }
+      } // end of sample of content plan
+   }
+
+   article.portfolio-wireframes {
+      padding: 35px;
+      max-width: 1250px;
+      margin: auto;
+      h4 {
+         font-size: 1.5em;
+      }
+      > div {
+         @include col-center-items;
+
+         // MQL
+         @media screen and (min-width: 50em) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 15px;
+         }
+
+         img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+
+            // MQL
+            @media screen and (min-width: 50em) {
+               margin-bottom: 0px;
             }
          }
       }
    }
-}
+
+   .development-example {
+      padding: 35px;
+      max-width: 1000px;
+      margin: auto;
+      @include col-center-items;
+
+      &__caption {
+         font-size: 1.2em;
+         line-height: 1.25em;
+      }
+      .code-snippet {
+         height: 750px;
+         width: 100%;
+         @include col-center-items;
+      }
+   }
+} // end of single portfolio project container

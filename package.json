@@ -19,6 +19,7 @@
     "react-parallax-tilt": "^1.4.83",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
+    "react-scroll-parallax": "^2.3.5",
     "react-tabs": "^3.1.2",
     "react-tooltip": "^4.2.15",
     "simple-react-lightbox": "^3.6.3",

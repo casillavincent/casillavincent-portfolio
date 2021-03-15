@@ -10,7 +10,7 @@ const SPChallenges = ({ challenge }) => {
             data-aos-duration="700"
          >
             {" "}
-            Challenges{" "}
+            What I found challenging{" "}
          </h3>
          <hr
             data-aos="fade-right"

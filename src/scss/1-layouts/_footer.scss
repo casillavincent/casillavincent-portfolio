@@ -53,6 +53,10 @@
       @include col-center-items;
       svg {
          margin: 5px;
+         transition: all 0.4s ease-out;
+         &:hover {
+            fill: $accent;
+         }
       }
 
       // Connect with me

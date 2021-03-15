@@ -144,14 +144,7 @@ const About = () => {
          {/* Technical Skills */}
          <article className="about-item artillery">
             {/* Development Stack */}
-            <div
-               className="col-development-stack"
-               data-aos="zoom-out-up"
-               data-aos-easing="ease-out-quart"
-               data-aos-once="true"
-               data-aos-duration="700"
-               data-aos-anchor-placement="bottom-bottom"
-            >
+            <div className="col-development-stack">
                <h3>Development Stack</h3>
                <hr />
                <ul className="development-stack" title="Scroll Me">
@@ -172,14 +165,7 @@ const About = () => {
             </div>
 
             {/* Technical Skills */}
-            <div
-               className="col-technical-skills"
-               data-aos="zoom-out-up"
-               data-aos-easing="ease-out-quart"
-               data-aos-once="true"
-               data-aos-duration="700"
-               data-aos-anchor-placement="bottom-bottom"
-            >
+            <div className="col-technical-skills">
                <h3>Technical Skills</h3>
                <hr />
                <ul className="technical-skills">
@@ -201,26 +187,9 @@ const About = () => {
 
          {/* My Inspirations */}
          <article className="about-item inspirations">
-            <h4
-               data-aos="zoom-out-up"
-               data-aos-easing="ease-out-quart"
-               data-aos-once="true"
-               data-aos-duration="700"
-               data-aos-anchor-placement="bottom-bottom"
-            >
-               Here's some things that inspire me ...{" "}
-            </h4>
+            <h4>Here's some things that inspire me ... </h4>
 
-            <ul
-               ref={sliderRef}
-               className="inspirations-list keen-slider"
-               data-aos="zoom-out-up"
-               data-aos-easing="ease-out-quart"
-               data-aos-once="true"
-               data-aos-duration="700"
-               data-aos-dalay="50"
-               data-aos-anchor-placement="bottom-bottom"
-            >
+            <ul ref={sliderRef} className="inspirations-list keen-slider">
                <li
                   className="inspirations-list__item keen-slider__slide number-slide1"
                   title="Scroll Me"

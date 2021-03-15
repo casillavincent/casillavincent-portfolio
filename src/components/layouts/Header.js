@@ -25,7 +25,6 @@ const Header = () => {
 
    const disableNavigation = () => {
       const navigation = document.querySelector("nav.main-nav");
-
       if (window.innerWidth <= 800) {
          if (navigation.classList.contains("main-nav--active")) {
             navigation.classList.remove("main-nav--active");

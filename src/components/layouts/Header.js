@@ -37,7 +37,9 @@ const Header = () => {
       <header>
          <Headroom>
             <Link to={"/"}>
-               <h1 className="logo">Vincent Casilla</h1>
+               <h1 className="logo">
+                  <span>Vincent</span> Casilla
+               </h1>
             </Link>
 
             {/* Hamburger Button */}

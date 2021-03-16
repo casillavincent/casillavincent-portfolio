@@ -3,6 +3,9 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { useEffect, useState } from "react";
 
+// Google Analytics
+import ReactGA from "react-ga";
+
 // Layouts
 import Header from "./components/layouts/Header";
 import Footer from "./components/layouts/Footer";
@@ -22,6 +25,14 @@ import SinglePortfolio from "./components/projects/single-project-page/SinglePor
 
 function App() {
    const [isDesktop, setIsDesktop] = useState(true);
+
+   // Google Analytics
+   useEffect(() => {
+      ReactGA.initialize("UA-187291517-1");
+      // Report views in each page
+      ReactGA.pageview(window.location.pathname + window.location.search);
+   }, []); // end of GA useEffect
+
    // Custom Cursor
    useEffect(() => {
       // Check if the user is on window or mobile

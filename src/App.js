@@ -74,7 +74,7 @@ function App() {
                      <Route path="/about" component={About} />
                      <Route path="/butter-db-project" component={SingleMovieApp} />
                      <Route path="/discover-japan-project" component={SingleDiscoverJapan} />
-                     <Route path="/the-rolling-pin" component={SingleCapstone} />
+                     <Route path="/the-rolling-pin-project" component={SingleCapstone} />
                      <Route path="/personal-portfolio" component={SinglePortfolio} />
                      <Route path="*" component={Homepage} />
                   </Switch>

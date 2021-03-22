@@ -55,16 +55,7 @@ button:focus {
 -------------------------------------------
 */
 .fixed-social-icons {
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   align-items: center;
-   width: auto;
-   position: fixed;
-   right: 10px;
-   bottom: 10px;
-   z-index: 9999;
-   transition: all 0.5s ease-out;
+   display: none;
    a {
       border-style: none;
       &:hover {
@@ -73,9 +64,22 @@ button:focus {
       }
    }
    @media screen and (min-width: 50em) {
-      right: 20px;
-      bottom: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: auto;
+      position: fixed;
+      right: 10px;
+      bottom: 10px;
+      z-index: 9999;
+      transition: all 0.5s ease-out;
    }
+
+}
+
+.fixed-social-icons--off {
+   display: none;
 }
 
 /*

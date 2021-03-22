@@ -189,7 +189,7 @@ const SingleMovieApp = () => {
             {/* Component for CTA */}
             <SPCta
                home="/"
-               nextProject="/the-rolling-pin"
+               nextProject="/the-rolling-pin-project"
                livesite={MY_PROJECTS[0].liveSite}
                github={MY_PROJECTS[0].github}
             />

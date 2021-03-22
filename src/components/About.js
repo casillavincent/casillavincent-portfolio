@@ -78,7 +78,7 @@ const About = () => {
                   data-aos-duration="750"
                   data-aos-delay="250"
                >
-                  Web designer and Frontend developer
+                  Web designer and Front-end developer
                </h2>
                <hr
                   data-aos="fade-right"
@@ -179,7 +179,7 @@ const About = () => {
                      Search Engine Optimization (SEO) and Analytics
                   </li>
                   <li className="technical-skills__item">Single page web applications</li>
-                  <li className="technical-skills__item">Frontend frameworks</li>
+                  <li className="technical-skills__item">Front-end frameworks</li>
                   <li className="technical-skills__item">CMS Development</li>
                </ul>
             </div>

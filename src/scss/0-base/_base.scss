@@ -110,28 +110,31 @@ h5,
 h6 {
    font-size: 2.5em;
    font-family: $font1;
-   line-height: 1.5em;
 }
 
 a {
    text-decoration: none;
    color: white;
+   font-size: 0.85em;
+   @media screen and (min-width: 50em) {
+      font-size: .9em;
+   }
 }
 
 li {
    list-style-type: none;
    font-size: 0.85em;
    @media screen and (min-width: 50em) {
-      font-size: 0.95em;
+      font-size: .9em;
    }
 }
 
 p,
 blockquote {
-   line-height: 1.5em;
+   line-height: 1.75;
    font-size: 0.85em;
    @media screen and (min-width: 50em) {
-      font-size: 0.95em;
+      font-size: .9em;
    }
 }
 img {

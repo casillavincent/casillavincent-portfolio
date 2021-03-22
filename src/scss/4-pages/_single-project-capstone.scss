@@ -1,7 +1,15 @@
+.process-heading {
+   text-align: center;
+   margin: 75px auto;
+   @media screen and (min-width: 50em) {
+      font-size: 2em;
+      margin: 125px auto;
+   }
+}
+
 .single-project-info .single-project-info__process {
    font-size: 1em;
    width: 100%;
-   max-width: 800px;
    margin: auto;
    padding: 35px;
 
@@ -18,6 +26,11 @@
       max-width: 600px;
    }
 
+   span {
+      font-family: $font1;
+      color: $accent;
+   }
+
    // Line
    .timeline {
       width: 5px;
@@ -26,26 +39,273 @@
       margin: 75px auto;
    }
 
-   // Global For all sections in selector
+   h4 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+   }
+
    .process-item {
       margin-top: 50px;
-      h4 {
-         font-size: 1.5em;
-         margin-bottom: 15px;
-      }
+   }
 
-      p.excerpt {
-         margin-bottom: 50px;
-      }
+   .planning {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      max-width: 600px;
+      margin: auto;
+   }
 
-      &__gallery {
-         div {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+   // Inspirations
+   .inspirations {
+      @include col-center-items;
+      &__imgs {
+         @include col-center-items;
+         img {
+            max-width: 600px;
+            margin: 0px auto 20px auto;
          }
       }
-      // .end of gallery
+      @media screen and (min-width: 75em) {
+         .inspirations__imgs {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 15px;
+
+            img {
+               max-width: 700px;
+               height: 450px;
+               margin: 0px;
+               object-fit: cover;
+               object-position: top;
+            }
+         }
+      }
    }
-}
+
+   // Guiding Questions
+   .guiding-questions--client {
+      @media screen and (min-width: 30em) {
+         margin-top: 75px;
+      }
+   }
+   .guiding-questions--team,
+   .guiding-questions--client {
+      max-width: 500px;
+      height: 15em;
+      margin-left: auto;
+      margin-right: auto;
+      @include col-center-items;
+      @media screen and (min-width: 30em) {
+         height: 15em;
+         align-items: flex-start;
+         padding-left: 5%;
+         max-width: 650px;
+      }
+      h4 {
+         font-size: 1.15em;
+         text-align: center;
+         @media screen and (min-width: 30em) {
+            font-size: 1.5em;
+         }
+      }
+      ul li {
+         list-style-type: disc;
+         margin-bottom: 15px;
+         line-height: 1.25;
+         margin-left: 15px;
+      }
+      ul li::marker {
+         color: $accent;
+         padding-left: 20px;
+      }
+   }
+
+   // Discovery Meeting
+   .discovery-meeting {
+      max-width: 800px;
+      margin: auto;
+      margin-bottom: 50px;
+      p {
+         margin-bottom: 10px;
+         span {
+            font-family: $font1;
+            color: $accent;
+         }
+      }
+
+      .memo-of-understanding__gallery {
+         img {
+            margin: 0px;
+            width: 100%;
+            height: auto;
+         }
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         grid-gap: 10px;
+
+         // MQL
+         @media screen and (min-width: 25em) {
+            grid-template-columns: repeat(3, 1fr);
+         }
+         @media screen and (min-width: 60em) {
+            grid-template-columns: repeat(6, 1fr);
+         }
+      }
+   }
+
+   .audience {
+      max-width: 800px;
+      margin: auto;
+      p {
+         margin-bottom: 10px;
+         max-width: 800px;
+      }
+   }
+
+   // Content Plan
+   .content-plan {
+      max-width: 850px;
+      margin: auto;
+
+      // IA Gallery
+      .ia-gallery-container {
+         margin-top: 20px;
+         @media screen and (min-width: 50em) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 15px;
+            img {
+               margin: 0px;
+               padding: 0px;
+               height: 600px;
+               width: auto;
+            }
+         }
+         img {
+            filter: invert(1);
+            width: 100%;
+            margin: auto;
+         }
+      }
+
+      .ia-template-heirarchy {
+         margin-top: 15px;
+      }
+   }
+   .wireframes {
+      max-width: 1000px;
+      margin: auto;
+      img {
+         margin: 0px auto 15px auto;
+      }
+   }
+
+   // High fidelity Mockups
+   .hfmu-container {
+      @include col-center-items;
+      .hfmu-overview {
+         margin-bottom: 15px;
+         @include col-center-items;
+         img {
+            width: 100%;
+            height: auto;
+            max-width: 1250px;
+            margin: auto;
+         }
+      }
+      .hfmu-single-pages {
+         @media screen and (min-width: 50em) {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            max-width: 1250px;
+            grid-gap: 15px;
+            img {
+               margin: 0px;
+            }
+         }
+         img {
+            margin: 0px auto 15px auto;
+         }
+      }
+   }
+} // end of process
+
+.single-project-info {
+   // Global Styling
+   h4 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+   }
+   // Logo
+   .rolling-pin-logo {
+      max-width: 800px;
+      margin: auto;
+      padding: 50px 0px;
+      @include col-center-items;
+      .logo-items {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         @media screen and (min-width: 35em) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 15px;
+            img:nth-child(1) {
+               margin: 0px;
+            }
+         }
+         img:nth-child(1) {
+            background: #f8f8f8;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+         }
+
+         img:nth-child(2) {
+            background: #0e0e0e;
+            padding: 10px;
+            border-radius: 5px;
+         }
+      }
+   }
+
+   .project-management {
+      max-width: 800px;
+      margin: auto;
+      padding: 35px;
+      img {
+         width: 100%;
+         max-width: 800px;
+         margin: auto;
+      }
+   }
+
+   .rp-code-snippets {
+      @include col-center-items;
+      h4 {
+         padding: 0px 35px;
+      }
+      p {
+         padding: 0px 35px;
+      }
+
+      img {
+         width: 100%;
+         height: auto;
+         max-width: 800px;
+         margin: auto;
+         border-radius: 3px;
+      }
+
+      .code-snippet {
+         @include col-center-items;
+      }
+
+      .code-snippet-1 {
+         img {
+            max-width: 500px;
+         }
+      }
+   }
+} // end of single project info

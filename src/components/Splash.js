@@ -26,7 +26,7 @@ const Splash = () => {
                data-aos-duration="850"
                data-aos-mirror="true"
             >
-               Web designer and frontend developer based in Vancouver, BC.
+               Web designer and Front-end developer based in Vancouver, BC.
             </p>
 
             <div

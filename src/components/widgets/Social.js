@@ -3,12 +3,17 @@ import { FaTwitter, FaGithub, FaEnvelope, FaLinkedinIn } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 
 const Social = () => {
+   // This hides the social icons when reaching the bottom of the window
    window.onscroll = function (e) {
       const socialIcons = document.querySelector("aside.fixed-social-icons");
       if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
-         socialIcons.style.display = "none";
+         if (!socialIcons.classList.contains("fixed-social-icons--off")) {
+            socialIcons.classList.add("fixed-social-icons--off");
+         }
       } else {
-         socialIcons.style.display = "flex";
+         if (socialIcons.classList.contains("fixed-social-icons--off")) {
+            socialIcons.classList.remove("fixed-social-icons--off");
+         }
       }
    };
 
@@ -21,7 +26,7 @@ const Social = () => {
          data-aos-once="true"
          data-aos-delay="500"
       >
-         <IconContext.Provider value={{ color: "white", size: "1em" }}>
+         <IconContext.Provider value={{ color: "white", size: "1.35em" }}>
             <a
                href="https://twitter.com/casillavincent"
                target="_blank"

@@ -13,7 +13,7 @@ const Footer = () => {
          <div className="footer__top-section">
             <ScrollTop />
 
-            <h1>Like my work?</h1>
+            <h1>Like My Work?</h1>
 
             <a
                href="mailto:casillavincent@gmail.com?subject=Hello Vincent!"

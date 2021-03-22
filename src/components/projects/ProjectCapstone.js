@@ -42,11 +42,10 @@ const ProjectCapstone = () => {
             </h2>
             <p className="project-item__text-content__excerpt">
                A fully functional eCommerce website that utilizes WordPress and WooCommerce to
-               display a bakery's products. This is a collaborative project consisting of 4 members
-               and it is still a work in progress.
+               display a bakery's products. This is a collaborative project consisting of 4 members.
             </p>
             <div className="project-item__text-content__cta">
-               <Link to={"/the-rolling-pin"} className="cta-btn">
+               <Link to={"/the-rolling-pin-project"} className="cta-btn">
                   More Info
                </Link>
                <a href="#0" className="cta-btn" style={{ cursor: "not-allowed" }}>

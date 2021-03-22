@@ -23,7 +23,6 @@
    justify-content: center;
    align-items: center;
    padding: 15px;
-   font-size: 1em;
    margin-bottom: 125px;
    h1 {
       font-size: 2.5em;
@@ -32,7 +31,6 @@
    }
 
    p {
-      font-size: 1em;
       text-align: center;
       font-style: italic;
    }
@@ -55,7 +53,6 @@
    display: flex;
    flex-direction: column;
    align-items: center;
-   font-size: 1em;
    // Banner
    &--mobile-banner {
       width: 60%;
@@ -82,7 +79,6 @@
 
    // Content
    &__content {
-      font-size: 1em;
       padding: 35px;
       width: 100%;
       max-width: 800px;
@@ -115,7 +111,6 @@
       .dev-team,
       .role,
       .tools {
-         font-size: 1em;
          margin-bottom: 35px;
          width: 100%;
          max-width: 400px;
@@ -127,11 +122,6 @@
             font-size: 1.25em;
             margin-bottom: 10px;
             color: $accent;
-         }
-
-         p,
-         ul li {
-            font-size: 0.85em;
          }
 
          ul {
@@ -190,7 +180,6 @@
    width: 100%;
    max-width: 950px;
    @include row-center-items;
-   font-size: 1em;
    margin: auto;
    height: 35em;
    @media screen and (min-width: 50em) {
@@ -199,15 +188,9 @@
    &__container {
       padding: 35px;
       max-width: 600px;
-      p {
-         font-size: 0.8em;
-      }
       @media screen and (min-width: 50em) {
          h3 {
             font-size: 3em;
-         }
-         p {
-            font-size: 0.95em;
          }
       }
    }
@@ -216,7 +199,6 @@
    width: 100%;
    max-width: 950px;
    @include row-center-items;
-   font-size: 1em;
    margin: auto;
    height: 35em;
 
@@ -226,15 +208,9 @@
    &__container {
       padding: 35px;
       max-width: 600px;
-      p {
-         font-size: 0.8em;
-      }
       @media screen and (min-width: 50em) {
          h3 {
             font-size: 3em;
-         }
-         p {
-            font-size: 0.95em;
          }
       }
    }
@@ -252,15 +228,9 @@
    &__container {
       padding: 35px;
       max-width: 600px;
-      p {
-         font-size: 0.8em;
-      }
       @media screen and (min-width: 50em) {
          h3 {
             font-size: 3em;
-         }
-         p {
-            font-size: 0.95em;
          }
       }
    }
@@ -347,7 +317,7 @@
    flex-direction: column;
    align-items: center;
    h3 {
-      font-size: 1.75em;
+      font-size: 1.5em;
    }
 
    @media screen and (min-width: 50em) {
@@ -402,7 +372,7 @@
    flex-direction: column;
    align-items: center;
    h3 {
-      font-size: 1.75em;
+      font-size: 1.5em;
    }
 
    @media screen and (min-width: 50em) {
@@ -442,7 +412,6 @@
    margin: auto;
 
    &__excerpt {
-      font-size: 1em;
       margin-bottom: 10px;
       @media screen and (min-width: 50em) {
          font-size: 1.25em;

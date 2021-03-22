@@ -38,11 +38,11 @@ const ProjectPortfolio = () => {
             data-aos-anchor-placement="center-bottom"
          >
             <h2 className="project-item__text-content__name">
-               Personal Portfolio (Coming Soon)<div className="accent-bar"></div>
+               Personal Portfolio<div className="accent-bar"></div>
             </h2>
             <p className="project-item__text-content__excerpt">
-               My magnum opus that combine everything I have learned so far as a front-end
-               developer. This project showcases all my most prominent technical projects
+               An application that highlights my technical skills and technical projects as a
+               Front-end developer.
             </p>
             <div className="project-item__text-content__cta">
                <Link to={"/personal-portfolio"} className="cta-btn">

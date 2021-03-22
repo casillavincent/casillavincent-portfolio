@@ -62,7 +62,7 @@ const SPOverview = ({
                {livesiteLink === undefined ? "Coming Soon" : "View Live Site"}
             </a>
             <a href={githubLink} target="_blank" rel="noopener noreferrer" title="Github Repo">
-               {githubLink === undefined ? "Coming Soon" : "View on Github"}
+               {githubLink === undefined ? "Not Available" : "View on Github"}
             </a>
          </div>
       </article>

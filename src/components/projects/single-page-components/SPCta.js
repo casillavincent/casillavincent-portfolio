@@ -27,7 +27,7 @@ const SPCta = ({ home, nextProject, livesite, github }) => {
                rel="noopener noreferrer"
                className="live-site"
             >
-               {github === "none" ? "Coming Soon" : "View on Github"}
+               {github === "none" ? "Not Available" : "View on Github"}
             </a>
          </div>
 

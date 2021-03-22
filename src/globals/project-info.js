@@ -8,9 +8,9 @@ export const MY_PROJECTS = [
       role: ["Full Stack Developer"],
       tools: ["React", "Javascript", "HTML5", "CSS3", "Sass", "Github", "Adobe XD", "Photoshop"],
       design:
-         "I created high-fidelity mockups using Photoshop and Adobe XD over the course of our design tools course. Although it’s not identical to the final product, I wanted to keep aspects from my initial design once I started with development. I knew I wanted to have a sidebar, a fixed navigation at the bottom and maintain the general layout of the mockup. For the basic design, I wanted to use colors that are dark and easy on the eyes. Considering that the backbone of this project was to create a spin on IMDB and TMDB, I wanted to keep the general layout that are familiar and make them less crowded.",
+         "I created high-fidelity mockups using Photoshop and Adobe XD over the course of our design tools course. Although it’s not identical to the final product, I wanted to keep parts of my initial layout  once I started with development. For the basic design, I wanted to use colors that are dark and easy on the eyes. Considering that the backbone of this project was to re-create IMDB and TMDB, I wanted to keep their general layout that is familiar and make them less crowded.",
       development:
-         "Since this would be my first react application, I started building a static webpage using HTML and JSX. I wanted to ensure that the template and architecture was clear as I would be replacing the content with dynamic content. Off the bat, I knew I would be working with a mix between static pages and dynamic pages so I organized my components based on those categories.",
+         "Since this would be my first React application, I started building a static webpage using HTML and JSX. I wanted to ensure that the template and architecture were clear as I would be replacing the content with dynamic content. Off the bat, I knew I would be working with a mix between static pages and dynamic pages so I organized my components based on those categories.",
       github: "https://github.com/casillavincent/movie-app",
       liveSite: "https://vcasilla.com/butter-db/",
       colors: ["#748FDC", "#1A1E2B", "#2E3344"],
@@ -20,9 +20,9 @@ export const MY_PROJECTS = [
 
    {
       title: "The Rolling Pin",
-      tagline: "A WordPress eCommerce site for a fictional bakery.",
+      tagline: "Artisanal bakery eCommerce made with WordPress & WooCommerce",
       scope:
-         "The Rolling Pin is a fictional eCommerce project that encompasses everything we have learned in frontend web development. This is a collaborative project consisting of 4 team members including myself where we were involved in team meetings, project management, branding & UX/UI design, content architecture, development planning and user experience research. This project utilizes WordPress and WooCommerce.",
+         "The Rolling Pin is a fictional eCommerce project that encompasses everything we have learned in front-end web development. This is a collaborative project consisting of 4 team members including myself where we were involved in team meetings, project management, branding & UX/UI design, content architecture, development planning and user experience research. This project utilizes WordPress and WooCommerce.",
       developmentTeam: "Vincent Casilla, Seraphina White, Robyn Abe, Olivia Feilden",
       role: "Front-end Developer",
       tools: [
@@ -36,8 +36,13 @@ export const MY_PROJECTS = [
          "Adobe XD",
          "Github",
       ],
+      colors: ["#F8F8F8", "#2F242C", "#605052"],
       github: "",
-      liveSite: "",
+      liveSite: "https://vcasilla.com/the-rolling-pin/",
+      development:
+         "Before we started coding and styling , our team went over our development setup. This included our Github repository, Gulp files, FTP and WordPress development plugins. Considering that this was a collaborative project, communication is critical in  preventing any conflicts. Our team utilized Discord and Zoom as our main line of communication and Trello as our project management. This allowed us to know what file each member is working on and what is being pushed to our repo.",
+      design:
+         "Our team decided to keep our layout, colors and typography very minimal. Since each products are colorful on their own, we wanted a design that does not create any distractions.",
    },
    {
       title: "Discover Japan",
@@ -70,6 +75,6 @@ export const MY_PROJECTS = [
       design:
          "When I was coming up with the design of my portfolio, I knew I wanted to keep it extremely minimal. My aim was to showcase more of my abilities as a developer but still maintain a tasteful design. A way I accomplished this is making use of a lot of white space. The purpose of doing this is to present my information seamlessly and really consider the natural way users read content. I must admit, my initial wireframes were a bit ambitious but the general layout I established is exactly what I envisioned for the final product.",
       development:
-         "When I began with development, I wanted to maintain a central idea of scalability and reusable components. I knew that all my projects included the same topic with different content. To get around making this easier for myself, I created child components for each topic that I eventually prop drill. Building each page was simply calling all the necessary components.",
+         "When I began with development, I wanted to maintain a central idea of scalability and reusable components. I knew that all my projects included the same topic with different content. To get around making this easier for myself, I created child components for each topic that I prop drill content from a large object containing each project's info. Building each page was simply calling all the components.",
    },
 ];

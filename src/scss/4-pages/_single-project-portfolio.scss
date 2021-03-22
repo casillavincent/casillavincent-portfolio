@@ -42,8 +42,8 @@
          height: 40em;
       }
       &__excerpt {
-         font-size: 1.5em;
-         line-height: 1.25em;
+         font-size: 1.25em;
+         line-height: 1.5em;
          margin-bottom: 10px;
       }
 
@@ -53,14 +53,14 @@
          margin: 0px auto;
          li {
             margin: 25px auto;
-            line-height: 1.25em;
+            line-height: 1.5;
             @media screen and (min-width: 50em) {
                margin: 30px auto;
             }
             span {
                font-family: $font1;
                color: $accent;
-               font-size: 1.5em;
+               font-size: 2em;
             }
          }
       }
@@ -107,12 +107,13 @@
       } // end of sample of content plan
    }
 
-   article.portfolio-wireframes {
+   .portfolio-wireframes {
       padding: 35px;
       max-width: 1250px;
       margin: auto;
       h4 {
          font-size: 1.5em;
+         margin-bottom: 10px;
       }
       > div {
          @include col-center-items;

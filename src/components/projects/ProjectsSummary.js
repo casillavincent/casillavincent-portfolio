@@ -51,9 +51,9 @@ const ProjectsSummary = () => {
                data-aos-duration="800"
             >
                Employing the right design and development tools can only get a website so far. As a
-               frontend developer, my goal is to build engaging websites that not only look good but
-               also integrate user experience research, design fundamentals, competitive analysis
-               and analytics to ensure my projects go further online.
+               front-end developer, my goal is to build engaging websites that not only look good
+               but also integrate user experience research, design fundamentals, competitive
+               analysis and analytics to ensure my projects go further online.
             </blockquote>
          </article>
 

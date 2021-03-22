@@ -42,6 +42,10 @@
          display: flex;
          flex-direction: row;
          align-items: flex-end;
+         @media screen and (min-width: 50em) {
+            font-size: 1.5em;
+         }
+
          .accent-bar {
             display: none;
             @media screen and (min-width: 450px) {
@@ -55,9 +59,7 @@
       }
       &__excerpt {
          margin-bottom: 20px;
-         @media screen and (min-width: 50em) {
-            font-size: 0.95em;
-         }
+         line-height: 1.35;
       }
       &__cta {
          display: flex;
@@ -69,7 +71,6 @@
          .cta-btn {
             width: 100%;
             max-width: 250px;
-            font-size: 0.9em;
             margin: 5px 0px;
          }
 
@@ -91,10 +92,10 @@
       align-items: flex-end;
       &__banner {
          &--mobile {
-            margin-left: 20px;
+            margin-left: 35px;
          }
          &--desktop {
-            margin-left: 20px;
+            margin-left: 35px;
          }
       }
 

@@ -2,6 +2,7 @@ import React from "react";
 import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox";
 import ReactCompareImage from "react-compare-image";
 import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 // Components
 import SPOverview from "../single-page-components/SPOverview";
@@ -72,6 +73,13 @@ const SingleMovieApp = () => {
    };
    return (
       <section className="single-project-info">
+         <Helmet>
+            <title>Vincent Casilla - Discover Japan</title>
+            <meta
+               name="description"
+               content="A mock, travel brochure for Japan. This is my first project using HTML and CSS."
+            />
+         </Helmet>
          <SimpleReactLightbox>
             {/* Component for outputting the title and tagline */}
             <SPTitle title={MY_PROJECTS[2].title} tagline={MY_PROJECTS[2].tagline} />
@@ -85,151 +93,209 @@ const SingleMovieApp = () => {
                livesiteLink={MY_PROJECTS[2].liveSite}
                mobileBanner={mobileBanner}
                desktopBanner={desktopBanner}
+               duration="2 Weeks"
             />
             {/* Component for Design Summary */}
             <SPDesign text={MY_PROJECTS[2].design} />
-            <div className="design-gallery">
-               <SRLWrapper options={options}>
+            <SRLWrapper options={options}>
+               <div className="design-gallery">
                   <img
                      src={japanBanner}
                      alt="Final png file for site banner"
+                     loading="lazy"
                      style={{ width: "70%", maxWidth: "650px" }}
+                     data-aos="fade-up"
+                     data-aos-easing="ease-out-quart"
+                     data-aos-once="false"
                   />
-                  <img src={japanBannerAi} alt="Site banner design with Illustrator" />
-               </SRLWrapper>
-            </div>
-            {/* Component for colors used */}
-            <SPColors
-               col1={MY_PROJECTS[2].colors[0]}
-               col2={MY_PROJECTS[2].colors[1]}
-               col3={MY_PROJECTS[2].colors[2]}
-            />
-
-            {/* Component for typography */}
-            <SPTypography
-               f1="Bebas Neue, cursive"
-               f2="Montserrat, sans-serif"
-               fam1="Bebas Neue, cursive"
-               fam2="Montserrat, sans-serif"
-            />
-
-            {/* Compare mobile designs */}
-            <article className="discover-japan-compare--mobile">
-               {/* Old Design */}
-               <div className="old-mobile">
-                  <img src={oldMobileGif} alt="Old Discover Japan Mobile" />
-                  <h4>Old Design (HTML/CSS)</h4>
+                  <img
+                     src={japanBannerAi}
+                     alt="Site banner design with Illustrator"
+                     loading="lazy"
+                     data-aos="fade-up"
+                     data-aos-easing="ease-out-quart"
+                     data-aos-once="false"
+                  />
                </div>
-
-               {/* New Design */}
-               <div className="new-mobile">
-                  <img src={newMobileGif} alt="New Discover Japan Mobile" />
-                  <h4>New Design (React)</h4>
-               </div>
-            </article>
-            {/* Compare desktop designs */}
-            <article className="discover-japan-compare--desktop">
-               <div className="old-desktop">
-                  <img src={oldDesktopHome} alt="Old Discover Japan Desktop" width="50" />
-                  <h4>Old Design (HTML/CSS)</h4>
-               </div>
-               <div className="new-desktop">
-                  <img src={newDesktopHome} alt="New Discover Japan Desktop" width="50" />
-                  <h4>New Design (React)</h4>
-               </div>
-            </article>
-            {/* Compare Desktop Widget */}
-            <article className="discover-japan-compare--desktop-slider">
-               <ReactCompareImage
-                  leftImage={oldDesktopHome}
-                  leftImageAlt="Old desktop design"
-                  rightImage={newDesktopHome}
-                  rightImageAlt="New desktop design"
-                  handleSize="0"
-                  sliderLineColor="#DA0D05"
-                  hover="true"
+               {/* Component for colors used */}
+               <SPColors
+                  col1={MY_PROJECTS[2].colors[0]}
+                  col2={MY_PROJECTS[2].colors[1]}
+                  col3={MY_PROJECTS[2].colors[2]}
                />
-               ;
-            </article>
 
-            {/* Component for Development Summary */}
-            <SPDevelopment text={MY_PROJECTS[2].development} />
+               {/* Component for typography */}
+               <SPTypography
+                  f1="Bebas Neue, cursive"
+                  f2="Montserrat, sans-serif"
+                  fam1="Bebas Neue, cursive"
+                  fam2="Montserrat, sans-serif"
+               />
 
-            {/* Gallery */}
-            <article className="final-project-gallery--mobile">
-               <h3>Mobile</h3>
-               <hr />
-               <SRLWrapper options={options}>
-                  <img src={finalMobile1} alt="Discover Japan Final Live Site" />
-                  <img src={finalMobile2} alt="Discover Japan Final Live Site" />
-                  <img src={finalMobile3} alt="Discover Japan Final Live Site" />
-                  <img src={finalMobile4} alt="Discover Japan Final Live Site" />
-               </SRLWrapper>
-            </article>
-            <article className="final-project-gallery--desktop">
-               <h3>Desktop</h3>
-               <hr />
-               <SRLWrapper options={options}>
-                  <img src={finalDesktop1} alt="Discover Japan Final Live Site" />
-                  <img src={finalDesktop2} alt="Discover Japan Final Live Site" />
-                  <img src={finalDesktop3} alt="Discover Japan Final Live Site" />
-                  <img src={finalDesktop5} alt="Discover Japan Final Live Site" />
-               </SRLWrapper>
-            </article>
+               {/* Compare mobile designs */}
+               <article className="discover-japan-compare--mobile">
+                  {/* Old Design */}
+                  <div className="old-mobile">
+                     <img src={oldMobileGif} alt="Old Discover Japan Mobile" loading="lazy" />
+                     <h4>Old Design (HTML/CSS)</h4>
+                  </div>
 
-            <article className="bem-code-snippet">
-               <div className="bem-code-snippet__text">
-                  <h4>Why I chose BEM as a methodology?</h4>
-                  <p>
-                     If you aren't familiar with BEM, it means;
-                     <span className="bem-bold"> Block, Element and Modifier</span>. It is simply
-                     one of many CSS methodology that allows stylesheets to have a standardized
-                     structure that provides scope and reduce style conflicts when working with CSS
-                  </p>
-                  <p>
-                     I decided to use this methodology for this project because I wanted to
-                     experiment with methods to organize my stylesheets and CSS properties.
-                     Employing BEM and SMACSS methodologies has greatly improved the efficiency of
-                     reading my code when working on larger and more complicated projects. I think
-                     getting comfortable with exploring different methodologies will come in handy
-                     when tackling projects where scalability is crucial.
-                  </p>
-               </div>
+                  {/* New Design */}
+                  <div className="new-mobile">
+                     <img src={newMobileGif} alt="New Discover Japan Mobile" loading="lazy" />
+                     <h4>New Design (React)</h4>
+                  </div>
+               </article>
+               {/* Compare desktop designs */}
+               <article className="discover-japan-compare--desktop">
+                  <div className="old-desktop">
+                     <img
+                        src={oldDesktopHome}
+                        alt="Old Discover Japan Desktop"
+                        width="50"
+                        loading="lazy"
+                     />
+                     <h4>Old Design (HTML/CSS)</h4>
+                  </div>
+                  <div className="new-desktop">
+                     <img
+                        src={newDesktopHome}
+                        alt="New Discover Japan Desktop"
+                        width="50"
+                        loading="lazy"
+                     />
+                     <h4>New Design (React)</h4>
+                  </div>
+               </article>
+               {/* Compare Desktop Widget */}
+               <article className="discover-japan-compare--desktop-slider">
+                  <ReactCompareImage
+                     leftImage={oldDesktopHome}
+                     leftImageAlt="Old desktop design"
+                     rightImage={newDesktopHome}
+                     rightImageAlt="New desktop design"
+                     handleSize="0"
+                     sliderLineColor="#DA0D05"
+                     hover="true"
+                  />
+                  ;
+               </article>
 
-               <div className="bem-code-snippet__code">
-                  <iframe
-                     height="265"
-                     scrolling="no"
-                     title="Discover Japan React"
-                     src="https://codepen.io/casillavincent/embed/RwoYBON?height=265&theme-id=dark&default-tab=js"
-                     frameborder="no"
-                     loading="lazy"
-                     allowtransparency="true"
-                  >
-                     See the Pen{" "}
-                     <a href="https://codepen.io/casillavincent/pen/RwoYBON">
-                        Discover Japan React
-                     </a>{" "}
-                     by Vincent Casilla (
-                     <a href="https://codepen.io/casillavincent">@casillavincent</a>) on{" "}
-                     <a href="https://codepen.io">CodePen</a>.
-                  </iframe>
-                  <iframe
-                     height="265"
-                     scrolling="no"
-                     title="yLVxqWp"
-                     src="https://codepen.io/casillavincent/embed/yLVxqWp?height=265&theme-id=dark&default-tab=css"
-                     frameborder="no"
-                     loading="lazy"
-                     allowtransparency="true"
-                  >
-                     See the Pen <a href="https://codepen.io/casillavincent/pen/yLVxqWp">yLVxqWp</a>{" "}
-                     by Vincent Casilla (
-                     <a href="https://codepen.io/casillavincent">@casillavincent</a>) on{" "}
-                     <a href="https://codepen.io">CodePen</a>.
-                  </iframe>
-               </div>
-            </article>
+               {/* Component for Development Summary */}
+               <SPDevelopment text={MY_PROJECTS[2].development} />
+
+               {/* Gallery */}
+               <article
+                  className="final-project-gallery--mobile"
+                  data-aos="fade-up"
+                  data-aos-easing="ease-out-quart"
+                  data-aos-once="false"
+               >
+                  <h3>Mobile</h3>
+                  <hr />
+                  <div className="mobile-gallery">
+                     <img src={finalMobile1} alt="Discover Japan Final Live Site" loading="lazy" />
+                     <img src={finalMobile2} alt="Discover Japan Final Live Site" loading="lazy" />
+                     <img src={finalMobile3} alt="Discover Japan Final Live Site" loading="lazy" />
+                     <img src={finalMobile4} alt="Discover Japan Final Live Site" loading="lazy" />
+                  </div>
+               </article>
+               <article className="final-project-gallery--desktop">
+                  <h3>Desktop</h3>
+                  <hr />
+                  <div className="desktop-gallery">
+                     <img
+                        src={finalDesktop1}
+                        alt="Discover Japan Final Live Site"
+                        loading="lazy"
+                        data-aos="fade-up"
+                        data-aos-easing="ease-out-quart"
+                        data-aos-once="false"
+                     />
+                     <img
+                        src={finalDesktop2}
+                        alt="Discover Japan Final Live Site"
+                        loading="lazy"
+                        data-aos="fade-up"
+                        data-aos-easing="ease-out-quart"
+                        data-aos-once="false"
+                     />
+                     <img
+                        src={finalDesktop3}
+                        alt="Discover Japan Final Live Site"
+                        loading="lazy"
+                        data-aos="fade-up"
+                        data-aos-easing="ease-out-quart"
+                        data-aos-once="false"
+                     />
+                     <img
+                        src={finalDesktop5}
+                        alt="Discover Japan Final Live Site"
+                        loading="lazy"
+                        data-aos="fade-up"
+                        data-aos-easing="ease-out-quart"
+                        data-aos-once="false"
+                        data-aos-anchor-placement="center-bottom"
+                     />
+                  </div>
+               </article>
+
+               <article className="bem-code-snippet">
+                  <div className="bem-code-snippet__text">
+                     <h4>Why I chose BEM as a methodology?</h4>
+                     <p>
+                        If you aren't familiar with BEM, it means;
+                        <span className="bem-bold"> Block, Element and Modifier</span>. It is simply
+                        one of many CSS methodology that allows stylesheets to have a standardized
+                        structure that provides scope and reduce style conflicts when working with
+                        CSS
+                     </p>
+                     <p>
+                        I decided to use this methodology for this project because I wanted to
+                        experiment with methods to organize my stylesheets and CSS properties.
+                        Employing BEM and SMACSS methodologies has greatly improved the efficiency
+                        of reading my code when working on larger and more complicated projects. I
+                        think getting comfortable with exploring different methodologies will come
+                        in handy when tackling projects where scalability is crucial.
+                     </p>
+                  </div>
+
+                  <div className="bem-code-snippet__code">
+                     <iframe
+                        height="265"
+                        scrolling="no"
+                        title="Discover Japan React"
+                        src="https://codepen.io/casillavincent/embed/RwoYBON?height=265&theme-id=dark&default-tab=js"
+                        frameborder="no"
+                        loading="lazy"
+                        allowtransparency="true"
+                     >
+                        See the Pen{" "}
+                        <a href="https://codepen.io/casillavincent/pen/RwoYBON">
+                           Discover Japan React
+                        </a>{" "}
+                        by Vincent Casilla (
+                        <a href="https://codepen.io/casillavincent">@casillavincent</a>) on{" "}
+                        <a href="https://codepen.io">CodePen</a>.
+                     </iframe>
+                     <iframe
+                        height="265"
+                        scrolling="no"
+                        title="yLVxqWp"
+                        src="https://codepen.io/casillavincent/embed/yLVxqWp?height=265&theme-id=dark&default-tab=css"
+                        frameborder="no"
+                        loading="lazy"
+                        allowtransparency="true"
+                     >
+                        See the Pen{" "}
+                        <a href="https://codepen.io/casillavincent/pen/yLVxqWp">yLVxqWp</a> by
+                        Vincent Casilla (
+                        <a href="https://codepen.io/casillavincent">@casillavincent</a>) on{" "}
+                        <a href="https://codepen.io">CodePen</a>.
+                     </iframe>
+                  </div>
+               </article>
+            </SRLWrapper>
 
             {/* Component for CTA */}
             <SPCta

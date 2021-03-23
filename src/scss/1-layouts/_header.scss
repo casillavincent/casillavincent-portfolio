@@ -13,12 +13,12 @@ header {
          align-items: center;
          width: inherit;
          height: 60px;
-         background-color: rgba(black, 0.9);
+         background: black;
          backdrop-filter: blur(10px);
          color: white;
          z-index: 9999;
 
-         h1 {  
+         h1 {
             font-size: 1.2em;
             margin-left: 20px;
             font-family: $font2;

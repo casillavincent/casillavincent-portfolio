@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const ProjectJapan = () => {
    return (
-      <section className="project-item" id="project-japan">
+      <article className="project-item" id="project-japan">
          {/* Left Column */}
          <img
             src={MobileBanner}
@@ -16,6 +16,7 @@ const ProjectJapan = () => {
             data-aos-once="true"
             data-aos-duration="600"
             data-aos-anchor-placement="center-bottom"
+            loading="lazy"
          />
          <img
             src={DesktopBanner}
@@ -26,10 +27,11 @@ const ProjectJapan = () => {
             data-aos-once="true"
             data-aos-duration="600"
             data-aos-anchor-placement="center-bottom"
+            loading="lazy"
          />
 
          {/* Right Column */}
-         <article
+         <section
             className="project-item__text-content"
             data-aos="fade-up"
             data-aos-easing="ease-out-quart"
@@ -41,8 +43,8 @@ const ProjectJapan = () => {
                Discover Japan<div className="accent-bar"></div>
             </h2>
             <p className="project-item__text-content__excerpt">
-               A small scale business travel brochure for Japan that highlights it's rich culture.
-               This is my first HTML5 & CSS3 project that I re-made using React.
+               My first HTML/CSS project. Discover Japan is a mock, travel brochure showcasing
+               Japan.
             </p>
             <div className="project-item__text-content__cta">
                <Link to={"/discover-japan-project"} className="cta-btn">
@@ -58,8 +60,8 @@ const ProjectJapan = () => {
                   View Live Site
                </a>
             </div>
-         </article>
-      </section>
+         </section>
+      </article>
    );
 };
 

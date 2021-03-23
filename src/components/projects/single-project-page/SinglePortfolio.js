@@ -1,6 +1,7 @@
 import React from "react";
 import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox";
 import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 // Components
 import SPOverview from "../single-page-components/SPOverview";
@@ -66,6 +67,13 @@ const SingleMovieApp = () => {
 
    return (
       <section className="single-project-info single-project-info-portfolio">
+         <Helmet>
+            <title>Vincent Casilla - Portfolio Piece</title>
+            <meta
+               name="description"
+               content="A react application that highlights the technical projects I have completed at BCIT."
+            />
+         </Helmet>
          <SimpleReactLightbox>
             {/* Component for outputting the title and tagline */}
             <SPTitle title={MY_PROJECTS[3].title} tagline={MY_PROJECTS[3].tagline} />
@@ -79,32 +87,14 @@ const SingleMovieApp = () => {
                livesiteLink={MY_PROJECTS[3].liveSite}
                mobileBanner={mobileBanner}
                desktopBanner={desktopBanner}
+               duration="6 Weeks"
             />
             {/* Planning */}
             <article className="single-project-planning">
                <section className="single-project-planning__container">
-                  <h3
-                     data-aos="fade-down"
-                     data-aos-easing="ease-out-sine"
-                     data-aos-once="false"
-                     data-aos-duration="700"
-                  >
-                     Planning
-                  </h3>
-                  <hr
-                     data-aos="fade-right"
-                     data-aos-easing="ease-out-sine"
-                     data-aos-once="false"
-                     data-aos-duration="700"
-                     data-aos-delay="250"
-                  />
-                  <p
-                     data-aos="fade-right"
-                     data-aos-easing="ease-out-sine"
-                     data-aos-once="false"
-                     data-aos-duration="700"
-                     data-aos-delay="450"
-                  >
+                  <h3>Planning</h3>
+                  <hr />
+                  <p>
                      When starting this my portfolio piece, I had the slightest clue of what a
                      quality web developer portfolio should be. During the initial stages, I was
                      only collecting inspiration from other developer’s portfolios. My goal was to
@@ -119,9 +109,9 @@ const SingleMovieApp = () => {
                <hr />
             </div>
             <div className="inspo-gallery">
-               <img src={inspo01} alt="Portfolio Inspiration 1" width="150" />
-               <img src={inspo02} alt="Portfolio Inspiration 2" width="150" />
-               <img src={inspo03} alt="Portfolio Inspiration 3" width="150" />
+               <img src={inspo01} alt="Portfolio Inspiration 1" width="150" loading="lazy" />
+               <img src={inspo02} alt="Portfolio Inspiration 2" width="150" loading="lazy" />
+               <img src={inspo03} alt="Portfolio Inspiration 3" width="150" loading="lazy" />
             </div>
             <div className="portfolio-goals">
                <h4 className="portfolio-goals__excerpt">
@@ -159,7 +149,16 @@ const SingleMovieApp = () => {
                   up my pages and content. I then created a detailed content plan for what all the
                   necessary information I wanted to present for each project and sections.
                </p>
-               <img src={contentPlan} alt="Content Plan" width="250" />
+               <img
+                  src={contentPlan}
+                  alt="Content Plan"
+                  width="250"
+                  loading="lazy"
+                  data-aos="fade-up"
+                  data-aos-easing="ease-out-quart"
+                  data-aos-once="false"
+                  data-aos-anchor-placement="center-bottom"
+               />
                <div className="content-plan__sample">
                   <h5> Content Plan for Single Page Project</h5>
                   <ul>
@@ -186,12 +185,12 @@ const SingleMovieApp = () => {
             <article className="portfolio-wireframes">
                <h4>Wireframes (click to enlarge)</h4>
                <SRLWrapper options={options}>
-                  <img src={WF1} alt="Portfolio Wireframes" width="150" />
-                  <img src={WF2} alt="Portfolio Wireframes" width="150" />
-                  <img src={WF3} alt="Portfolio Wireframes" width="150" />
-                  <img src={WF4} alt="Portfolio Wireframes" width="150" />
-                  <img src={WF5} alt="Portfolio Wireframes" width="150" />
-                  <img src={WF6} alt="Portfolio Wireframes" width="150" />
+                  <img src={WF1} alt="Portfolio Wireframes" width="150" loading="lazy" />
+                  <img src={WF2} alt="Portfolio Wireframes" width="150" loading="lazy" />
+                  <img src={WF3} alt="Portfolio Wireframes" width="150" loading="lazy" />
+                  <img src={WF4} alt="Portfolio Wireframes" width="150" loading="lazy" />
+                  <img src={WF5} alt="Portfolio Wireframes" width="150" loading="lazy" />
+                  <img src={WF6} alt="Portfolio Wireframes" width="150" loading="lazy" />
                </SRLWrapper>
             </article>
 

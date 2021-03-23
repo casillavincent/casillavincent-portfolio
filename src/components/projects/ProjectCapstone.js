@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const ProjectCapstone = () => {
    return (
-      <section className="project-item" id="project-capstone">
+      <article className="project-item" id="project-capstone">
          {/* Left Column */}
          <img
             src={MobileBanner}
@@ -16,6 +16,7 @@ const ProjectCapstone = () => {
             data-aos-once="true"
             data-aos-duration="600"
             data-aos-anchor-placement="center-bottom"
+            loading="lazy"
          />
          <img
             src={DesktopBanner}
@@ -26,10 +27,11 @@ const ProjectCapstone = () => {
             data-aos-once="true"
             data-aos-duration="600"
             data-aos-anchor-placement="center-bottom"
+            loading="lazy"
          />
 
          {/* Right Column */}
-         <article
+         <section
             className="project-item__text-content"
             data-aos="fade-up"
             data-aos-easing="ease-out-quart"
@@ -38,22 +40,22 @@ const ProjectCapstone = () => {
             data-aos-anchor-placement="center-bottom"
          >
             <h2 className="project-item__text-content__name">
-               The Rolling Pin (Coming Soon)<div className="accent-bar"></div>
+               The Rolling Pin<div className="accent-bar"></div>
             </h2>
             <p className="project-item__text-content__excerpt">
-               A fully functional eCommerce website that utilizes WordPress and WooCommerce to
-               display a bakery's products. This is a collaborative project consisting of 4 members.
+               A fully functional eCommerce website that utilizes WordPress and WooCommerce. This is
+               a collaborative project consisting of 4 members.
             </p>
             <div className="project-item__text-content__cta">
                <Link to={"/the-rolling-pin-project"} className="cta-btn">
                   More Info
                </Link>
-               <a href="#0" className="cta-btn" style={{ cursor: "not-allowed" }}>
+               {/* <a href="#0" className="cta-btn" style={{ cursor: "not-allowed" }}>
                   Coming Soon
-               </a>
+               </a> */}
             </div>
-         </article>
-      </section>
+         </section>
+      </article>
    );
 };
 

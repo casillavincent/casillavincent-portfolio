@@ -9,6 +9,7 @@ const SPOverview = ({
    livesiteLink,
    mobileBanner,
    desktopBanner,
+   duration,
 }) => {
    return (
       <article className="single-project-overview">
@@ -29,6 +30,11 @@ const SPOverview = ({
             <div className="scope">
                <h2>Overview</h2>
                <p>{scope}</p>
+            </div>
+
+            <div className="duration">
+               <h2>Duration</h2>
+               <p>{duration}</p>
             </div>
 
             {/* Development Team */}

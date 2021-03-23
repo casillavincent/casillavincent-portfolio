@@ -11,7 +11,7 @@
    font-size: 1em;
    width: 100%;
    margin: auto;
-   padding: 35px;
+   padding: 20px;
 
    // Global for all images in this selector
    img {
@@ -273,7 +273,7 @@
    .project-management {
       max-width: 800px;
       margin: auto;
-      padding: 35px;
+      padding: 20px;
       img {
          width: 100%;
          max-width: 800px;
@@ -284,10 +284,10 @@
    .rp-code-snippets {
       @include col-center-items;
       h4 {
-         padding: 0px 35px;
+         padding: 0px 20px;
       }
       p {
-         padding: 0px 35px;
+         padding: 0px 20px;
       }
 
       img {

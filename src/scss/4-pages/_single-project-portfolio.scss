@@ -12,7 +12,7 @@
       @include col-center-items;
    }
    .inspo-gallery {
-      padding: 35px;
+      padding: 20px;
       width: 100%;
       height: auto;
       @include col-center-items;
@@ -35,7 +35,7 @@
       width: 100%;
       max-width: 800px;
       margin: auto;
-      padding: 35px;
+      padding: 20px;
       height: 30em;
       @include col-center-items;
       @media screen and (min-width: 50em) {
@@ -71,7 +71,7 @@
       @include col-center-items;
       max-width: 800px;
       margin: auto;
-      padding: 35px;
+      padding: 20px;
       h4 {
          text-align: center;
          font-size: 1.5em;
@@ -108,7 +108,7 @@
    }
 
    .portfolio-wireframes {
-      padding: 35px;
+      padding: 20px;
       max-width: 1250px;
       margin: auto;
       h4 {
@@ -139,7 +139,7 @@
    }
 
    .development-example {
-      padding: 35px;
+      padding: 20px;
       max-width: 1000px;
       margin: auto;
       @include col-center-items;

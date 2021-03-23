@@ -23,9 +23,9 @@ const ProjectsSummary = () => {
    // AOS Plugin
    AOS.init();
    return (
-      <section className="section projects" id="my-work">
+      <article className="section projects" id="my-work">
          {/* Title and Summary */}
-         <article className="projects__intro">
+         <section className="projects__intro">
             <h1
                data-aos="fade-down"
                data-aos-anchor-placement="center-bottom"
@@ -50,15 +50,15 @@ const ProjectsSummary = () => {
                data-aos-once="false"
                data-aos-duration="800"
             >
-               Employing the right design and development tools can only get a website so far. As a
-               front-end developer, my goal is to build engaging websites that not only look good
-               but also integrate user experience research, design fundamentals, competitive
-               analysis and analytics to ensure my projects go further online.
+               Employing the right development tools can only get a website so far. As a front-end
+               developer, my goal is to build engaging websites that not only look good but also
+               integrate user experience research, design fundamentals and analytics to ensure my
+               work go further online.
             </blockquote>
-         </article>
+         </section>
 
          {/* Highlights */}
-         <article className="projects__highlights">
+         <section className="projects__highlights">
             <h2
                className="projects__highlights__title"
                data-aos="fade-right"
@@ -68,7 +68,7 @@ const ProjectsSummary = () => {
                data-aos-delay="500"
                data-aos-duration="800"
             >
-               With all my projects, I take account ...
+               With all my work, I take account ...
             </h2>
             <div className="highlights-container">
                <IconContext.Provider value={{ size: "2em" }}>
@@ -122,8 +122,8 @@ const ProjectsSummary = () => {
                   </div>
                </IconContext.Provider>
             </div>
-         </article>
-      </section>
+         </section>
+      </article>
    );
 };
 

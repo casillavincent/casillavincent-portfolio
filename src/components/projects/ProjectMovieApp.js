@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const ProjectMovieApp = () => {
    return (
-      <section className="project-item" id="project-movie-app">
+      <article className="project-item" id="project-movie-app">
          {/* Left Column */}
          <img
             src={MobileBanner}
@@ -16,6 +16,7 @@ const ProjectMovieApp = () => {
             data-aos-once="true"
             data-aos-duration="600"
             data-aos-anchor-placement="center-bottom"
+            loading="lazy"
          />
          <img
             src={DesktopBanner}
@@ -26,10 +27,11 @@ const ProjectMovieApp = () => {
             data-aos-once="true"
             data-aos-duration="600"
             data-aos-anchor-placement="center-bottom"
+            loading="lazy"
          />
 
          {/* Right Column */}
-         <article
+         <section
             className="project-item__text-content"
             data-aos="fade-up"
             data-aos-easing="ease-out-quart"
@@ -41,9 +43,8 @@ const ProjectMovieApp = () => {
                Butter.DB<div className="accent-bar"></div>
             </h2>
             <p className="project-item__text-content__excerpt">
-               A dynamic single-page web application that allows users to browse movies based on
-               what's trending, upcoming, popular and top rated. This is my first project using
-               React and the TMDB Rest API.
+               A dynamic, single-page web application that uses TMDB Rest API to to display movie
+               details.
             </p>
             <div className="project-item__text-content__cta">
                <Link to={"/butter-db-project"} className="cta-btn">
@@ -58,8 +59,8 @@ const ProjectMovieApp = () => {
                   View Live Site
                </a>
             </div>
-         </article>
-      </section>
+         </section>
+      </article>
    );
 };
 

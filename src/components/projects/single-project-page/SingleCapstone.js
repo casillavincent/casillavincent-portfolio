@@ -1,6 +1,7 @@
 import React from "react";
 import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox";
 import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 // Components
 import SPOverview from "../single-page-components/SPOverview";
@@ -101,6 +102,13 @@ const SingleMovieApp = () => {
    };
    return (
       <section className="single-project-info">
+         <Helmet>
+            <title>Vincent Casilla - The Rolling Pin</title>
+            <meta
+               name="description"
+               content="An eCommerce website for a local bakery. This project is built using WordPress and WooCommerce."
+            />
+         </Helmet>
          <SimpleReactLightbox>
             {/* Component for outputting the title and tagline */}
             <SPTitle title={MY_PROJECTS[1].title} tagline={MY_PROJECTS[1].tagline} />
@@ -114,25 +122,13 @@ const SingleMovieApp = () => {
                mobileBanner={mobileBanner}
                desktopBanner={desktopBanner}
                livesiteLink="https://vcasilla.com/the-rolling-pin/"
+               duration={"5 Weeks"}
             />
             <SRLWrapper options={options}>
                <article className="single-project-info__process">
                   <div className="project-item planning">
-                     <h3
-                        data-aos="fade-down"
-                        data-aos-easing="ease-out-sine"
-                        data-aos-once="false"
-                        data-aos-duration="700"
-                     >
-                        Planning
-                     </h3>
-                     <hr
-                        data-aos="fade-right"
-                        data-aos-easing="ease-out-sine"
-                        data-aos-once="false"
-                        data-aos-duration="700"
-                        data-aos-delay="250"
-                     />
+                     <h3>Planning</h3>
+                     <hr />
 
                      <p>
                         Our team started off by gathering various inspirations from different
@@ -148,10 +144,30 @@ const SingleMovieApp = () => {
                      <h4>Inspirations</h4>
                      <hr />
                      <div className="inspirations__imgs">
-                        <img src={Inspo1} alt="Bakery website inspiration" width="150" />
-                        <img src={Inspo2} alt="Bakery website inspiration" width="150" />
-                        <img src={Inspo3} alt="Bakery website inspiration" width="150" />
-                        <img src={Inspo4} alt="Bakery website inspiration" width="150" />
+                        <img
+                           src={Inspo1}
+                           alt="Bakery website inspiration"
+                           width="150"
+                           loading="lazy"
+                        />
+                        <img
+                           src={Inspo2}
+                           alt="Bakery website inspiration"
+                           width="150"
+                           loading="lazy"
+                        />
+                        <img
+                           src={Inspo3}
+                           alt="Bakery website inspiration"
+                           width="150"
+                           loading="lazy"
+                        />
+                        <img
+                           src={Inspo4}
+                           alt="Bakery website inspiration"
+                           width="150"
+                           loading="lazy"
+                        />
                      </div>
                   </div>
 
@@ -184,24 +200,8 @@ const SingleMovieApp = () => {
 
                   {/* Discovery Meeting */}
                   <div className="process-item discovery-meeting">
-                     <h4
-                        data-aos="fade-right"
-                        data-aos-easing="ease-out-sine"
-                        data-aos-once="false"
-                        data-aos-duration="700"
-                        data-aos-anchor-placement="bottom-bottom"
-                     >
-                        {" "}
-                        Memo of Understanding{" "}
-                     </h4>
-                     <p
-                        className="excerpt"
-                        data-aos="fade-right"
-                        data-aos-easing="ease-out-sine"
-                        data-aos-once="false"
-                        data-aos-duration="700"
-                        data-aos-anchor-placement="bottom-bottom"
-                     >
+                     <h4> Memo of Understanding </h4>
+                     <p className="excerpt">
                         The purpose of this meeting was to discuss with a fictional client regarding
                         the website's primary goals, potential competition, products and services
                         offered, ideal audience, website inspirations and brainstorm ideas
@@ -211,12 +211,42 @@ const SingleMovieApp = () => {
                      </p>
 
                      <div className="memo-of-understanding__gallery">
-                        <img src={MOU1} alt="Memo of Understanding Document" width="250" />
-                        <img src={MOU2} alt="Memo of Understanding Document" width="250" />
-                        <img src={MOU3} alt="Memo of Understanding Document" width="250" />
-                        <img src={MOU4} alt="Memo of Understanding Document" width="250" />
-                        <img src={MOU5} alt="Memo of Understanding Document" width="250" />
-                        <img src={MOU6} alt="Memo of Understanding Document" width="250" />
+                        <img
+                           src={MOU1}
+                           alt="Memo of Understanding Document"
+                           width="250"
+                           loading="lazy"
+                        />
+                        <img
+                           src={MOU2}
+                           alt="Memo of Understanding Document"
+                           width="250"
+                           loading="lazy"
+                        />
+                        <img
+                           src={MOU3}
+                           alt="Memo of Understanding Document"
+                           width="250"
+                           loading="lazy"
+                        />
+                        <img
+                           src={MOU4}
+                           alt="Memo of Understanding Document"
+                           width="250"
+                           loading="lazy"
+                        />
+                        <img
+                           src={MOU5}
+                           alt="Memo of Understanding Document"
+                           width="250"
+                           loading="lazy"
+                        />
+                        <img
+                           src={MOU6}
+                           alt="Memo of Understanding Document"
+                           width="250"
+                           loading="lazy"
+                        />
                      </div>
                   </div>
                   {/* end of discovery meeting */}
@@ -232,7 +262,14 @@ const SingleMovieApp = () => {
                         website are crucial.{" "}
                         <span>(Click the image below to read the user's journey)</span>
                      </p>
-                     <img src={Journey} alt="Journey Map" />
+                     <img
+                        src={Journey}
+                        alt="Journey Map"
+                        loading="lazy"
+                        data-aos="fade-up"
+                        data-aos-easing="ease-out-quart"
+                        data-aos-once="false"
+                     />
 
                      <div className="personas">
                         <h4>User Personas</h4>
@@ -241,8 +278,24 @@ const SingleMovieApp = () => {
                            biases and create a development plan that caters to the user's needs,
                            frustrations and goals.
                         </p>
-                        <img src={archetypes1} alt="Angela Johnson User Persona" width="250" />
-                        <img src={archetypes2} alt="Jessica Campbell User Persona" width="250" />
+                        <img
+                           src={archetypes1}
+                           alt="Angela Johnson User Persona"
+                           width="250"
+                           loading="lazy"
+                           data-aos="fade-up"
+                           data-aos-easing="ease-out-quart"
+                           data-aos-once="false"
+                        />
+                        <img
+                           src={archetypes2}
+                           alt="Jessica Campbell User Persona"
+                           width="250"
+                           loading="lazy"
+                           data-aos="fade-up"
+                           data-aos-easing="ease-out-quart"
+                           data-aos-once="false"
+                        />
                      </div>
                   </div>
 
@@ -252,10 +305,26 @@ const SingleMovieApp = () => {
                   <h3 className="process-heading">Development Plan</h3>
                   <div className="content-plan">
                      <h4>Site Map</h4>
-                     <img src={infoArchitecture} alt="Site Map" width="250" />
+                     <img
+                        src={infoArchitecture}
+                        alt="Site Map"
+                        width="250"
+                        loading="lazy"
+                        data-aos="fade-up"
+                        data-aos-easing="ease-out-quart"
+                        data-aos-once="false"
+                     />
 
                      <h4>Feature Prioritization</h4>
-                     <img src={Features} alt="Site Map" width="250" />
+                     <img
+                        src={Features}
+                        alt="Site Map"
+                        width="250"
+                        loading="lazy"
+                        data-aos="fade-up"
+                        data-aos-easing="ease-out-quart"
+                        data-aos-once="false"
+                     />
 
                      <h4>Information Architecture</h4>
                      <p>
@@ -267,17 +336,25 @@ const SingleMovieApp = () => {
                         clean markup.
                      </p>
 
-                     <div className="ia-gallery-container">
+                     <div
+                        className="ia-gallery-container"
+                        data-aos="fade-up"
+                        data-aos-easing="ease-out-quart"
+                        data-aos-once="false"
+                        data-aos-anchor-placement="top-center"
+                     >
                         <img
                            src={IA4}
                            alt="Information Architecture"
                            width="250"
+                           loading="lazy"
                            className="ia-gallery-item"
                         />
                         <img
                            src={IA3}
                            alt="Information Architecture"
                            width="250"
+                           loading="lazy"
                            className="ia-gallery-item"
                         />
                      </div>
@@ -285,7 +362,12 @@ const SingleMovieApp = () => {
                         src={IA1}
                         alt="Information Architecture with PHP"
                         width="150"
+                        loading="lazy"
                         className="ia-template-heirarchy"
+                        data-aos="fade-up"
+                        data-aos-easing="ease-out-quart"
+                        data-aos-once="false"
+                        data-aos-anchor-placement="top-center"
                      />
                   </div>
 
@@ -294,10 +376,38 @@ const SingleMovieApp = () => {
                   {/* Wireframes */}
                   <div className="process-item wireframes">
                      <h3 className="process-heading">Wireframes</h3>
-                     <img src={wireframe1} alt="The Rolling Pin Wireframes" />
-                     <img src={wireframe2} alt="The Rolling Pin Wireframes" />
-                     <img src={wireframe3} alt="The Rolling Pin Wireframes" />
-                     <img src={wireframe4} alt="The Rolling Pin Wireframes" />
+                     <img
+                        src={wireframe1}
+                        alt="The Rolling Pin Wireframes"
+                        loading="lazy"
+                        data-aos="fade-up"
+                        data-aos-easing="ease-out-quart"
+                        data-aos-once="false"
+                     />
+                     <img
+                        src={wireframe2}
+                        alt="The Rolling Pin Wireframes"
+                        loading="lazy"
+                        data-aos="fade-up"
+                        data-aos-easing="ease-out-quart"
+                        data-aos-once="false"
+                     />
+                     <img
+                        src={wireframe3}
+                        alt="The Rolling Pin Wireframes"
+                        loading="lazy"
+                        data-aos="fade-up"
+                        data-aos-easing="ease-out-quart"
+                        data-aos-once="false"
+                     />
+                     <img
+                        src={wireframe4}
+                        alt="The Rolling Pin Wireframes"
+                        loading="lazy"
+                        data-aos="fade-up"
+                        data-aos-easing="ease-out-quart"
+                        data-aos-once="false"
+                     />
                   </div>
 
                   <div className="timeline"></div>
@@ -308,15 +418,54 @@ const SingleMovieApp = () => {
 
                      {/* Photo with Adobe XD */}
                      <div className="hfmu-overview">
-                        <img src={HFMU1} alt="Adobe XD All Mockup" width="750" />
+                        <img
+                           src={HFMU1}
+                           alt="Adobe XD All Mockup"
+                           width="750"
+                           loading="lazy"
+                           data-aos="fade-up"
+                           data-aos-easing="ease-out-quart"
+                           data-aos-once="false"
+                           data-aos-anchor-placement="center-bottom"
+                        />
                      </div>
 
                      {/* Single Page Items */}
-                     <div className="hfmu-single-pages">
-                        <img src={HFMU5} alt="Home Mockup Page" width="750" height="350" />
-                        <img src={HFMU3} alt="Catering Mockup Page" width="750" height="350" />
-                        <img src={HFMU4} alt="Shop Mockup Page" width="750" height="350" />
-                        <img src={HFMU2} alt="Careers Mockup Page" width="750" height="350" />
+                     <div
+                        className="hfmu-single-pages"
+                        data-aos="fade-up"
+                        data-aos-easing="ease-out-quart"
+                        data-aos-once="false"
+                        data-aos-anchor-placement="center-bottom"
+                     >
+                        <img
+                           src={HFMU5}
+                           alt="Home Mockup Page"
+                           width="750"
+                           height="350"
+                           loading="lazy"
+                        />
+                        <img
+                           src={HFMU3}
+                           alt="Catering Mockup Page"
+                           width="750"
+                           height="350"
+                           loading="lazy"
+                        />
+                        <img
+                           src={HFMU4}
+                           alt="Shop Mockup Page"
+                           width="750"
+                           height="350"
+                           loading="lazy"
+                        />
+                        <img
+                           src={HFMU2}
+                           alt="Careers Mockup Page"
+                           width="750"
+                           height="350"
+                           loading="lazy"
+                        />
                      </div>
                   </div>
 
@@ -346,8 +495,26 @@ const SingleMovieApp = () => {
                   <h3>Logo</h3>
                   <hr />
                   <div className="logo-items">
-                     <img src={Logo1} alt="The Rolling Pin Logo Dark" width="250" />
-                     <img src={Logo2} alt="The Rolling Pin Logo Light" width="250" />
+                     <img
+                        src={Logo1}
+                        alt="The Rolling Pin Logo Dark"
+                        width="250"
+                        loading="lazy"
+                        data-aos="fade-right"
+                        data-aos-easing="ease-out-quart"
+                        data-aos-once="false"
+                        data-aos-anchor-placement="top-center"
+                     />
+                     <img
+                        src={Logo2}
+                        alt="The Rolling Pin Logo Light"
+                        width="250"
+                        loading="lazy"
+                        data-aos="fade-left"
+                        data-aos-easing="ease-out-quart"
+                        data-aos-once="false"
+                        data-aos-anchor-placement="top-center"
+                     />
                   </div>
                </div>
 
@@ -356,7 +523,15 @@ const SingleMovieApp = () => {
                <SPDevelopment text={MY_PROJECTS[1].development} />
                <div className="project-management">
                   <h4>Project Management</h4>
-                  <img src={Trello} alt="Trello; Project Management Split" width="800" />
+                  <img
+                     src={Trello}
+                     alt="Trello; Project Management Split"
+                     width="800"
+                     loading="lazy"
+                     data-aos="fade-up"
+                     data-aos-easing="ease-out-quart"
+                     data-aos-once="false"
+                  />
                </div>
 
                <div className="timeline"></div>
@@ -366,7 +541,15 @@ const SingleMovieApp = () => {
                   <h3 className="process-heading"> Code Snippets</h3>
                   <div className="code-snippet code-snippet-1">
                      <p>Function for displaying the Featured Items ACF</p>
-                     <img src={CodeS1} alt="ACF Code Snippet" width="500" />
+                     <img
+                        src={CodeS1}
+                        alt="ACF Code Snippet"
+                        width="500"
+                        loading="lazy"
+                        data-aos="fade-up"
+                        data-aos-easing="ease-out-quart"
+                        data-aos-once="false"
+                     />
                   </div>
 
                   <div className="code-snippet code-snippet-2">
@@ -375,6 +558,10 @@ const SingleMovieApp = () => {
                         src={CodeS2}
                         alt="Conditional Rendering for class attribute in Header"
                         width="500"
+                        loading="lazy"
+                        data-aos="fade-up"
+                        data-aos-easing="ease-out-quart"
+                        data-aos-once="false"
                      />
                   </div>
                </div>

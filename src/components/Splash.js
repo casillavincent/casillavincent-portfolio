@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 const Splash = () => {
    return (
-      <section className="section splash">
+      <article className="section splash">
          {/* Text Content */}
-         <article className="splash-text-container">
+         <section className="splash-text-container">
             <h1
                className="splash-text-container__tagline"
                data-aos="fade-right"
@@ -40,11 +40,11 @@ const Splash = () => {
             >
                <Link to={"/about"}>More About Me</Link>
             </div>
-         </article>
+         </section>
 
          {/* Scroll Down Indicator */}
          <ScrollDownIcon />
-      </section>
+      </article>
    );
 };
 

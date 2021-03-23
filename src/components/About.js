@@ -3,6 +3,7 @@ import Portrait from "../assets/portrait.jpg";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 
 // Plugins
 import AOS from "aos";
@@ -56,9 +57,16 @@ const About = () => {
    }, [pause, slider]);
    // <--- End of Keen Slider --->
    return (
-      <section className="section about">
+      <article className="section about">
+         <Helmet>
+            <title>Vincent Casilla - About Me</title>
+            <meta
+               name="description"
+               content="A short summary of who I am and my goals as a UX/UI designer and Front-end web developer."
+            />
+         </Helmet>
          {/* My Summary */}
-         <article className="about-item my-summary">
+         <section className="about-item my-summary">
             {/* Text */}
             <div className="my-summary__text">
                <h1
@@ -68,7 +76,7 @@ const About = () => {
                   data-aos-once="true"
                   data-aos-duration="750"
                >
-                  Vincent Casilla
+                  Who am I?
                </h1>
                <h2
                   className="headline"
@@ -96,10 +104,10 @@ const About = () => {
                   data-aos-delay="750"
                >
                   There was a time I thought writing code was strictly for those who are wildly
-                  intelligent. Diving into web development, I am beginning to recognize that the
-                  only prerequisite to successfully learning how to code is to be inquisitive. As
-                  someone who is esteemed to challenges and solving problems, web development has
-                  certainly found a way to engage my creativity and structured way of thinking.
+                  intelligent. After jumping into web development, I am beginning to recognize that
+                  the only prerequisite to successfully learning how to code is to be inquisitive.
+                  As someone who is esteemed to challenges and solving problems, web development has
+                  indeed found a way to engage my creativity and structured way of thinking.
                </p>
                <p
                   className="summary"
@@ -109,9 +117,9 @@ const About = () => {
                   data-aos-duration="750"
                   data-aos-delay="850"
                >
-                  As I venture further into web development, I aim to keep getting inspired by new
-                  technologies and continue to develop my ideas with like minded individuals to
-                  create robust web applications that are tailored to client's goals.
+                  As a front-end developer, I aim to keep getting inspired by new technologies and
+                  continue developing my ideas with like-minded individuals to create robust web
+                  applications tailored to clients’ goals.
                </p>
                <p
                   className="summary"
@@ -122,7 +130,7 @@ const About = () => {
                   data-aos-delay="950"
                   data-aos-anchor-placement="bottom-bottom"
                >
-                  My life isn't just writing code. When I’m not sitting in front of my laptop,
+                  My life isn’t just writing code. When I’m not sitting in front of my laptop,
                   you’ll most likely find me first in line at a new boba place, watching my stocks
                   crumble, boxing or create mixtapes in my bedroom.
                </p>
@@ -139,10 +147,10 @@ const About = () => {
                   data-aos-duration="750"
                />
             </div>
-         </article>
+         </section>
 
          {/* Technical Skills */}
-         <article className="about-item artillery">
+         <section className="about-item artillery">
             {/* Development Stack */}
             <div className="col-development-stack">
                <h3>Development Stack</h3>
@@ -183,10 +191,10 @@ const About = () => {
                   <li className="technical-skills__item">CMS Development</li>
                </ul>
             </div>
-         </article>
+         </section>
 
          {/* My Inspirations */}
-         <article className="about-item inspirations">
+         <section className="about-item inspirations">
             <h4>Here's some things that inspire me ... </h4>
 
             <ul ref={sliderRef} className="inspirations-list keen-slider">
@@ -227,8 +235,8 @@ const About = () => {
                   Stocks
                </li>
             </ul>
-         </article>
-      </section>
+         </section>
+      </article>
    );
 };
 

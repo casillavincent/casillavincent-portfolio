@@ -79,7 +79,7 @@
 
    // Content
    &__content {
-      padding: 35px;
+      padding: 20px;
       width: 100%;
       max-width: 800px;
       height: auto;
@@ -95,7 +95,7 @@
          grid-template-areas:
             "scope devTeam"
             "scope roles"
-            "scope tools";
+            "tools time";
          grid-gap: 25px;
 
          height: auto;
@@ -110,8 +110,9 @@
       .scope,
       .dev-team,
       .role,
-      .tools {
-         margin-bottom: 35px;
+      .tools,
+      .duration {
+         margin-bottom: 20px;
          width: 100%;
          max-width: 400px;
          @media screen and (min-width: 50em) {
@@ -140,6 +141,9 @@
       }
       .role {
          grid-area: roles;
+      }
+      .duration {
+         grid-area: time;
       }
 
       .tools {
@@ -186,7 +190,7 @@
       height: 600px;
    }
    &__container {
-      padding: 35px;
+      padding: 20px;
       max-width: 600px;
       @media screen and (min-width: 50em) {
          h3 {
@@ -206,8 +210,8 @@
       height: 600px;
    }
    &__container {
-      padding: 35px;
       max-width: 600px;
+      padding: 0px;
       @media screen and (min-width: 50em) {
          h3 {
             font-size: 3em;
@@ -226,7 +230,7 @@
       height: 600px;
    }
    &__container {
-      padding: 35px;
+      padding: 20px;
       max-width: 600px;
       @media screen and (min-width: 50em) {
          h3 {
@@ -242,15 +246,13 @@
 -------------------------------------------
 */
 .single-project-info-colors {
-   padding: 35px;
+   padding: 20px;
    width: 100%;
    max-width: 600px;
    margin: auto;
 
-   height: 350px;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
+   height: 500px;
+   @include col-center-items;
 
    .color-items {
       display: flex;
@@ -296,21 +298,19 @@
 */
 .single-project-info {
    .design-gallery {
-      div {
-         width: 90%;
-         margin: auto;
-         @include col-center-items;
-         img {
-            width: 100%;
-            max-width: 1000px;
-            margin-bottom: 50px;
-         }
+      width: 90%;
+      margin: auto;
+      @include col-center-items;
+      img {
+         width: 100%;
+         max-width: 1000px;
+         margin-bottom: 50px;
       }
    }
 }
 
 .final-project-gallery--mobile {
-   padding: 35px;
+   padding: 20px;
    max-width: 600px;
    margin: auto;
    display: flex;
@@ -326,7 +326,7 @@
    }
 
    // The gallery content
-   div {
+   .mobile-gallery {
       width: 100%;
       margin: auto;
       display: flex;
@@ -366,7 +366,7 @@
 }
 
 .final-project-gallery--desktop {
-   padding: 35px;
+   padding: 20px;
    margin: auto;
    display: flex;
    flex-direction: column;
@@ -379,7 +379,7 @@
       @include col-center-items;
    }
    // Gallery Container
-   div {
+   .desktop-gallery {
       img {
          width: 100%;
          height: auto;
@@ -407,7 +407,7 @@
 */
 .code-snippet {
    width: 100%;
-   padding: 35px;
+   padding: 20px;
    max-width: 800px;
    margin: auto;
 
@@ -534,11 +534,12 @@
 -------------------------------------------
 */
 .single-project-info__typography {
-   padding: 35px;
+   padding: 20px;
    width: 100%;
    max-width: 800px;
    margin: auto;
    font-size: 1em;
+   height: 450px;
    @include col-center-items; // Typography Container
    .typography-container {
       @media screen and (min-width: 50em) {
@@ -556,17 +557,17 @@
          margin: 30px 0px;
          // Aa
          h4.typeface-sample {
-            font-size: 2.5em;
+            font-size: 1.75em;
             border: 1px solid white;
-            width: 75px;
-            height: 75px;
+            width: 50px;
+            height: 50px;
             @include col-center-items;
             margin-bottom: 10px;
          }
 
          // Typeface Name
          h5.typeface-name {
-            font-size: 1.25em;
+            font-size: 1.15em;
             margin-bottom: 5px;
          }
 

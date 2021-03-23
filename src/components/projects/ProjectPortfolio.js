@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const ProjectPortfolio = () => {
    return (
-      <section className="project-item" id="project-portfolio">
+      <article className="project-item" id="project-portfolio">
          {/* Left Column */}
          <img
             src={MobileBanner}
@@ -16,6 +16,7 @@ const ProjectPortfolio = () => {
             data-aos-once="true"
             data-aos-duration="600"
             data-aos-anchor-placement="center-bottom"
+            loading="lazy"
          />
          <img
             src={DesktopBanner}
@@ -26,10 +27,11 @@ const ProjectPortfolio = () => {
             data-aos-once="true"
             data-aos-duration="600"
             data-aos-anchor-placement="center-bottom"
+            loading="lazy"
          />
 
          {/* Right Column */}
-         <article
+         <section
             className="project-item__text-content"
             data-aos="fade-up"
             data-aos-easing="ease-out-quart"
@@ -41,7 +43,7 @@ const ProjectPortfolio = () => {
                Personal Portfolio<div className="accent-bar"></div>
             </h2>
             <p className="project-item__text-content__excerpt">
-               An application that highlights my technical skills and technical projects as a
+               A React application that highlights my technical skills and technical projects as a
                Front-end developer.
             </p>
             <div className="project-item__text-content__cta">
@@ -58,8 +60,8 @@ const ProjectPortfolio = () => {
                   View on Github
                </a>
             </div>
-         </article>
-      </section>
+         </section>
+      </article>
    );
 };
 

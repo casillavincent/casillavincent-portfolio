@@ -8,14 +8,14 @@
    font-size: 1em;
    margin-top: 100px;
    margin-bottom: 100px;
-   max-width: 550px;
    margin: auto;
+   width: 100%;
    height: 40em;
 
    display: flex;
    flex-direction: column;
    justify-content: center;
-   background: $accent2;
+   background: rgba($accent2, 0.875);
 
    // Target all selectors
    .col-development-stack,
@@ -23,8 +23,17 @@
       padding: 20px;
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
+      justify-content: center;
+      align-items: center;
       height: 275px;
+      width: 100%;
+      max-width: 500px;
+      margin: auto;
+      @media screen and (min-width: 50em) {
+         margin: 0px;
+         padding: 0px;
+         justify-content: flex-start;
+      }
       hr {
          width: 25px;
          height: 2px;
@@ -84,7 +93,6 @@
       justify-content: center;
       align-items: center;
       height: 60em;
-      margin: 0px;
-      max-width: 100%;
+      padding: 35px;
    }
 }

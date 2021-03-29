@@ -203,11 +203,11 @@ const SingleMovieApp = () => {
                      <h4> Memo of Understanding </h4>
                      <p className="excerpt">
                         The purpose of this meeting was to discuss with a fictional client regarding
-                        the website's primary goals, potential competition, products and services
-                        offered, ideal audience, website inspirations and brainstorm ideas
-                        pertaining to the website’s functionalities and features. Our team then
-                        created a Memo of Understanding summarizing everything we discussed in our
-                        meeting. <span>(Click the images below to see the document)</span>
+                        the website's primary goals, potential competition, products, services
+                        offered, ideal audience, website inspirations, and brainstorm ideas about
+                        the website’s functionalities and features. Our team then created a Memo of
+                        Understanding summarizing everything we discussed in our meeting{" "}
+                        <span>(Click the images below to see the document)</span>
                      </p>
 
                      <div className="memo-of-understanding__gallery">
@@ -254,12 +254,11 @@ const SingleMovieApp = () => {
                   <div className="audience">
                      <h4>Journey Map</h4>
                      <p className="journey-map-excerpt">
-                        In order to help our team develop a solid content plan and features of this
-                        website, we had to first understand the target audience and their primary
-                        goals. Creating a journey map allowed our team to identify where the user's
-                        pain points exist and develop solutions to improve user experience. This was
-                        super helpful for our team because this guided us on what facets of the
-                        website are crucial.{" "}
+                        To help our team develop a solid content plan and features, we had to first
+                        understand the target audience and their primary goals. Creating a journey
+                        map allowed our team to identify where the user's pain points exist and
+                        develop solutions to improve user experience. This was super helpful for our
+                        team because this guided us on what facets of the website are crucial.
                         <span>(Click the image below to read the user's journey)</span>
                      </p>
                      <img
@@ -330,9 +329,9 @@ const SingleMovieApp = () => {
                      <p>
                         Through multiple meetings over Zoom, we began compiling all the essential
                         information into one content plan. This stage was exhaustive because we
-                        needed a concrete map for what files would contain each and every piece of
+                        needed a concrete map for what files would contain each piece of
                         information. Since we were using WordPress as our CMS, we had to examine
-                        WordPress’ template hierarchy to determine the best approach in creating a
+                        WordPress’s template hierarchy to determine the best approach in creating a
                         clean markup.
                      </p>
 
@@ -436,7 +435,7 @@ const SingleMovieApp = () => {
                         data-aos="fade-up"
                         data-aos-easing="ease-out-quart"
                         data-aos-once="false"
-                        data-aos-anchor-placement="center-bottom"
+                        data-aos-anchor-placement="top-bottom"
                      >
                         <img
                            src={HFMU5}
@@ -540,7 +539,10 @@ const SingleMovieApp = () => {
                <div className="rp-code-snippets">
                   <h3 className="process-heading"> Code Snippets</h3>
                   <div className="code-snippet code-snippet-1">
-                     <p>Function for displaying the Featured Items ACF</p>
+                     <p>
+                        Function for displaying the Featured Items ACF{" "}
+                        <span>(Click the image to see the code)</span>
+                     </p>
                      <img
                         src={CodeS1}
                         alt="ACF Code Snippet"
@@ -553,7 +555,10 @@ const SingleMovieApp = () => {
                   </div>
 
                   <div className="code-snippet code-snippet-2">
-                     <p>Conditional rendering of additional class for Header</p>
+                     <p>
+                        Conditional rendering of additional class for Header{" "}
+                        <span>(Click the image to see the code)</span>
+                     </p>
                      <img
                         src={CodeS2}
                         alt="Conditional Rendering for class attribute in Header"

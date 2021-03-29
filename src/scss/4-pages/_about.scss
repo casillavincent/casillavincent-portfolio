@@ -19,9 +19,8 @@
 
    // My Summary
    .my-summary {
-      display: flex;
-      flex-direction: column-reverse;
-      align-items: center;
+      @include col-center-items;
+      height: 100vh;
 
       &__text,
       &__portrait {
@@ -48,7 +47,6 @@
          }
 
          p {
-            font-size: 0.75em;
             margin-bottom: 15px;
          }
       }
@@ -66,24 +64,21 @@
 
       @media screen and (min-width: 75em) {
          max-width: 1150px;
-         display: grid;
-         grid-template-columns: repeat(2, 1fr);
-         justify-items: center;
-         align-items: flex-start;
          margin: auto;
          height: 100vh;
-         padding-bottom: 175px;
-         &__text,
+         padding-bottom: 10%;
+         x &__text,
          &__portrait {
             height: 100%;
          }
 
          &__text {
+            max-width: 800px;
             .name {
                font-size: 3.5em;
             }
             p {
-               font-size: 0.85em;
+               font-size: 0.9em;
             }
          }
       }

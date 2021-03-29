@@ -1,23 +1,11 @@
 import React from "react";
-import MobileBanner from "../../assets/banners/movie-mobile.jpg";
-import DesktopBanner from "../../assets/banners/movie-desktop.jpg";
+import DesktopBanner from "../../assets/banners/movie.png";
 import { Link } from "react-router-dom";
 
 const ProjectMovieApp = () => {
    return (
       <article className="project-item" id="project-movie-app">
          {/* Left Column */}
-         <img
-            src={MobileBanner}
-            alt="Project Banner"
-            className="project-item__banner--mobile"
-            data-aos="zoom-out-down"
-            data-aos-easing="ease-out-quart"
-            data-aos-once="true"
-            data-aos-duration="600"
-            data-aos-anchor-placement="center-bottom"
-            loading="lazy"
-         />
          <img
             src={DesktopBanner}
             alt="Project Banner"
@@ -43,7 +31,7 @@ const ProjectMovieApp = () => {
                Butter.DB<div className="accent-bar"></div>
             </h2>
             <p className="project-item__text-content__excerpt">
-               A dynamic, single-page web application that uses TMDB Rest API to to display movie
+               A dynamic, single-page web application that uses the TMDB Rest API to display movie
                details.
             </p>
             <div className="project-item__text-content__cta">

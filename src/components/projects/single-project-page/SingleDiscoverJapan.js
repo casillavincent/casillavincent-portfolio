@@ -31,10 +31,10 @@ import finalMobile2 from "../../../assets/discover-japan/final-design/japan-fina
 import finalMobile3 from "../../../assets/discover-japan/final-design/japan-final-mobile-3.jpg";
 import finalMobile4 from "../../../assets/discover-japan/final-design/japan-final-mobile-4.jpg";
 
-import finalDesktop1 from "../../../assets/discover-japan/final-design/japan-final-desktop-1.jpg";
-import finalDesktop2 from "../../../assets/discover-japan/final-design/japan-final-desktop-2.jpg";
-import finalDesktop3 from "../../../assets/discover-japan/final-design/japan-final-desktop-3.jpg";
-import finalDesktop5 from "../../../assets/discover-japan/final-design/japan-final-desktop-5.jpg";
+import finalDesktop1 from "../../../assets/discover-japan/final-design/japan-final-desktop-1.png";
+import finalDesktop2 from "../../../assets/discover-japan/final-design/japan-final-desktop-2.png";
+import finalDesktop3 from "../../../assets/discover-japan/final-design/japan-final-desktop-3.png";
+import finalDesktop5 from "../../../assets/discover-japan/final-design/japan-final-desktop-4.png";
 
 // Banner
 import mobileBanner from "../../../assets/banners/japan-mobile.jpg";
@@ -178,7 +178,6 @@ const SingleMovieApp = () => {
                      sliderLineColor="#DA0D05"
                      hover="true"
                   />
-                  ;
                </article>
 
                {/* Component for Development Summary */}
@@ -242,21 +241,19 @@ const SingleMovieApp = () => {
 
                <article className="bem-code-snippet">
                   <div className="bem-code-snippet__text">
-                     <h4>Why I chose BEM as a methodology?</h4>
+                     <h4>Why BEM?</h4>
                      <p>
-                        If you aren't familiar with BEM, it means;
-                        <span className="bem-bold"> Block, Element and Modifier</span>. It is simply
-                        one of many CSS methodology that allows stylesheets to have a standardized
-                        structure that provides scope and reduce style conflicts when working with
-                        CSS
+                        If you aren't familiar with BEM, it is simply one of many CSS methodology
+                        that allows stylesheets to have a standardized structure that provides scope
+                        and reduce style conflicts when working with CSS.
                      </p>
                      <p>
                         I decided to use this methodology for this project because I wanted to
-                        experiment with methods to organize my stylesheets and CSS properties.
-                        Employing BEM and SMACSS methodologies has greatly improved the efficiency
-                        of reading my code when working on larger and more complicated projects. I
-                        think getting comfortable with exploring different methodologies will come
-                        in handy when tackling projects where scalability is crucial.
+                        experiment with different methods to organize my selectors and CSS
+                        properties. Employing BEM and SMACSS has greatly improved the efficiency of
+                        reading my code when working on more complicated projects. I think this will
+                        come in handy in the future when working with larger teams and larger
+                        websites.
                      </p>
                   </div>
 

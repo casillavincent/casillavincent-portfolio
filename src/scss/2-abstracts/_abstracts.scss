@@ -11,7 +11,7 @@ $accent: #ec2341;
 $accent2: #0c0c0e;
 
 $galleryBorder: #202225;
-$bannerBorder: rgb(190, 190, 190);
+$bannerBorder: rgb(24, 24, 24);
 /*
 -------------------------------------------
 * Fonts
@@ -59,9 +59,10 @@ $logo2: "Monda", sans-serif;
 }
 
 @mixin mobile-border {
-   border: 10px solid $galleryBorder;
-   border-top: 15px solid $galleryBorder;
-   border-bottom: 40px solid $galleryBorder;
+   border: 5px solid $bannerBorder;
+   border-top: 20px solid $bannerBorder;
+   border-bottom: 40px solid $bannerBorder;
+   box-shadow: 0px 0px 0px 3px #303030;
    border-radius: 10px;
 }
 
@@ -77,15 +78,18 @@ $logo2: "Monda", sans-serif;
 }
 
 @mixin mobile-banner-border {
-   border: 10px solid $bannerBorder;
-   border-top: 15px solid $bannerBorder;
+   border: 5px solid $bannerBorder;
+   border-top: 20px solid $bannerBorder;
    border-bottom: 40px solid $bannerBorder;
+   box-shadow: 0px 0px 0px 3px #303030;
    border-radius: 10px;
 }
 
 @mixin desktop-banner-border {
-   border: 10px solid $galleryBorder;
-   border-bottom: 25px solid $galleryBorder;
+   border: 10px solid $bannerBorder;
+   border-bottom: 35px solid $bannerBorder;
+   box-shadow: 0px 0px 0px 3px #303030;
+
    border-radius: 5px;
 }
 

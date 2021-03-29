@@ -55,7 +55,7 @@ const Social = () => {
             </a>
 
             <a
-               href="mailto:casillavincent@gmail.com?subject=Hello Vincent!"
+               href="mailto:webdeveloper@vcasilla.com?subject=Hello Vincent!"
                target="_blank"
                id="e-mail-link"
                rel="noopener noreferrer"

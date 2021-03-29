@@ -65,6 +65,7 @@ const About = () => {
                content="A short summary of who I am and my goals as a UX/UI designer and Front-end web developer."
             />
          </Helmet>
+
          {/* My Summary */}
          <section className="about-item my-summary">
             {/* Text */}
@@ -103,10 +104,10 @@ const About = () => {
                   data-aos-duration="750"
                   data-aos-delay="750"
                >
-                  There was a time I thought writing code was strictly for those who are wildly
+                  There was a time I thought coding was strictly for those who are wildly
                   intelligent. After jumping into web development, I am beginning to recognize that
-                  the only prerequisite to successfully learning how to code is to be inquisitive.
-                  As someone who is esteemed to challenges and solving problems, web development has
+                  the only prerequisite to successfully learn web development is to be inquisitive.
+                  As someone who's esteemed to challenges and solving problems, this field has
                   indeed found a way to engage my creativity and structured way of thinking.
                </p>
                <p
@@ -132,12 +133,12 @@ const About = () => {
                >
                   My life isn’t just writing code. When I’m not sitting in front of my laptop,
                   you’ll most likely find me first in line at a new boba place, watching my stocks
-                  crumble, boxing or create mixtapes in my bedroom.
+                  crumble, boxing and fitness.
                </p>
             </div>
 
             {/* Portrait */}
-            <div className="my-summary__portrait">
+            {/* <div className="my-summary__portrait">
                <img
                   src={Portrait}
                   alt="My Portrait"
@@ -146,7 +147,7 @@ const About = () => {
                   data-aos-once="true"
                   data-aos-duration="750"
                />
-            </div>
+            </div> */}
          </section>
 
          {/* Technical Skills */}
@@ -166,7 +167,6 @@ const About = () => {
                   <li className="development-stack__item">Wordpress</li>
                   <li className="development-stack__item">WooCommerce</li>
                   <li className="development-stack__item">Adobe XD</li>
-                  <li className="development-stack__item">Photshop</li>
                   <li className="development-stack__item">Github</li>
                   <li className="development-stack__item">MySQL</li>
                </ul>
@@ -188,7 +188,8 @@ const About = () => {
                   </li>
                   <li className="technical-skills__item">Single page web applications</li>
                   <li className="technical-skills__item">Front-end frameworks</li>
-                  <li className="technical-skills__item">CMS Development</li>
+                  <li className="technical-skills__item">CMS Development(WordPress)</li>
+                  <li className="technical-skills__item">UX/UI Design</li>
                </ul>
             </div>
          </section>
@@ -232,7 +233,7 @@ const About = () => {
                   className="inspirations-list__item keen-slider__slide number-slide1"
                   title="Scroll Me"
                >
-                  Stocks
+                  Cats
                </li>
             </ul>
          </section>

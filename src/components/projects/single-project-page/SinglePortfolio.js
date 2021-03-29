@@ -95,11 +95,10 @@ const SingleMovieApp = () => {
                   <h3>Planning</h3>
                   <hr />
                   <p>
-                     When starting this my portfolio piece, I had the slightest clue of what a
-                     quality web developer portfolio should be. During the initial stages, I was
-                     only collecting inspiration from other developer’s portfolios. My goal was to
-                     take notes of their underlying similarities and also record each of their
-                     strengths.
+                     When starting my portfolio, I had the slightest clue what a quality web
+                     developer portfolio should include. During the initial stages, I was only
+                     collecting inspiration from other portfolios. My goal was to take notes of
+                     their underlying similarities and also record each of their strengths.
                   </p>
                </section>
             </article>
@@ -115,9 +114,8 @@ const SingleMovieApp = () => {
             </div>
             <div className="portfolio-goals">
                <h4 className="portfolio-goals__excerpt">
-                  {" "}
-                  After gathering my inspirations I created a list of what I need to prioritize when
-                  I design my portfolio ...
+                  After gathering inspirations, I created a list prioritizing the goals of my
+                  portfolio
                </h4>
 
                <ol className="portfolio-goals__list">
@@ -133,7 +131,7 @@ const SingleMovieApp = () => {
                   </li>
 
                   <li>
-                     <span>Performance</span> - keep my page load time below 5.0s and page size is
+                     <span>Performance</span> - keep my page load time below 5.0s and page size
                      below 3.0Mb
                   </li>
                </ol>
@@ -145,9 +143,9 @@ const SingleMovieApp = () => {
                <h4 className="content-plan__title">Information Architecture & Content Plan</h4>
                <hr />
                <p className="content-plan__excerpt">
-                  The next step is to create a simple information architecture of how I would break
-                  up my pages and content. I then created a detailed content plan for what all the
-                  necessary information I wanted to present for each project and sections.
+                  The next step is to create a simple site map of how I would break up my pages and
+                  content. I then created a detailed content plan for all the necessary information
+                  I wanted to present for each project.
                </p>
                <img
                   src={contentPlan}
@@ -160,7 +158,7 @@ const SingleMovieApp = () => {
                   data-aos-anchor-placement="center-bottom"
                />
                <div className="content-plan__sample">
-                  <h5> Content Plan for Single Page Project</h5>
+                  <h5> Content plan for my portfolio react app (example)</h5>
                   <ul>
                      <li>Name of website/application</li>
                      <li>
@@ -214,9 +212,9 @@ const SingleMovieApp = () => {
 
             {/* Code Snippets */}
             <div className="development-example">
-               <h4 className="development-example__caption">
-                  This is how I build my Single Movie App page using resusable components
-               </h4>
+               <p className="development-example__caption">
+                  This is how I built my movie app page using resusable components
+               </p>
                <iframe
                   className="code-snippet"
                   height="500"
@@ -238,7 +236,7 @@ const SingleMovieApp = () => {
             </div>
 
             <div className="development-example">
-               <h4 className="development-example__caption">Responsive Header</h4>
+               <p className="development-example__caption">Responsive Header</p>
                <iframe
                   className="code-snippet"
                   height="500"

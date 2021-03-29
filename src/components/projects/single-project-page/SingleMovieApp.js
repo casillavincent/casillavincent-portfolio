@@ -28,10 +28,10 @@ import movieFinalMobile3 from "../../../assets/movie-app-final/mobile/butter-db-
 import movieFinalMobile4 from "../../../assets/movie-app-final/mobile/butter-db-final-mobile4.jpg";
 import movieFinalMobile5 from "../../../assets/movie-app-final/mobile/butter-db-final-mobile5.jpg";
 
-import movieFinalDesktop1 from "../../../assets/movie-app-final/desktop/butter-db-final-desktop1.jpg";
-import movieFinalDesktop2 from "../../../assets/movie-app-final/desktop/butter-db-final-desktop2.jpg";
-import movieFinalDesktop3 from "../../../assets/movie-app-final/desktop/butter-db-final-desktop3.jpg";
-import movieFinalDesktop4 from "../../../assets/movie-app-final/desktop/butter-db-final-desktop4.jpg";
+import movieFinalDesktop1 from "../../../assets/movie-app-final/desktop/butter-db-final-desktop1.png";
+import movieFinalDesktop2 from "../../../assets/movie-app-final/desktop/butter-db-final-desktop2.png";
+import movieFinalDesktop3 from "../../../assets/movie-app-final/desktop/butter-db-final-desktop3.png";
+import movieFinalDesktop4 from "../../../assets/movie-app-final/desktop/butter-db-final-desktop4.png";
 
 import mobileBanner from "../../../assets/banners/movie-mobile.jpg";
 import desktopBanner from "../../../assets/banners/movie-desktop.jpg";
@@ -246,9 +246,9 @@ const SingleMovieApp = () => {
 
                {/* Fetch API code snippet */}
                <article className="code-snippet">
-                  <h4 className="code-snippet__excerpt">
+                  <p className="code-snippet__excerpt">
                      Here is how I fetch the popular movies from the Rest API
-                  </h4>
+                  </p>
                   <iframe
                      height="335"
                      scrolling="no"
@@ -272,9 +272,9 @@ const SingleMovieApp = () => {
 
                {/* Add to Likes local storage Snippet */}
                <article className="code-snippet">
-                  <h4 className="code-snippet__excerpt">
+                  <p className="code-snippet__excerpt">
                      This application utilizes the local storage to save favourite movies
-                  </h4>
+                  </p>
                   <iframe
                      height="302"
                      scrolling="no"

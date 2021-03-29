@@ -23,9 +23,22 @@ html {
 }
 
 body {
-   background-color: black;
+   background-color: rgb(7, 7, 7);
    width: 100%;
    overflow-x: hidden;
+   background-image: url("../../assets/bg-mobile.jpg");
+   background-attachment: fixed;
+   background-position-x: center;
+   background-position-y: bottom;
+   background-repeat: no-repeat;
+   background-size: cover;
+   @media screen and (min-width: 700px) {
+      background-image: url("../../assets/bg-tablet.jpg");
+   }
+   @media screen and (min-width: 1350px) {
+      background-image: url("../../assets/bg-desktop.jpg");
+   }
+
    cursor: url("../../assets/cursor.png"), auto;
    .main-page {
       width: 100%;

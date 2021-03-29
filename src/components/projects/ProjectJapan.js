@@ -1,23 +1,11 @@
 import React from "react";
-import MobileBanner from "../../assets/banners/japan-mobile.jpg";
-import DesktopBanner from "../../assets/banners/japan-desktop.jpg";
+import DesktopBanner from "../../assets/banners/japan.png";
 import { Link } from "react-router-dom";
 
 const ProjectJapan = () => {
    return (
       <article className="project-item" id="project-japan">
          {/* Left Column */}
-         <img
-            src={MobileBanner}
-            alt="Project Banner"
-            className="project-item__banner--mobile"
-            data-aos="zoom-out-down"
-            data-aos-easing="ease-out-quart"
-            data-aos-once="true"
-            data-aos-duration="600"
-            data-aos-anchor-placement="center-bottom"
-            loading="lazy"
-         />
          <img
             src={DesktopBanner}
             alt="Project Banner"
@@ -29,7 +17,6 @@ const ProjectJapan = () => {
             data-aos-anchor-placement="center-bottom"
             loading="lazy"
          />
-
          {/* Right Column */}
          <section
             className="project-item__text-content"

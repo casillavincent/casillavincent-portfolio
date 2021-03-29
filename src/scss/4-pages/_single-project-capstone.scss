@@ -288,24 +288,21 @@
       }
       p {
          padding: 0px 20px;
+         span {
+            color: $accent;
+         }
       }
 
       img {
          width: 100%;
          height: auto;
-         max-width: 800px;
          margin: auto;
          border-radius: 3px;
       }
 
       .code-snippet {
+         max-width: 950px;
          @include col-center-items;
-      }
-
-      .code-snippet-1 {
-         img {
-            max-width: 500px;
-         }
       }
    }
 } // end of single project info

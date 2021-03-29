@@ -1,23 +1,11 @@
 import React from "react";
-import MobileBanner from "../../assets/banners/portfolio-mobile.jpg";
-import DesktopBanner from "../../assets/banners/portfolio-desktop.jpg";
+import DesktopBanner from "../../assets/banners/portfolio.png";
 import { Link } from "react-router-dom";
 
 const ProjectPortfolio = () => {
    return (
       <article className="project-item" id="project-portfolio">
          {/* Left Column */}
-         <img
-            src={MobileBanner}
-            alt="Project Banner"
-            className="project-item__banner--mobile"
-            data-aos="zoom-out-down"
-            data-aos-easing="ease-out-quart"
-            data-aos-once="true"
-            data-aos-duration="600"
-            data-aos-anchor-placement="center-bottom"
-            loading="lazy"
-         />
          <img
             src={DesktopBanner}
             alt="Project Banner"

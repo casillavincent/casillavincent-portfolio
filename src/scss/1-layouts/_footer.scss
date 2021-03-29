@@ -4,7 +4,7 @@
    color: white;
    width: 100%;
    font-size: 1em;
-   height: 45em;
+   height: 40em;
 
    // Top Section
    &__top-section {
@@ -15,12 +15,12 @@
       align-items: center;
       height: 75%;
 
-      h1 {
-         font-size: 2.25em;
+      h3 {
+         font-size: 2em;
          margin-bottom: 20px;
          color: white;
          @media screen and (min-width: 50em) {
-            font-size: 3.5em;
+            font-size: 2.5em;
          }
       }
       button svg {
@@ -37,8 +37,7 @@
 
    // Bottom Section
    &__bottom-section {
-      // background: #ec2341;
-      background: $accent2;
+      background: rgba($accent2, 0.875);
       .social-icons {
          a {
             border-style: none;
@@ -59,8 +58,8 @@
       }
 
       // Connect with me
-      h2 {
-         font-size: 1.25em;
+      h4 {
+         font-size: 1.1em;
          margin-bottom: 5px;
       }
 

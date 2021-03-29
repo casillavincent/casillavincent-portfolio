@@ -50,10 +50,10 @@ const ProjectsSummary = () => {
                data-aos-once="false"
                data-aos-duration="800"
             >
-               Employing the right development tools can only get a website so far. As a front-end
-               developer, my goal is to build engaging websites that not only look good but also
-               integrate user experience research, design fundamentals and analytics to ensure my
-               work go further online.
+               I believe that employing all the latest development technologies can only get a
+               website so far online. As a front-end developer, my goal is to build websites that
+               not only look good but create a seamless user experience through research, analytics,
+               and SEO best practices.
             </blockquote>
          </section>
 

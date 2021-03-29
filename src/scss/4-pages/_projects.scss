@@ -15,7 +15,7 @@
    flex-direction: column;
    justify-content: flex-start;
    align-items: center;
-   background: $accent2;
+   background: rgba($accent2, 0.875);
    @media screen and (min-width: 50em) {
       height: 100vh;
    }

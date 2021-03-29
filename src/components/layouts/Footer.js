@@ -13,20 +13,20 @@ const Footer = () => {
          <div className="footer__top-section">
             <ScrollTop />
 
-            <h1>Like My Work?</h1>
+            <h3>Like My Work?</h3>
 
             <a
-               href="mailto:casillavincent@gmail.com?subject=Hello Vincent!"
+               href="mailto:webdeveloper@vcasilla.com?subject=Hello Vincent!"
                rel="noopener noreferrer"
                className="button"
             >
-               Contact Me
+               Let's Chat
             </a>
          </div>
 
          {/* Bottom Section */}
          <div className="footer__bottom-section">
-            <h2>Connect with me</h2>
+            <h4>Connect with me</h4>
             <div className="social-icons">
                <IconContext.Provider value={{ color: "white", size: "1.25em" }}>
                   <a

@@ -23,20 +23,20 @@ html {
 }
 
 body {
-   background-color: rgb(7, 7, 7);
+   background: black;
    width: 100%;
    overflow-x: hidden;
-   background-image: url("../../assets/bg-mobile.jpg");
+   background-image: url("../../assets/bg-desktop.jpg");
    background-attachment: fixed;
    background-position-x: center;
-   background-position-y: bottom;
+   background-position-y: center;
    background-repeat: no-repeat;
-   background-size: cover;
+   background-size: 750px;
    @media screen and (min-width: 700px) {
-      background-image: url("../../assets/bg-tablet.jpg");
+      background-size: 1000px;
    }
    @media screen and (min-width: 1350px) {
-      background-image: url("../../assets/bg-desktop.jpg");
+      background-size: cover;
    }
 
    cursor: url("../../assets/cursor.png"), auto;

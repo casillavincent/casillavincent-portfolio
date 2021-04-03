@@ -30,7 +30,7 @@ const ProjectsSummary = () => {
                data-aos="fade-down"
                data-aos-anchor-placement="center-bottom"
                data-aos-easing="ease-out-quart"
-               data-aos-once="false"
+               data-aos-once="true"
                data-aos-duration="800"
             >
                Work
@@ -39,7 +39,7 @@ const ProjectsSummary = () => {
                data-aos="fade-right"
                data-aos-anchor-placement="center-bottom"
                data-aos-easing="ease-out-quart"
-               data-aos-once="false"
+               data-aos-once="true"
                data-aos-duration="800"
             />
             <blockquote
@@ -47,7 +47,7 @@ const ProjectsSummary = () => {
                data-aos-anchor-placement="bottom-bottom"
                data-aos-easing="ease-out-quart"
                data-aos-delay="300"
-               data-aos-once="false"
+               data-aos-once="true"
                data-aos-duration="800"
             >
                I believe that employing all the latest development technologies can only get a
@@ -64,7 +64,7 @@ const ProjectsSummary = () => {
                data-aos="fade-right"
                data-aos-anchor-placement="center-bottom"
                data-aos-easing="ease-out-quart"
-               data-aos-once="false"
+               data-aos-once="true"
                data-aos-delay="500"
                data-aos-duration="800"
             >
@@ -77,7 +77,7 @@ const ProjectsSummary = () => {
                      className="highlights-item-01"
                      data-aos={isDesktop === true ? "fade-up" : "fade-right"}
                      data-aos-easing="ease-out-quart"
-                     data-aos-once="false"
+                     data-aos-once="true"
                      data-aos-duration="800"
                   >
                      <FaPencilRuler title="Ruler Icon" />
@@ -89,7 +89,7 @@ const ProjectsSummary = () => {
                      className="highlights-item-02"
                      data-aos={isDesktop === true ? "fade-up" : "fade-right"}
                      data-aos-easing="ease-out-quart"
-                     data-aos-once="false"
+                     data-aos-once="true"
                      data-aos-duration="800"
                   >
                      <RiDeviceFill title="Devices Icon" />
@@ -101,7 +101,7 @@ const ProjectsSummary = () => {
                      className="highlights-item-03"
                      data-aos={isDesktop === true ? "fade-up" : "fade-right"}
                      data-aos-easing="ease-out-quart"
-                     data-aos-once="false"
+                     data-aos-once="true"
                      data-aos-duration="800"
                   >
                      <FaSearch title="Magnifying Glass Icon" />
@@ -114,7 +114,7 @@ const ProjectsSummary = () => {
                      className="highlights-item-04"
                      data-aos={isDesktop === true ? "fade-up" : "fade-right"}
                      data-aos-easing="ease-out-quart"
-                     data-aos-once="false"
+                     data-aos-once="true"
                      data-aos-duration="800"
                   >
                      <FaPaintRoller title="Paint Roller Icon" />

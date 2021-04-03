@@ -1,25 +1,12 @@
 import React from "react";
-import Portrait from "../assets/portrait.jpg";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
-import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 
 // Plugins
 import AOS from "aos";
 
 const About = () => {
-   const [isDesktop, setIsDesktop] = useState(null);
-
-   useEffect(() => {
-      window.scrollTo(0, 0);
-      if (window.innerWidth >= 800) {
-         setIsDesktop(true);
-      } else {
-         setIsDesktop(false);
-      }
-   }, []);
-
    // AOS Plugin initiate
    AOS.init();
    // <--- Keen Slider --->
@@ -106,9 +93,10 @@ const About = () => {
                >
                   There was a time I thought coding was strictly for those who are wildly
                   intelligent. After jumping into web development, I am beginning to recognize that
-                  the only prerequisite to successfully learn web development is to be inquisitive.
-                  As someone who's esteemed to challenges and solving problems, this field has
-                  indeed found a way to engage my creativity and structured way of thinking.
+                  the only prerequisite to successfully learn how to build websites is to be
+                  inquisitive. As someone who's esteemed to challenges and solving problems, this
+                  field has indeed found a way to engage my creativity and structured way of
+                  thinking.
                </p>
                <p
                   className="summary"
@@ -119,8 +107,8 @@ const About = () => {
                   data-aos-delay="850"
                >
                   As a front-end developer, I aim to keep getting inspired by new technologies and
-                  continue developing my ideas with like-minded individuals to create robust web
-                  applications tailored to clients’ goals.
+                  develop my ideas with like-minded individuals to create meaningful, user-facing
+                  web applications.
                </p>
                <p
                   className="summary"
@@ -131,23 +119,11 @@ const About = () => {
                   data-aos-delay="950"
                   data-aos-anchor-placement="bottom-bottom"
                >
-                  My life isn’t just writing code. When I’m not sitting in front of my laptop,
+                  I don't always think about coding. When I’m not sitting in front of my laptop,
                   you’ll most likely find me first in line at a new boba place, watching my stocks
-                  crumble, boxing and fitness.
+                  crumble, boxing and music.
                </p>
             </div>
-
-            {/* Portrait */}
-            {/* <div className="my-summary__portrait">
-               <img
-                  src={Portrait}
-                  alt="My Portrait"
-                  data-aos={isDesktop === true ? "fade-left" : "zoom-out-down"}
-                  data-aos-easing="ease-out-cubic"
-                  data-aos-once="true"
-                  data-aos-duration="750"
-               />
-            </div> */}
          </section>
 
          {/* Technical Skills */}

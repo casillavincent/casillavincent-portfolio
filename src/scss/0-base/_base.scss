@@ -26,13 +26,13 @@ body {
    background: black;
    width: 100%;
    overflow-x: hidden;
-   background-image: url("../../assets/bg-desktop.jpg");
-   background-attachment: fixed;
-   background-position-x: center;
-   background-position-y: center;
-   background-repeat: no-repeat;
-   background-size: 750px;
+
    @media screen and (min-width: 700px) {
+      background-image: url("../../assets/bg-desktop.jpg");
+      background-attachment: fixed;
+      background-position-x: center;
+      background-position-y: center;
+      background-repeat: no-repeat;
       background-size: 1000px;
    }
    @media screen and (min-width: 1350px) {

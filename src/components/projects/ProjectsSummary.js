@@ -33,7 +33,7 @@ const ProjectsSummary = () => {
                data-aos-once="true"
                data-aos-duration="800"
             >
-               Work
+               Projects
             </h1>
             <hr
                data-aos="fade-right"

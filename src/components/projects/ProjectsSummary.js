@@ -50,10 +50,10 @@ const ProjectsSummary = () => {
                data-aos-once="true"
                data-aos-duration="800"
             >
-               I believe that employing all the latest development technologies can only get a
+               {/* I believe that employing all the latest development technologies can only get a
                website so far online. As a front-end developer, my goal is to build websites that
                not only look good but create a seamless user experience through research, analytics,
-               and SEO best practices.
+               and SEO best practices. */}
             </blockquote>
          </section>
 

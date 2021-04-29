@@ -13,6 +13,7 @@
    height: 500px;
    padding: 45px 0px;
    margin-bottom: 100px;
+
    // Banner
    &__banner {
       &--desktop {
@@ -21,12 +22,13 @@
          margin: auto;
          padding: 0px 0px 0px 20px;
          height: auto;
+         filter: drop-shadow(-5px 10px 10px rgb(133, 126, 126));
       }
    }
 
    // Information
    &__text-content {
-      color: white;
+      color: $main_text;
       padding: 25px;
       max-width: 450px;
       width: 100%;
@@ -59,6 +61,21 @@
             }
          }
       }
+      .stack-list {
+         display: flex;
+         flex-direction: row;
+         justify-content: flex-start;
+         flex-wrap: wrap;
+         align-items: center;
+         margin-bottom: 5px;
+         .stack-list-item {
+            margin: 0px 8px 8px 0px;
+            padding: 4px 7px;
+            border-radius: 2px;
+            background: $main_text;
+            color: white;
+         }
+      }
       &__excerpt {
          margin-bottom: 20px;
          line-height: 1.35;
@@ -75,6 +92,9 @@
             max-width: 250px;
             margin: 5px 0px;
             padding: 15px 0px;
+            &:hover {
+               border: 1px solid $accent;
+            }
          }
 
          @media screen and (min-width: 50em) {

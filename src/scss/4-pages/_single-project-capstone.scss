@@ -1,6 +1,7 @@
 .process-heading {
    text-align: center;
    margin: 75px auto;
+   color: $main_text;
    @media screen and (min-width: 50em) {
       font-size: 2em;
       margin: 125px auto;
@@ -12,6 +13,7 @@
    width: 100%;
    margin: auto;
    padding: 20px;
+   color: $main_text;
 
    // Global for all images in this selector
    img {
@@ -154,6 +156,12 @@
       }
    }
 
+   // Specific Images Styling
+   .site-map-01,
+   .site-map-02 {
+      filter: invert(1);
+   }
+
    .audience {
       max-width: 800px;
       margin: auto;
@@ -183,7 +191,6 @@
             }
          }
          img {
-            filter: invert(1);
             width: 100%;
             margin: auto;
          }

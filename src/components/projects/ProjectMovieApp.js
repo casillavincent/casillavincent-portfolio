@@ -30,6 +30,17 @@ const ProjectMovieApp = () => {
             <h2 className="project-item__text-content__name">
                Butter.DB<div className="accent-bar"></div>
             </h2>
+
+            {/* List of the stack used for the project */}
+            <ul className="stack-list">
+               <li className="stack-list-item">ReactJS</li>
+               <li className="stack-list-item">HTML5</li>
+               <li className="stack-list-item">CSS3</li>
+               <li className="stack-list-item">Sass</li>
+               <li className="stack-list-item">Github</li>
+               <li className="stack-list-item">RESTful API</li>
+            </ul>
+
             <p className="project-item__text-content__excerpt">
                A dynamic, single-page web application that uses the TMDB Rest API to display movie
                details.

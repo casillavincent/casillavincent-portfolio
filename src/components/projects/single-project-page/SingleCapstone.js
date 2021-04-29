@@ -312,6 +312,7 @@ const SingleMovieApp = () => {
                         data-aos="fade-up"
                         data-aos-easing="ease-out-quart"
                         data-aos-once="false"
+                        className="site-map-01"
                      />
 
                      <h4>Feature Prioritization</h4>
@@ -362,7 +363,7 @@ const SingleMovieApp = () => {
                         alt="Information Architecture with PHP"
                         width="150"
                         loading="lazy"
-                        className="ia-template-heirarchy"
+                        className="ia-template-heirarchy site-map-02"
                         data-aos="fade-up"
                         data-aos-easing="ease-out-quart"
                         data-aos-once="false"

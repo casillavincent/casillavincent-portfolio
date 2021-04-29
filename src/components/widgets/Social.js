@@ -26,7 +26,7 @@ const Social = () => {
          data-aos-once="true"
          data-aos-delay="500"
       >
-         <IconContext.Provider value={{ color: "white", size: "1.35em" }}>
+         <IconContext.Provider value={{ color: "#202123", size: "1.75em" }}>
             <a
                href="https://twitter.com/casillavincent"
                target="_blank"

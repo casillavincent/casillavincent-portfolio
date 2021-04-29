@@ -21,6 +21,7 @@ const Homepage = () => {
                name="description"
                content="A personal portfolio that highlights my work as a front-end web developer."
             />
+            <script src="https://cdn.lordicon.com//libs/frhvbuzj/lord-icon-2.0.2.js"></script>
          </Helmet>
 
          <Splash />

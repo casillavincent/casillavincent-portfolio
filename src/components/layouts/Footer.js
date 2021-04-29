@@ -1,5 +1,5 @@
 import React from "react";
-import { FaTwitter, FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaTwitter, FaGithub, FaLinkedinIn, FaTelegramPlane } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 import ScrollTop from "../widgets/ScrollTop";
 
@@ -20,7 +20,7 @@ const Footer = () => {
                rel="noopener noreferrer"
                className="button"
             >
-               Let's Chat
+               <FaTelegramPlane size="1.5em" /> Contact Me Here
             </a>
          </div>
 
@@ -28,7 +28,7 @@ const Footer = () => {
          <div className="footer__bottom-section">
             <h4>Connect with me</h4>
             <div className="social-icons">
-               <IconContext.Provider value={{ color: "white", size: "1.25em" }}>
+               <IconContext.Provider value={{ color: "white", size: "1.75em" }}>
                   <a
                      href="https://twitter.com/casillavincent"
                      target="_blank"
@@ -57,7 +57,7 @@ const Footer = () => {
                   </a>
                </IconContext.Provider>
             </div>
-            <p className="copyright">&copy; Vincent Casilla 2020-2021</p>
+            <p className="copyright">&copy; Vincent Casilla 2021</p>
          </div>
       </footer>
    );

@@ -6,9 +6,13 @@ import { Helmet } from "react-helmet";
 // Plugins
 import AOS from "aos";
 
+// Images
+import MY_PORTAIT from "../assets/portrait.png";
+
 const About = () => {
    // AOS Plugin initiate
    AOS.init();
+
    // <--- Keen Slider --->
    const [pause, setPause] = React.useState(false);
    const timer = React.useRef();
@@ -54,74 +58,31 @@ const About = () => {
          </Helmet>
 
          {/* My Summary */}
-         <section className="about-item my-summary">
+         <section className="about-item my-summary" data-aos="fade-up" data-aos-duration="800">
+            {/* Portrait */}
+            <div className="my-summary__portrait">
+               <img src={MY_PORTAIT} alt="Photo of my self" />
+            </div>
             {/* Text */}
             <div className="my-summary__text">
-               <h1
-                  className="name"
-                  data-aos="fade-right"
-                  data-aos-easing="ease-out-cubic"
-                  data-aos-once="true"
-                  data-aos-duration="750"
-               >
-                  Who am I?
-               </h1>
-               <h2
-                  className="headline"
-                  data-aos="fade-right"
-                  data-aos-easing="ease-out-cubic"
-                  data-aos-once="true"
-                  data-aos-duration="750"
-                  data-aos-delay="250"
-               >
-                  Web designer and Front-end developer
-               </h2>
-               <hr
-                  data-aos="fade-right"
-                  data-aos-easing="ease-out-cubic"
-                  data-aos-once="true"
-                  data-aos-duration="750"
-                  data-aos-delay="500"
-               />
-               <p
-                  className="summary"
-                  data-aos="fade-right"
-                  data-aos-easing="ease-out-cubic"
-                  data-aos-once="true"
-                  data-aos-duration="750"
-                  data-aos-delay="750"
-               >
+               <h1 className="name">About Me</h1>
+               <h2 className="headline">A creative problem solver.</h2>
+               <hr />
+               <p className="summary">
                   There was a time I thought coding was strictly for those who are wildly
                   intelligent. After jumping into web development, I am beginning to recognize that
-                  the only prerequisite to successfully learn how to build websites is to be
-                  inquisitive. As someone who's esteemed to challenges and solving problems, this
-                  field has indeed found a way to engage my creativity and structured way of
-                  thinking.
+                  the only prerequisite to learning about web technologies is to be inquisitive. As
+                  someone who's esteemed to challenges and solving problems, this industry has
+                  indeed found a way to engage my creativity and structured thinking.
                </p>
-               <p
-                  className="summary"
-                  data-aos="fade-right"
-                  data-aos-easing="ease-out-cubic"
-                  data-aos-once="true"
-                  data-aos-duration="750"
-                  data-aos-delay="850"
-               >
-                  As a front-end developer, I aim to keep getting inspired by new technologies and
-                  develop my ideas with like-minded individuals to create meaningful, user-facing
-                  web applications.
+               <p className="summary">
+                  I aim to continue getting inspired by new technologies and develop my ideas with
+                  others who share the same passion for creating meaningful online experiences
                </p>
-               <p
-                  className="summary"
-                  data-aos="fade-right"
-                  data-aos-easing="ease-out-cubic"
-                  data-aos-once="true"
-                  data-aos-duration="750"
-                  data-aos-delay="950"
-                  data-aos-anchor-placement="bottom-bottom"
-               >
+               <p className="summary">
                   I don't always think about coding. When I’m not sitting in front of my laptop,
                   you’ll most likely find me first in line at a new boba place, watching my stocks
-                  crumble, boxing and music.
+                  crumble, boxing and exploring music.
                </p>
             </div>
          </section>
@@ -137,10 +98,13 @@ const About = () => {
                   <li className="development-stack__item">HTML5</li>
                   <li className="development-stack__item">CSS3</li>
                   <li className="development-stack__item">Sass</li>
-                  <li className="development-stack__item">Javascript</li>
+                  <li className="development-stack__item">JavaScript ES6+</li>
+                  <li className="development-stack__item">TypeScript</li>
                   <li className="development-stack__item">jQuery</li>
                   <li className="development-stack__item">PHP</li>
                   <li className="development-stack__item">Wordpress</li>
+                  <li className="development-stack__item">Shopify</li>
+                  <li className="development-stack__item">Liquid</li>
                   <li className="development-stack__item">WooCommerce</li>
                   <li className="development-stack__item">Adobe XD</li>
                   <li className="development-stack__item">Github</li>
@@ -153,18 +117,15 @@ const About = () => {
                <h3>Technical Skills</h3>
                <hr />
                <ul className="technical-skills">
-                  <li className="technical-skills__item">
-                     Fully responsive web design (mobile first)
-                  </li>
+                  <li className="technical-skills__item">Responsive web design (mobile first)</li>
                   <li className="technical-skills__item">
                      Wireframing and high-fidelity prototyping
                   </li>
                   <li className="technical-skills__item">
-                     Search Engine Optimization (SEO) and Analytics
+                     Search Engine Optimization (SEO) and Accessibility
                   </li>
                   <li className="technical-skills__item">Single page web applications</li>
-                  <li className="technical-skills__item">Front-end frameworks</li>
-                  <li className="technical-skills__item">CMS Development(WordPress)</li>
+                  <li className="technical-skills__item">CMS Development(WordPress & Shopify)</li>
                   <li className="technical-skills__item">UX/UI Design</li>
                </ul>
             </div>

@@ -3,7 +3,7 @@
 
 // Container Styling
 .splash {
-   color: white;
+   color: black;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -32,13 +32,13 @@
    flex-direction: column;
    justify-content: flex-start;
    align-items: flex-start;
-   padding-left: 20px;
+   padding-left: 10%;
    margin-bottom: 15%;
 
    // Long tagline text container
    &__tagline {
       color: $accent;
-      margin-bottom: 5px;
+      margin-bottom: 15px;
       font-size: 1.5em;
       line-height: 1.15;
    }
@@ -46,13 +46,19 @@
    // Titles/Roles
    p {
       margin-bottom: 25px;
+      font-size: 0.8em;
    }
 
    .splash-button-container {
       a {
          font-size: 0.75em;
+         border: 1px solid $space_gray;
+         color: $space_gray;
+         transition: all 0.3s ease-in-out;
          &:hover {
             cursor: url("../../assets/cursor.png"), auto;
+            color: rgba(white, 0.7);
+            border: 1px solid white;
          }
       }
    }
@@ -68,7 +74,7 @@
          font-size: 2em;
       }
       p {
-         font-size: 0.9em;
+         font-size: 1.25em;
       }
 
       .splash-button-container {

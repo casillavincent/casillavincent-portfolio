@@ -15,7 +15,7 @@ const Splash = () => {
                data-aos-duration="850"
                data-aos-mirror="true"
             >
-               I build websites using innovative tools.
+               I build user-facing online experiences using creative tools.
             </h1>
 
             <p
@@ -26,7 +26,7 @@ const Splash = () => {
                data-aos-duration="850"
                data-aos-mirror="true"
             >
-               Web designer and Front-end developer based in Vancouver, BC.
+               Front-end Web Developer & UX/UI Designer based in Vancouver, BC.
             </p>
 
             <div

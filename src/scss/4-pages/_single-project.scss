@@ -15,7 +15,7 @@
 -------------------------------------------
 */
 .single-project-info__title {
-   color: white;
+   color: $main_text;
    width: 100%;
    height: 45vh;
    display: flex;
@@ -128,6 +128,7 @@
          ul {
             li {
                margin-bottom: 5px;
+               color: $main_text;
             }
          }
       }
@@ -186,6 +187,7 @@
    @include row-center-items;
    margin: auto;
    height: 35em;
+   color: $main_text;
    @media screen and (min-width: 50em) {
       height: 600px;
    }
@@ -205,7 +207,7 @@
    @include row-center-items;
    margin: auto;
    height: 35em;
-
+   color: $main_text;
    @media screen and (min-width: 50em) {
       height: 600px;
    }
@@ -252,6 +254,7 @@
    margin: auto;
 
    height: 500px;
+   color: $main_text;
    @include col-center-items;
 
    .color-items {
@@ -452,14 +455,19 @@
    .next-project {
       width: 200px;
       transition: all 0.4s ease-out;
-      border-style: none;
+      border: 1px solid white;
       p {
          font-size: 1em;
       }
 
       &:hover {
-         color: $accent;
-         background: none;
+         background: rgba(#ec2341, 0.8);
+         color: rgba(white, 0.75);
+         border: 1px solid white;
+         border-radius: 2px;
+         p {
+            color: rgba(white, 0.75);
+         }
       }
    }
 
@@ -537,6 +545,7 @@
    margin: auto;
    font-size: 1em;
    height: 450px;
+   color: $main_text;
    @include col-center-items; // Typography Container
    .typography-container {
       @media screen and (min-width: 50em) {
@@ -546,7 +555,7 @@
             margin: 150px 0px;
             padding-left: 15%;
             .typeface-placeholder {
-               font-size: 0.9em;
+               font-size: 1.5em;
             }
          }
       }
@@ -555,7 +564,7 @@
          // Aa
          h4.typeface-sample {
             font-size: 1.75em;
-            border: 1px solid white;
+            border: 1px solid $main_text;
             width: 50px;
             height: 50px;
             @include col-center-items;
@@ -564,12 +573,12 @@
 
          // Typeface Name
          h5.typeface-name {
-            font-size: 1.15em;
+            font-size: 1.25em;
             margin-bottom: 5px;
          }
 
          p.typeface-placeholder {
-            font-size: 0.85em;
+            font-size: 1.15em;
          }
       }
    }

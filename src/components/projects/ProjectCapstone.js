@@ -30,6 +30,18 @@ const ProjectCapstone = () => {
             <h2 className="project-item__text-content__name">
                The Rolling Pin<div className="accent-bar"></div>
             </h2>
+
+            {/* List of the stack used for the project */}
+            <ul className="stack-list">
+               <li className="stack-list-item">WordPress</li>
+               <li className="stack-list-item">JavaScript</li>
+               <li className="stack-list-item">CSS3</li>
+               <li className="stack-list-item">Sass</li>
+               <li className="stack-list-item">MySQL</li>
+               <li className="stack-list-item">PHP</li>
+               <li className="stack-list-item">Github</li>
+            </ul>
+
             <p className="project-item__text-content__excerpt">
                A fully functional eCommerce website that utilizes WordPress and WooCommerce. This is
                a collaborative project consisting of 4 members.

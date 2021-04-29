@@ -15,7 +15,7 @@
    display: flex;
    flex-direction: column;
    justify-content: center;
-   background: rgba($accent2, 0.875);
+   background: $accent2;
 
    // Target all selectors
    .col-development-stack,
@@ -73,7 +73,7 @@
          }
 
          @media screen and (min-width: 50em) {
-            grid-template-columns: repeat(3, 100px);
+            grid-template-columns: repeat(3, 125px);
          }
       }
    }

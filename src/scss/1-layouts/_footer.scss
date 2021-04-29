@@ -8,15 +8,15 @@
 
    // Top Section
    &__top-section {
-      background-color: transparent;
+      background-color: #2b2c30;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 75%;
-
+      height: 70%;
       h3 {
          font-size: 2em;
+         margin-top: 40px;
          margin-bottom: 20px;
          color: white;
          @media screen and (min-width: 50em) {
@@ -25,19 +25,29 @@
       }
       button svg {
          &:hover {
-            fill: white;
-            color: white;
+            color: $main_text;
             cursor: url("../../assets/cursor.png"), auto;
          }
       }
       a {
-         padding: 15px 40px;
+         svg {
+            margin-right: 5px;
+         }
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         align-items: center;
+         padding: 15px 30px;
+         border: 1px solid white;
+         color: white;
       }
    }
 
    // Bottom Section
    &__bottom-section {
-      background: rgba($accent2, 0.875);
+      background: $accent2;
+      height: 30%;
+      @include col-center-items;
       .social-icons {
          a {
             border-style: none;
@@ -47,10 +57,7 @@
          }
       }
 
-      height: 25%;
-      @include col-center-items;
       svg {
-         margin: 5px;
          transition: all 0.4s ease-out;
          &:hover {
             fill: $accent;
@@ -59,12 +66,14 @@
 
       // Connect with me
       h4 {
-         font-size: 1.1em;
-         margin-bottom: 5px;
+         font-size: 1.5em;
+         margin-bottom: 10px;
       }
 
       .copyright {
          font-size: 0.75em;
+         color: white;
+         margin-top: 10px;
       }
    }
 }

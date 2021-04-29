@@ -30,6 +30,16 @@ const ProjectPortfolio = () => {
             <h2 className="project-item__text-content__name">
                Personal Portfolio<div className="accent-bar"></div>
             </h2>
+
+            {/* List of the stack used for the project */}
+            <ul className="stack-list">
+               <li className="stack-list-item">React.JS</li>
+               <li className="stack-list-item">JavaScript</li>
+               <li className="stack-list-item">HTML5</li>
+               <li className="stack-list-item">CSS3</li>
+               <li className="stack-list-item">Sass</li>
+            </ul>
+
             <p className="project-item__text-content__excerpt">
                A React application that highlights my technical skills and technical projects as a
                Front-end developer.

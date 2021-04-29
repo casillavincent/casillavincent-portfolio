@@ -8,24 +8,26 @@
    height: auto;
    color: white;
    font-size: 1em;
+
    // Global HR
    hr {
       border: 1px solid $accent;
       width: 50px;
       height: 5px;
       background: $accent;
-      margin: 15px 0px;
+      margin: 15px auto;
    }
 
    // My Summary
    .my-summary {
       @include col-center-items;
-      height: 100vh;
 
-      &__text,
+      // Portrait styles
       &__portrait {
-         max-width: 550px;
          padding: 20px;
+         img {
+            max-width: 200px;
+         }
       }
 
       // Text Content
@@ -33,43 +35,55 @@
          display: flex;
          flex-direction: column;
          justify-content: center;
+         max-width: 550px;
+         padding: 20px;
 
          .name {
             font-size: 1.75em;
             margin-bottom: 10px;
+            color: $main_text;
+            text-align: center;
          }
 
          .headline {
             font-family: $font2;
-            font-size: 0.85em;
+            font-size: 1em;
             line-height: 1.5;
-            font-style: italic;
+            color: $main_text;
+            text-align: center;
          }
 
          p {
             margin-bottom: 15px;
          }
       }
+      @media screen and (min-width: 50em) {
+         &__text {
+            max-width: 800px;
+         }
 
-      // Portrait
-      &__portrait {
-         @include col-center-items;
-         img {
-            width: 75%;
-            max-width: 550px;
-            height: auto;
-            margin: auto;
+         &__portrait img {
+            max-width: 325px;
          }
       }
 
-      @media screen and (min-width: 75em) {
-         max-width: 1150px;
+      @media screen and (min-width: 70em) {
+         display: grid;
+         grid-template-columns: 1fr 2fr;
+         max-width: 1300px;
          margin: auto;
          height: 100vh;
          padding-bottom: 10%;
-         x &__text,
+
+         .name,
+         .headline {
+            text-align: left;
+         }
+         hr {
+            margin: 15px 0px;
+         }
          &__portrait {
-            height: 100%;
+            @include col-center-items;
          }
 
          &__text {

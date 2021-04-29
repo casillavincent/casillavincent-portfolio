@@ -29,6 +29,14 @@ const ProjectJapan = () => {
             <h2 className="project-item__text-content__name">
                Discover Japan<div className="accent-bar"></div>
             </h2>
+
+            <ul className="stack-list">
+               <li className="stack-list-item">HTML5</li>
+               <li className="stack-list-item">Sass</li>
+               <li className="stack-list-item">CSS3</li>
+               <li className="stack-list-item">React.JS</li>
+            </ul>
+
             <p className="project-item__text-content__excerpt">
                My first HTML/CSS project. Discover Japan is a mock, travel brochure showcasing
                Japan.

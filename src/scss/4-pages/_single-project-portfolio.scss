@@ -1,5 +1,6 @@
 .single-project-info-portfolio {
    font-size: 1em;
+   color: $main_text;
 
    // Inspo
    div.inspo-gallery-text {
@@ -84,6 +85,7 @@
       img {
          width: 100%;
          max-width: 750px;
+         filter: invert(1);
       }
 
       // Example of content plan

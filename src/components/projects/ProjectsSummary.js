@@ -26,15 +26,15 @@ const ProjectsSummary = () => {
       <article className="section projects" id="my-work">
          {/* Title and Summary */}
          <section className="projects__intro">
-            <h1
+            <h2
                data-aos="fade-down"
                data-aos-anchor-placement="center-bottom"
                data-aos-easing="ease-out-quart"
                data-aos-once="true"
                data-aos-duration="800"
             >
-               Projects
-            </h1>
+               My Work
+            </h2>
             <hr
                data-aos="fade-right"
                data-aos-anchor-placement="center-bottom"
@@ -50,77 +50,89 @@ const ProjectsSummary = () => {
                data-aos-once="true"
                data-aos-duration="800"
             >
-               {/* I believe that employing all the latest development technologies can only get a
-               website so far online. As a front-end developer, my goal is to build websites that
-               not only look good but create a seamless user experience through research, analytics,
-               and SEO best practices. */}
+               {" "}
+               I am passionate about creating interactive and reusable UI components that implement
+               design thinking principles, UX research and web development best practices. With all
+               my projects I take account ...
             </blockquote>
          </section>
 
          {/* Highlights */}
          <section className="projects__highlights">
-            <h2
-               className="projects__highlights__title"
-               data-aos="fade-right"
-               data-aos-anchor-placement="center-bottom"
-               data-aos-easing="ease-out-quart"
-               data-aos-once="true"
-               data-aos-delay="500"
-               data-aos-duration="800"
-            >
-               With all my work, I take account ...
-            </h2>
             <div className="highlights-container">
-               <IconContext.Provider value={{ size: "2em" }}>
-                  {/* Item 01 */}
-                  <div
-                     className="highlights-item-01"
-                     data-aos={isDesktop === true ? "fade-up" : "fade-right"}
-                     data-aos-easing="ease-out-quart"
-                     data-aos-once="true"
-                     data-aos-duration="800"
-                  >
-                     <FaPencilRuler title="Ruler Icon" />
-                     <h2>Semantic, Scalable and Modular Architecure</h2>
-                  </div>
+               {/* Item 01 */}
+               <div
+                  className="highlights-item-01"
+                  data-aos={isDesktop === true ? "fade-up" : "fade-right"}
+                  data-aos-easing="ease-out-quart"
+                  data-aos-once="true"
+                  data-aos-duration="800"
+               >
+                  <lord-icon
+                     src="https://cdn.lordicon.com//nocovwne.json"
+                     trigger="loop-on-hover"
+                     colors="primary:#FFFFFF,secondary:#ec2341"
+                     stroke="30"
+                     style={{ width: "150px", height: "150px" }}
+                  ></lord-icon>
+                  <h2>Semantic, Scalable and Well-Documented Code</h2>
+               </div>
 
-                  {/* Item 02 */}
-                  <div
-                     className="highlights-item-02"
-                     data-aos={isDesktop === true ? "fade-up" : "fade-right"}
-                     data-aos-easing="ease-out-quart"
-                     data-aos-once="true"
-                     data-aos-duration="800"
-                  >
-                     <RiDeviceFill title="Devices Icon" />
-                     <h2>Fully Responsive Design</h2>
-                  </div>
+               {/* Item 02 */}
+               <div
+                  className="highlights-item-02"
+                  data-aos={isDesktop === true ? "fade-up" : "fade-right"}
+                  data-aos-easing="ease-out-quart"
+                  data-aos-once="true"
+                  data-aos-duration="800"
+               >
+                  <lord-icon
+                     src="https://cdn.lordicon.com//jvucoldz.json"
+                     trigger="loop-on-hover"
+                     colors="primary:#FFFFFF,secondary:#ec2341"
+                     stroke="30"
+                     style={{ width: "150px", height: "150px" }}
+                  ></lord-icon>
+                  <h2>Fully Responsive Design</h2>
+               </div>
 
-                  {/* Item 03 */}
-                  <div
-                     className="highlights-item-03"
-                     data-aos={isDesktop === true ? "fade-up" : "fade-right"}
-                     data-aos-easing="ease-out-quart"
-                     data-aos-once="true"
-                     data-aos-duration="800"
-                  >
-                     <FaSearch title="Magnifying Glass Icon" />
-                     <h2>Search Engine Optimization</h2>
-                  </div>
+               {/* Item 03 */}
+               <div
+                  className="highlights-item-03"
+                  data-aos={isDesktop === true ? "fade-up" : "fade-right"}
+                  data-aos-easing="ease-out-quart"
+                  data-aos-once="true"
+                  data-aos-duration="800"
+               >
+                  <lord-icon
+                     src="https://cdn.lordicon.com//msoeawqm.json"
+                     trigger="loop-on-hover"
+                     colors="primary:#FFFFFF,secondary:#ec2341"
+                     stroke="30"
+                     style={{ width: "150px", height: "150px" }}
+                  ></lord-icon>
+                  <h2>Search Engine Optimization</h2>
+               </div>
 
-                  {/* Item 04 */}
-
-                  <div
-                     className="highlights-item-04"
-                     data-aos={isDesktop === true ? "fade-up" : "fade-right"}
-                     data-aos-easing="ease-out-quart"
-                     data-aos-once="true"
-                     data-aos-duration="800"
-                  >
-                     <FaPaintRoller title="Paint Roller Icon" />
-                     <h2>Design Fundamentals</h2>
-                  </div>
-               </IconContext.Provider>
+               {/* Item 04 */}
+               <div
+                  className="highlights-item-04"
+                  data-aos={isDesktop === true ? "fade-up" : "fade-right"}
+                  data-aos-easing="ease-out-quart"
+                  data-aos-once="true"
+                  data-aos-duration="800"
+               >
+                  {/* <FaPaintRoller title="Paint Roller Icon" /> */}
+                  <lord-icon
+                     src="https://cdn.lordicon.com//wloilxuq.json"
+                     trigger="loop-on-hover"
+                     colors="primary:#FFFFFF,secondary:#ec2341"
+                     stroke="30"
+                     style={{ width: "150px", height: "150px" }}
+                  ></lord-icon>
+                  <h2>Design Fundamentals</h2>
+               </div>
+               {/* </IconContext.Provider> */}
             </div>
          </section>
       </article>

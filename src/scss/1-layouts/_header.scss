@@ -13,10 +13,11 @@ header {
          align-items: center;
          width: inherit;
          height: 60px;
-         background: black;
-         backdrop-filter: blur(10px);
-         color: white;
+         background: white;
          z-index: 9999;
+         * {
+            color: $main_text;
+         }
 
          h1 {
             font-size: 1.2em;
@@ -47,10 +48,15 @@ header {
             // List Items
             .main-nav__ul .main-nav__list-item {
                a {
-                  transition: all 0.5s ease-out;
+                  transition: all 0.2s ease-in-out;
                   border-style: none;
                   &:hover {
                      color: $accent;
+                     @media screen and (min-width: 50em) {
+                        background: rgba(#ec2341, 0.8);
+                        color: rgba(white, 0.75);
+                        border-radius: 3px;
+                     }
                   }
                }
             }
@@ -62,7 +68,7 @@ header {
                width: 100%;
                z-index: 99;
                @include col-center-items;
-               background: black;
+               background: white;
                backdrop-filter: blur(10px);
 
                // List Items
@@ -100,6 +106,14 @@ header {
             justify-content: space-around;
             h1 {
                margin-left: 0px;
+               font-size: 1.5em;
+
+               &:hover {
+                  color: $accent;
+                  span {
+                     color: $accent;
+                  }
+               }
             }
             // Hide the hamburger button in desktop view
             .hamburger-react {
@@ -123,7 +137,7 @@ header {
                   align-items: center;
                   text-transform: lowercase;
                   .main-nav__list-item {
-                     font-size: 1em;
+                     font-size: 1.15em;
                   }
                }
             }

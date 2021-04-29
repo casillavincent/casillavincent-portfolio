@@ -1,11 +1,6 @@
 import React from "react";
 import { useEffect, useState } from "react";
 
-// React Icons
-import { FaPaintRoller, FaSearch, FaPencilRuler } from "react-icons/fa";
-import { IconContext } from "react-icons/lib";
-import { RiDeviceFill } from "react-icons/ri";
-
 // AOS
 import AOS from "aos";
 

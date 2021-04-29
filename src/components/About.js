@@ -61,7 +61,7 @@ const About = () => {
          <section className="about-item my-summary" data-aos="fade-up" data-aos-duration="800">
             {/* Portrait */}
             <div className="my-summary__portrait">
-               <img src={MY_PORTAIT} alt="Photo of my self" />
+               <img src={MY_PORTAIT} alt="Self Portrait" />
             </div>
             {/* Text */}
             <div className="my-summary__text">

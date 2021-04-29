@@ -72,8 +72,9 @@
             margin: 0px 8px 8px 0px;
             padding: 4px 7px;
             border-radius: 2px;
-            background: $main_text;
-            color: white;
+            background: $accent;
+            color: rgba(white, 0.85);
+            font-size: 0.85em;
          }
       }
       &__excerpt {

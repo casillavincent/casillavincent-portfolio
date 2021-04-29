@@ -40,17 +40,18 @@
 
          .name {
             font-size: 1.75em;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
             color: $main_text;
             text-align: center;
          }
 
          .headline {
             font-family: $font2;
-            font-size: 1em;
+            font-size: 1.15em;
             line-height: 1.5;
             color: $main_text;
             text-align: center;
+            margin: 0px;
          }
 
          p {

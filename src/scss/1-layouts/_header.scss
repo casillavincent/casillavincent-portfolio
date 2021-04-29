@@ -24,8 +24,10 @@ header {
             margin-left: 20px;
             font-family: $font2;
             padding: 5px 10px;
+            font-weight: normal;
             span {
-               font-family: $font1;
+               font-family: $font2;
+               font-weight: bold;
             }
          }
          a {

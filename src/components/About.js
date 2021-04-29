@@ -66,23 +66,22 @@ const About = () => {
             {/* Text */}
             <div className="my-summary__text">
                <h1 className="name">About Me</h1>
-               <h2 className="headline">A creative problem solver.</h2>
+               <p className="headline">A creative problem solver.</p>
                <hr />
                <p className="summary">
-                  There was a time I thought coding was strictly for those who are wildly
-                  intelligent. After jumping into web development, I am beginning to recognize that
-                  the only prerequisite to learning about web technologies is to be inquisitive. As
-                  someone who's esteemed to challenges and solving problems, this industry has
-                  indeed found a way to engage my creativity and structured thinking.
+                  Jumping into web development has taught me that the only prerequisite to learning
+                  how to write code is to be inquisitive. As someone who is adapted to challenges
+                  and solving problems, this industry has managed to engage my creativity and
+                  structured thinking.
                </p>
                <p className="summary">
-                  I aim to continue getting inspired by new technologies and develop my ideas with
-                  others who share the same passion for creating meaningful online experiences
+                  I aim to build user interfaces that create a seamless online experience by
+                  leveraging new front-end technologies with design fundamentals.
                </p>
                <p className="summary">
-                  I don't always think about coding. When I’m not sitting in front of my laptop,
-                  you’ll most likely find me first in line at a new boba place, watching my stocks
-                  crumble, boxing and exploring music.
+                  When I’m not sitting in front of my laptop coding away, you’ll most likely find me
+                  first in line at a new boba place, watching my stocks crumble, boxing and
+                  exploring music.
                </p>
             </div>
          </section>

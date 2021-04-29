@@ -9,10 +9,9 @@ const Footer = () => {
    AOS.init();
    return (
       <footer className="footer" id="contact">
+         <ScrollTop />
          {/* Top Section */}
          <div className="footer__top-section">
-            <ScrollTop />
-
             <h3>Like My Work?</h3>
 
             <a

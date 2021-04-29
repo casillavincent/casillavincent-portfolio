@@ -89,11 +89,15 @@ button:focus {
 -------------------------------------------
 */
 button.scroll-to-top-btn {
-   border: 1px solid #2b2c30;
-   margin-bottom: 45px;
+   border: 1px solid transparent;
+   margin: 0px auto 45px auto;
    color: $space_gray;
+   display: flex;
+   flex-direction: row;
+   align-self: center;
+   justify-self: center;
    &:hover {
-      border: 1px solid #2b2c30;
+      border: 1px solid transparent;
       svg {
          color: white;
       }

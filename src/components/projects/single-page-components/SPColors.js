@@ -26,7 +26,7 @@ const SPColors = ({ col1, col2, col3 }) => {
                data-aos-easing="ease-out-sine"
                data-aos-once="false"
                data-aos-duration="700"
-               data-aos-delay="450"
+               data-aos-delay="800"
                data-aos-anchor-placement="top-bottom"
             >
                <div className="color-swatch" style={{ background: `${col1}` }}></div>
@@ -40,7 +40,7 @@ const SPColors = ({ col1, col2, col3 }) => {
                data-aos-easing="ease-out-sine"
                data-aos-once="false"
                data-aos-duration="700"
-               data-aos-delay="350"
+               data-aos-delay="900"
                data-aos-anchor-placement="center-bottom"
             >
                <div className="color-swatch" style={{ background: `${col2}` }}></div>
@@ -54,7 +54,7 @@ const SPColors = ({ col1, col2, col3 }) => {
                data-aos-easing="ease-out-sine"
                data-aos-once="false"
                data-aos-duration="700"
-               data-aos-delay="450"
+               data-aos-delay="1000"
                data-aos-anchor-placement="bottom-bottom"
             >
                <div className="color-swatch" style={{ background: `${col3}` }}></div>

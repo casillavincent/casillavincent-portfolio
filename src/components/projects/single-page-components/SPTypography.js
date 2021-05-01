@@ -29,6 +29,7 @@ const SPTypography = ({ f1, f2, fam1, fam2 }) => {
                   data-aos-once="false"
                   data-aos-duration="900"
                   data-aos-anchor-placement="top-bottom"
+                  data-aos-delay="800"
                >
                   Aa
                </h4>
@@ -40,6 +41,7 @@ const SPTypography = ({ f1, f2, fam1, fam2 }) => {
                   data-aos-once="false"
                   data-aos-duration="900"
                   data-aos-anchor-placement="top-bottom"
+                  data-aos-delay="900"
                >
                   {f1}
                </h5>
@@ -51,6 +53,7 @@ const SPTypography = ({ f1, f2, fam1, fam2 }) => {
                   data-aos-once="false"
                   data-aos-duration="900"
                   data-aos-anchor-placement="top-bottom"
+                  data-aos-delay="1000"
                >
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt exercitationem
                   eum maiores distinctio quibusdam ab asperiores amet.

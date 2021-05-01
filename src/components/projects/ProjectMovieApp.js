@@ -10,23 +10,11 @@ const ProjectMovieApp = () => {
             src={DesktopBanner}
             alt="Project Banner"
             className="project-item__banner--desktop"
-            data-aos="zoom-out-up"
-            data-aos-easing="ease-out-quart"
-            data-aos-once="true"
-            data-aos-duration="600"
-            data-aos-anchor-placement="center-bottom"
             loading="lazy"
          />
 
          {/* Right Column */}
-         <section
-            className="project-item__text-content"
-            data-aos="fade-up"
-            data-aos-easing="ease-out-quart"
-            data-aos-once="true"
-            data-aos-duration="600"
-            data-aos-anchor-placement="center-bottom"
-         >
+         <section className="project-item__text-content">
             <h2 className="project-item__text-content__name">
                Butter.DB<div className="accent-bar"></div>
             </h2>

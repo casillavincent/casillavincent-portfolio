@@ -2,7 +2,8 @@ import React from "react";
 import Headroom from "react-headroom";
 import { Squash as Hamburger } from "hamburger-react";
 import { useState } from "react";
-import { FaTwitter, FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaGithubAlt, FaLinkedinIn } from "react-icons/fa";
+import { CgTwitter } from "react-icons/cg";
 import { IconContext } from "react-icons/lib";
 import { Link } from "react-router-dom";
 
@@ -16,7 +17,7 @@ const Header = () => {
       if (!isOpen) {
          navigation.classList.add("main-nav--active");
          socialIcons.style.display = "none";
-         window.scrollBy(0, 50);
+         window.scrollBy(0, 75);
       } else {
          navigation.classList.remove("main-nav--active");
          socialIcons.style.display = "flex";
@@ -37,9 +38,7 @@ const Header = () => {
       <header>
          <Headroom>
             <Link to={"/"}>
-               <h1 className="logo">
-                  <span>Vincent</span> Casilla
-               </h1>
+               <span className="logo">VC</span>
             </Link>
 
             {/* Hamburger Button */}
@@ -81,7 +80,7 @@ const Header = () => {
                         rel="noopener noreferrer"
                         id="twitter-link"
                      >
-                        <FaTwitter title="Twitter Icon" />
+                        <CgTwitter title="Twitter Icon" />
                      </a>
 
                      <a
@@ -90,7 +89,7 @@ const Header = () => {
                         rel="noopener noreferrer"
                         id="github-link"
                      >
-                        <FaGithub title="Github Icon" />
+                        <FaGithubAlt title="Github Icon" />
                      </a>
 
                      <a

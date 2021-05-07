@@ -12,39 +12,44 @@ header {
          justify-content: space-between;
          align-items: center;
          width: inherit;
-         height: 60px;
+         height: 85px;
          background: white;
          z-index: 9999;
          * {
             color: $main_text;
          }
 
-         h1 {
-            font-size: 1.2em;
-            margin-left: 20px;
-            font-family: $font2;
-            padding: 5px 10px;
+         a {
+            border-style: none;
             font-weight: normal;
-            span {
-               font-family: $font2;
-               font-weight: bold;
+            &:hover {
+               background: none;
             }
          }
-         a {
+
+         a:nth-child(1) {
+            padding: 0px;
+            margin-left: 30px;
             border-style: none;
             &:hover {
                background: none;
-               color: $accent;
+               padding-left: 5px;
+            }
+            span {
+               font-size: 2em;
+               font-weight: bold;
+               font-family: $font2;
+               @media screen and (min-width: 50em) {
+                  font-size: 2.5em;
+               }
             }
          }
 
          // Hamburger Button
          .hamburger-react {
-            margin-right: 10px;
-            &:hover {
-               cursor: url("../../assets/cursor.png"), auto;
-            }
+            margin-right: 25px;
          }
+
          // Navigation
          .main-nav {
             // List Items
@@ -52,12 +57,14 @@ header {
                a {
                   transition: all 0.2s ease-in-out;
                   border-style: none;
+                  padding: 5px 10px;
+                  font-size: 1em;
                   &:hover {
                      color: $accent;
                      @media screen and (min-width: 50em) {
-                        background: rgba(#ec2341, 0.8);
+                        background: rgba($accent2, 0.8);
                         color: rgba(white, 0.75);
-                        border-radius: 3px;
+                        border-radius: 2px;
                      }
                   }
                }
@@ -66,7 +73,7 @@ header {
                position: fixed;
                top: 60px;
                left: 0px;
-               height: 100vh;
+               height: 110vh;
                width: 100%;
                z-index: 99;
                @include col-center-items;
@@ -78,6 +85,10 @@ header {
                   margin-bottom: 10px;
                   font-size: 2em;
                   text-align: center;
+                  a {
+                     font-size: 0.9em;
+                     margin: 0px;
+                  }
                }
             }
          }
@@ -86,17 +97,25 @@ header {
          hr.menu-break {
             background: $accent;
             border: 3px solid $accent;
-            height: 3px;
+            height: 2px;
             width: 50px;
             margin: 10px auto 20px auto;
          }
 
          .menu-social-icons {
             display: flex;
-            flex-direction: row;
+            flex-direction: row-reverse;
             justify-content: space-around;
             align-items: center;
             width: 125px;
+            a {
+               padding: 0px;
+               margin: 0px;
+            }
+            svg {
+               padding: 0px;
+               margin: 0px;
+            }
          }
       }
    }
@@ -106,17 +125,7 @@ header {
       .headroom-wrapper {
          .headroom {
             justify-content: space-around;
-            h1 {
-               margin-left: 0px;
-               font-size: 1.5em;
 
-               &:hover {
-                  color: $accent;
-                  span {
-                     color: $accent;
-                  }
-               }
-            }
             // Hide the hamburger button in desktop view
             .hamburger-react {
                display: none;

@@ -2,6 +2,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { ParallaxProvider } from "react-scroll-parallax";
 
 // Google Analytics
 import ReactGA from "react-ga";
@@ -19,7 +20,6 @@ import About from "./components/About";
 
 // More Info Pages for Projects
 import SingleMovieApp from "./components/projects/single-project-page/SingleMovieApp";
-import SingleDiscoverJapan from "./components/projects/single-project-page/SingleDiscoverJapan";
 import SingleCapstone from "./components/projects/single-project-page/SingleCapstone";
 import SinglePortfolio from "./components/projects/single-project-page/SinglePortfolio";
 
@@ -63,25 +63,25 @@ function App() {
    return (
       <Router>
          <React.Fragment>
-            <Header />
-            {/* Custom Cursor */}
-            {isDesktop === true && <div className="cursor"></div>}
-
-            <div className="wrapper">
-               <main className="main main-page">
-                  <Switch>
-                     <Route path="/" exact component={Homepage} />
-                     <Route path="/about" component={About} />
-                     <Route path="/butter-db-project" component={SingleMovieApp} />
-                     <Route path="/discover-japan-project" component={SingleDiscoverJapan} />
-                     <Route path="/the-rolling-pin-project" component={SingleCapstone} />
-                     <Route path="/personal-portfolio" component={SinglePortfolio} />
-                     <Route path="*" component={Homepage} />
-                  </Switch>
-               </main>
-            </div>
-            <Social />
-            <Footer />
+            <ParallaxProvider>
+               <Header />
+               {/* Custom Cursor */}
+               {isDesktop === true && <div className="cursor"></div>}
+               <div className="wrapper">
+                  <main className="main main-page">
+                     <Switch>
+                        <Route path="/" exact component={Homepage} />
+                        <Route path="/about" component={About} />
+                        <Route path="/butter-db-project" component={SingleMovieApp} />
+                        <Route path="/the-rolling-pin-project" component={SingleCapstone} />
+                        <Route path="/personal-portfolio-project" component={SinglePortfolio} />
+                        <Route path="*" component={Homepage} />
+                     </Switch>
+                  </main>
+               </div>
+               <Social />
+               <Footer />
+            </ParallaxProvider>
          </React.Fragment>
       </Router>
    );

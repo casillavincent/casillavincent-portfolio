@@ -26,7 +26,6 @@
       button svg {
          &:hover {
             color: $main_text;
-            cursor: url("../../assets/cursor.png"), auto;
          }
       }
       a {
@@ -40,6 +39,9 @@
          padding: 15px 30px;
          border: 1px solid white;
          color: white;
+         &:hover {
+            background: $accent;
+         }
       }
    }
 
@@ -59,9 +61,6 @@
 
       svg {
          transition: all 0.4s ease-out;
-         &:hover {
-            fill: $accent;
-         }
       }
 
       // Connect with me

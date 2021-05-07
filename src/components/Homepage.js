@@ -2,11 +2,8 @@ import React from "react";
 import { useEffect } from "react";
 import Splash from "./Splash";
 import ProjectsSummary from "./projects/ProjectsSummary";
-import ProjectMovieApp from "./projects/ProjectMovieApp";
-import ProjectPortfolio from "./projects/ProjectPortfolio";
-import ProjectCapstone from "./projects/ProjectCapstone";
-import ProjectJapan from "./projects/ProjectJapan";
 import { Helmet } from "react-helmet";
+import Work from "./projects-thumn/Work";
 
 const Homepage = () => {
    useEffect(() => {
@@ -26,17 +23,8 @@ const Homepage = () => {
 
          <Splash />
          <ProjectsSummary />
-         <div
-            className="home-page-line-break"
-            data-aos="fade-down"
-            data-aos-easing="ease-in-quad"
-            data-aos-once="true"
-            data-aos-anchor-placement="top-center"
-         ></div>
-         <ProjectMovieApp />
-         <ProjectCapstone />
-         <ProjectPortfolio />
-         <ProjectJapan />
+
+         <Work />
       </React.Fragment>
    );
 };

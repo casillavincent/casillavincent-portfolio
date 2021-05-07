@@ -1,0 +1,167 @@
+// Imports
+@import "../2-abstracts/abstracts";
+
+/*
+-------------------------------------------
+* Global Project Items
+-------------------------------------------
+*/
+
+// Container
+.single-project-items {
+   width: 100%;
+   margin: 50px auto 50px auto;
+   @media screen and (min-width: 75em) {
+      margin: 150px auto 50px auto;
+   }
+}
+
+// SIngle Items
+.single-project-items .single-project-item {
+   width: 100%;
+   margin: auto;
+   @media screen and (min-width: 30em) {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.4s ease-in-out;
+      padding-bottom: 50px;
+
+      // Hover State
+      &:hover {
+         background: rgb(243, 243, 243);
+         img {
+            transform: scale(1.015);
+         }
+         .text-content {
+            h2 {
+               padding-left: 5px;
+            }
+            .stack {
+               padding-left: 10px;
+            }
+            .description {
+               padding-left: 15px;
+            }
+            .cta-btns {
+               padding-left: 20px;
+            }
+         }
+      }
+   }
+   @media screen and (min-width: 75em) {
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+   }
+
+   // Banner
+   .banner-link {
+      padding: 0px;
+      margin: 0px;
+      border: none;
+      &:hover {
+         background: none;
+         border: none;
+      }
+   }
+   .banner-link img {
+      width: 100%;
+      max-width: 500px;
+      @media screen and (min-width: 50em) {
+         transition: all 0.2s ease-in-out;
+      }
+   }
+
+   // Text
+   .text-content {
+      padding: 0px 25px;
+      position: relative;
+      top: -25px;
+      @media screen and (min-width: 75em) {
+         position: static;
+      }
+
+      h2,
+      .stack,
+      .description,
+      .cta-btns {
+         transition: all 0.3s ease-in-out;
+      }
+      h2 {
+         font-size: 1.5em;
+         display: flex;
+         flex-direction: row;
+         align-items: flex-end;
+         margin-bottom: 10px;
+         div {
+            height: 3px;
+            width: 25px;
+            margin: 0px 3px;
+            background: $accent;
+         }
+      }
+
+      .stack {
+         display: flex;
+         flex-direction: row;
+         justify-content: flex-start;
+         align-items: center;
+         flex-wrap: wrap;
+         margin-bottom: 15px;
+         li {
+            height: 25px;
+            width: 100%;
+            max-width: 85px;
+            margin: 5px 5px 0px 0px;
+            text-align: center;
+            padding: 5px 0px;
+            font-size: 0.75em;
+            color: white;
+            background: rgba($accent2, 0.9);
+            border-radius: 3px;
+            @media screen and (min-width: 50em) {
+               font-size: 0.8em;
+               max-width: 75;
+            }
+         }
+      }
+
+      .description {
+         line-height: 1.25;
+         margin-bottom: 25px;
+      }
+
+      .cta-btns {
+         display: flex;
+         flex-direction: column;
+         justify-content: flex-start;
+         align-items: flex-start;
+         flex-wrap: wrap;
+         @media screen and (min-width: 25em) {
+            flex-wrap: nowrap;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+         }
+
+         a {
+            width: 100%;
+            margin-bottom: 5px;
+            padding: 10px;
+            @media screen and (min-width: 25em) {
+               max-width: none;
+               width: 150px;
+               margin-right: 5px;
+            }
+
+            &:hover {
+               border: 1px solid transparent;
+               border-style: transparent;
+            }
+         }
+      }
+   }
+}

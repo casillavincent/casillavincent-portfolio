@@ -1,49 +1,36 @@
 import React from "react";
 import ScrollDownIcon from "./widgets/ScrollDownIcon";
-import { Link } from "react-router-dom";
 
 const Splash = () => {
    return (
       <article className="section splash">
          {/* Text Content */}
-         <section className="splash-text-container">
-            <h1
-               className="splash-text-container__tagline"
-               data-aos="fade-right"
-               data-aos-easing="ease-out-quart"
-               data-aos-once="false"
-               data-aos-duration="850"
-               data-aos-mirror="true"
-            >
-               I build user-facing online experiences using creative tools.
-            </h1>
-
-            <p
-               data-aos="fade-right"
-               data-aos-easing="ease-out-quart"
-               data-aos-once="false"
-               data-aos-delay="100"
-               data-aos-duration="850"
-               data-aos-mirror="true"
-            >
-               Front-end Web Developer & UX/UI Designer based in Vancouver, BC.
-            </p>
-
+         <section className="splash-section section-header-container">
             <div
-               className="splash-button-container"
-               data-aos="fade-right"
+               className="section-header"
+               data-aos="fade-up"
+               data-aos-duration="800"
+               data-aos-one="true"
                data-aos-easing="ease-out-quart"
-               data-aos-once="false"
-               data-aos-delay="150"
-               data-aos-duration="850"
-               data-aos-mirror="true"
             >
-               <Link to={"/about"}>More About Me</Link>
+               <p>Porfolio</p>
+               <h1>Vincent Casilla </h1>
+               <p className="role">Front-end web developer based in Vancouver, BC.</p>
             </div>
+            <ScrollDownIcon />
          </section>
 
-         {/* Scroll Down Indicator */}
-         <ScrollDownIcon />
+         {/* Intro */}
+         <section className="splash-section brief-intro" id="brief-intro">
+            <h2
+               data-aos="fade-up"
+               data-aos-duration="800"
+               data-aos-one="true"
+               data-aos-easing="ease-out-quart"
+            >
+               I build user-facing digital experiences
+            </h2>
+         </section>
       </article>
    );
 };

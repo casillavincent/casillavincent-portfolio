@@ -25,16 +25,12 @@ html {
 body {
    background: white;
    width: 100%;
-   overflow-x: hidden;
-
-   cursor: url("../../assets/cursor.png"), auto;
-   .main-page {
-      width: 100%;
-   }
+   margin: 0px;
+   padding: 0px;
 }
 
 .cursor {
-   border: 1px solid $accent;
+   border: 1px solid #202123;
    width: 25px;
    height: 25px;
    position: absolute;
@@ -45,6 +41,10 @@ body {
    transition-timing-function: ease-out;
    pointer-events: none;
    animation: cursorAnim 0.5s infinite alternate;
+   opacity: 0.7;
+   @media screen and (max-width: 50em) {
+      display: none;
+   }
 }
 
 .cursor::after {
@@ -52,7 +52,7 @@ body {
    width: 25px;
    height: 25px;
    position: absolute;
-   border: 8px solid $accent;
+   border: 8px solid #202123;
    border-radius: 50%;
    opacity: 0.5;
    top: -9px;
@@ -94,7 +94,7 @@ body {
 
 .expand {
    animation: cursorAnim3 0.5s forwards;
-   border: 1px solid red;
+   border: 1px solid #202123;
 }
 
 /*

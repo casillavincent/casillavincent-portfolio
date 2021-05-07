@@ -428,13 +428,6 @@
 
 /*
 -------------------------------------------
-* Japan
--------------------------------------------
-*/
-@import "./single-project-japan";
-
-/*
--------------------------------------------
 * Bottom CTAs
 -------------------------------------------
 */
@@ -462,7 +455,7 @@
       }
 
       &:hover {
-         background: rgba(#ec2341, 0.8);
+         background: rgba($accent2, 0.8);
          color: rgba(white, 0.75);
          border: 1px solid transparent;
          border-radius: 2px;

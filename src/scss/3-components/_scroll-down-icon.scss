@@ -8,15 +8,25 @@
 .scroll-downs {
    @include col-center-items;
    &:hover {
-      cursor: url("../../assets/cursor.png"), auto;
       * {
          color: $accent;
          border-color: $accent;
       }
+      .mousey {
+         background: transparent;
+         margin: 0px;
+         border-width: 2px;
+      }
+      .scroller {
+         background: $accent2;
+      }
+      .scroll-downs__label {
+         color: $accent;
+      }
    }
    &__label {
       margin-top: 10px;
-      font-size: 0.75em;
+      font-size: 0.85em;
       text-align: center;
       width: 100%;
    }
@@ -32,11 +42,6 @@
    display: flex;
    flex-direction: column;
    align-items: center;
-   &:hover {
-      background: transparent;
-      border: 2px solid $accent;
-      cursor: url("../../assets/cursor.png"), auto;
-   }
 }
 .scroller {
    width: 5px;

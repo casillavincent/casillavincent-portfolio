@@ -575,7 +575,7 @@ const SingleMovieApp = () => {
                {/* Component for CTA */}
                <SPCta
                   home="/"
-                  nextProject="/discover-japan-project"
+                  nextProject="/personal-portfolio-project"
                   livesite="https://vcasilla.com/the-rolling-pin/"
                   github={"none"}
                />

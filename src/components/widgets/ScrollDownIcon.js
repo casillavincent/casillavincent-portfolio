@@ -5,13 +5,12 @@ const ScrollDownIcon = () => {
       <div
          className="scroll-downs"
          data-aos="fade-up"
+         data-aos-duration="800"
+         data-aos-one="true"
          data-aos-easing="ease-out-quart"
-         data-aos-once="false"
-         data-aos-duration="850"
-         data-aos-mirror="true"
-         data-aos-anchor-placement="top-bottom"
+         data-aos-delay="150"
       >
-         <a href="#my-work" className="mousey">
+         <a href="#brief-intro" className="mousey">
             <div className="scroller"></div>
          </a>
          <p className="scroll-downs__label"> scroll down to explore my page</p>

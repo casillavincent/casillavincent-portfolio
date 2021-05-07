@@ -1,20 +1,9 @@
 import React from "react";
-import { useEffect, useState } from "react";
 
 // AOS
 import AOS from "aos";
 
 const ProjectsSummary = () => {
-   const [isDesktop, setIsDesktop] = useState(null);
-
-   useEffect(() => {
-      if (window.innerWidth >= 800) {
-         setIsDesktop(true);
-      } else {
-         setIsDesktop(false);
-      }
-   }, []);
-
    // AOS Plugin
    AOS.init();
    return (
@@ -23,7 +12,6 @@ const ProjectsSummary = () => {
          <section className="projects__intro">
             <h2
                data-aos="fade-down"
-               data-aos-anchor-placement="center-bottom"
                data-aos-easing="ease-out-quart"
                data-aos-once="true"
                data-aos-duration="800"
@@ -31,15 +19,13 @@ const ProjectsSummary = () => {
                My Work
             </h2>
             <hr
-               data-aos="fade-right"
-               data-aos-anchor-placement="center-bottom"
+               data-aos="fade-up"
                data-aos-easing="ease-out-quart"
                data-aos-once="true"
                data-aos-duration="800"
             />
             <blockquote
-               data-aos="fade-right"
-               data-aos-anchor-placement="bottom-bottom"
+               data-aos="fade-up"
                data-aos-easing="ease-out-quart"
                data-aos-delay="300"
                data-aos-once="true"
@@ -54,15 +40,16 @@ const ProjectsSummary = () => {
 
          {/* Highlights */}
          <section className="projects__highlights">
-            <div className="highlights-container">
+            <div
+               className="highlights-container"
+               data-aos="fade-up"
+               data-aos-easing="ease-out-quart"
+               data-aos-delay="450"
+               data-aos-once="true"
+               data-aos-duration="900"
+            >
                {/* Item 01 */}
-               <div
-                  className="highlights-item-01"
-                  data-aos={isDesktop === true ? "fade-up" : "fade-right"}
-                  data-aos-easing="ease-out-quart"
-                  data-aos-once="true"
-                  data-aos-duration="800"
-               >
+               <div className="highlights-item-01">
                   <lord-icon
                      src="https://cdn.lordicon.com//nocovwne.json"
                      trigger="loop-on-hover"
@@ -74,13 +61,7 @@ const ProjectsSummary = () => {
                </div>
 
                {/* Item 02 */}
-               <div
-                  className="highlights-item-02"
-                  data-aos={isDesktop === true ? "fade-up" : "fade-right"}
-                  data-aos-easing="ease-out-quart"
-                  data-aos-once="true"
-                  data-aos-duration="800"
-               >
+               <div className="highlights-item-02">
                   <lord-icon
                      src="https://cdn.lordicon.com//jvucoldz.json"
                      trigger="loop-on-hover"
@@ -92,13 +73,7 @@ const ProjectsSummary = () => {
                </div>
 
                {/* Item 03 */}
-               <div
-                  className="highlights-item-03"
-                  data-aos={isDesktop === true ? "fade-up" : "fade-right"}
-                  data-aos-easing="ease-out-quart"
-                  data-aos-once="true"
-                  data-aos-duration="800"
-               >
+               <div className="highlights-item-03">
                   <lord-icon
                      src="https://cdn.lordicon.com//msoeawqm.json"
                      trigger="loop-on-hover"
@@ -110,13 +85,7 @@ const ProjectsSummary = () => {
                </div>
 
                {/* Item 04 */}
-               <div
-                  className="highlights-item-04"
-                  data-aos={isDesktop === true ? "fade-up" : "fade-right"}
-                  data-aos-easing="ease-out-quart"
-                  data-aos-once="true"
-                  data-aos-duration="800"
-               >
+               <div className="highlights-item-04">
                   {/* <FaPaintRoller title="Paint Roller Icon" /> */}
                   <lord-icon
                      src="https://cdn.lordicon.com//wloilxuq.json"

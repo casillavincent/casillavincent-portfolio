@@ -117,9 +117,7 @@ const About = () => {
                <hr />
                <ul className="technical-skills">
                   <li className="technical-skills__item">Responsive web design (mobile first)</li>
-                  <li className="technical-skills__item">
-                     Wireframing and high-fidelity prototyping
-                  </li>
+                  <li className="technical-skills__item">Wireframing and high-fidelity mockups</li>
                   <li className="technical-skills__item">
                      Search Engine Optimization (SEO) and Accessibility
                   </li>

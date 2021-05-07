@@ -1,6 +1,7 @@
 import React from "react";
-import { FaTwitter, FaGithub, FaEnvelope, FaLinkedinIn } from "react-icons/fa";
+import { FaGithubAlt, FaTelegramPlane, FaLinkedinIn } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
+import { CgTwitter } from "react-icons/cg";
 
 const Social = () => {
    // This hides the social icons when reaching the bottom of the window
@@ -33,7 +34,7 @@ const Social = () => {
                rel="noopener noreferrer"
                id="twitter-link"
             >
-               <FaTwitter title="Twitter Icon" />
+               <CgTwitter title="Twitter Icon" />
             </a>
 
             <a
@@ -42,7 +43,7 @@ const Social = () => {
                rel="noopener noreferrer"
                id="github-link"
             >
-               <FaGithub title="Github Icon" />
+               <FaGithubAlt title="Github Icon" />
             </a>
 
             <a
@@ -60,7 +61,7 @@ const Social = () => {
                id="e-mail-link"
                rel="noopener noreferrer"
             >
-               <FaEnvelope title="E-mail Icon" />
+               <FaTelegramPlane title="E-mail Icon" />
             </a>
          </IconContext.Provider>
       </aside>

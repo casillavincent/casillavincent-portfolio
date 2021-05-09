@@ -1,12 +1,12 @@
 import React from "react";
-import { FaTwitter, FaGithub, FaLinkedinIn, FaTelegramPlane } from "react-icons/fa";
-import { IconContext } from "react-icons/lib";
 import ScrollTop from "../widgets/ScrollTop";
 
-// Plugins
-import AOS from "aos";
+// Icons
+import { FaGithubAlt, FaTelegramPlane, FaLinkedinIn } from "react-icons/fa";
+import { IconContext } from "react-icons/lib";
+import { CgTwitter } from "react-icons/cg";
+
 const Footer = () => {
-   AOS.init();
    return (
       <footer className="footer" id="contact">
          <ScrollTop />
@@ -34,7 +34,7 @@ const Footer = () => {
                      rel="noopener noreferrer"
                      id="twitter-link"
                   >
-                     <FaTwitter title="Twitter Icon" />
+                     <CgTwitter title="Twitter Icon" />
                   </a>
 
                   <a
@@ -43,7 +43,7 @@ const Footer = () => {
                      rel="noopener noreferrer"
                      id="github-link"
                   >
-                     <FaGithub title="Github Icon" />
+                     <FaGithubAlt title="Github Icon" />
                   </a>
 
                   <a

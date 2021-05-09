@@ -10,8 +10,7 @@ const Splash = () => {
                className="section-header"
                data-aos="fade-up"
                data-aos-duration="800"
-               data-aos-one="true"
-               data-aos-easing="ease-out-quart"
+               data-aos-once="true"
             >
                <p>Porfolio</p>
                <h1>Vincent Casilla </h1>
@@ -22,12 +21,7 @@ const Splash = () => {
 
          {/* Intro */}
          <section className="splash-section brief-intro" id="brief-intro">
-            <h2
-               data-aos="fade-up"
-               data-aos-duration="800"
-               data-aos-one="true"
-               data-aos-easing="ease-out-quart"
-            >
+            <h2 data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
                I build user-facing digital experiences
             </h2>
          </section>

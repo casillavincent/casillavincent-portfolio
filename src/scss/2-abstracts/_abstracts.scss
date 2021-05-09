@@ -84,14 +84,15 @@ $logo2: "Monda", sans-serif;
    border-top: 20px solid $bannerBorder;
    border-bottom: 40px solid $bannerBorder;
    box-shadow: 0px 0px 0px 3px #303030;
-   border-radius: 10px;
+   border-radius: 5px;
+   box-shadow: -5px 5px 20px 10px rgba(gray, 0.2);
 }
 
 @mixin desktop-banner-border {
    border: 10px solid $bannerBorder;
    border-bottom: 35px solid $bannerBorder;
    box-shadow: 0px 0px 0px 3px #303030;
-
+   box-shadow: -5px 5px 20px 10px rgba(gray, 0.3);
    border-radius: 5px;
 }
 

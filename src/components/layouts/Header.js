@@ -73,7 +73,7 @@ const Header = () => {
                </ul>
                <hr className="menu-break" />
                <div className="menu-social-icons">
-                  <IconContext.Provider value={{ color: "white", size: "1.75em" }}>
+                  <IconContext.Provider value={{ color: "#202123", size: "1.75em" }}>
                      <a
                         href="https://twitter.com/casillavincent"
                         target="_blank"

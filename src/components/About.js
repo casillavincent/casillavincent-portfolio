@@ -3,16 +3,10 @@ import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import { Helmet } from "react-helmet";
 
-// Plugins
-import AOS from "aos";
-
 // Images
 import MY_PORTAIT from "../assets/portrait.png";
 
 const About = () => {
-   // AOS Plugin initiate
-   AOS.init();
-
    // <--- Keen Slider --->
    const [pause, setPause] = React.useState(false);
    const timer = React.useRef();
@@ -58,7 +52,7 @@ const About = () => {
          </Helmet>
 
          {/* My Summary */}
-         <section className="about-item my-summary" data-aos="fade-up" data-aos-duration="800">
+         <section className="about-item my-summary" data-aos="fade-up">
             {/* Portrait */}
             <div className="my-summary__portrait">
                <img src={MY_PORTAIT} alt="Self Portrait" />
@@ -90,7 +84,7 @@ const About = () => {
          <section className="about-item artillery">
             {/* Development Stack */}
             <div className="col-development-stack">
-               <h3>Development Stack</h3>
+               <h3>Tech Stack</h3>
                <hr />
                <ul className="development-stack" title="Scroll Me">
                   <li className="development-stack__item">React.JS</li>
@@ -102,12 +96,13 @@ const About = () => {
                   <li className="development-stack__item">jQuery</li>
                   <li className="development-stack__item">PHP</li>
                   <li className="development-stack__item">Wordpress</li>
-                  <li className="development-stack__item">Shopify</li>
-                  <li className="development-stack__item">Liquid</li>
+                  <li className="development-stack__item">Shopify Liquid</li>
                   <li className="development-stack__item">WooCommerce</li>
                   <li className="development-stack__item">Adobe XD</li>
                   <li className="development-stack__item">Github</li>
                   <li className="development-stack__item">MySQL</li>
+                  <li className="development-stack__item">Apollo Server</li>
+                  <li className="development-stack__item">GraphQL</li>
                </ul>
             </div>
 
@@ -122,7 +117,7 @@ const About = () => {
                      Search Engine Optimization (SEO) and Accessibility
                   </li>
                   <li className="technical-skills__item">Single page web applications</li>
-                  <li className="technical-skills__item">CMS Development(WordPress & Shopify)</li>
+                  <li className="technical-skills__item">CMS Development (WordPress & Shopify)</li>
                   <li className="technical-skills__item">UX/UI Design</li>
                </ul>
             </div>

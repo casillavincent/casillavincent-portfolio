@@ -11,40 +11,43 @@
 }
 /*
 -------------------------------------------
-* Title
+*                Title
 -------------------------------------------
 */
 .single-project-info__title {
    color: $main_text;
    width: 100%;
-   height: 45vh;
+   height: 35vh;
+   min-height: 400px;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
    padding: 15px;
-   margin-bottom: 125px;
    h1 {
-      font-size: 2.5em;
+      font-size: 2em;
       margin-bottom: 5px;
       text-align: center;
+      text-transform: uppercase;
    }
 
    p {
       text-align: center;
       font-style: italic;
+      line-height: 1.25;
    }
 
-   @media screen and (min-width: 45em) {
+   @media screen and (min-width: 50em) {
+      height: 50vh;
       h1 {
-         font-size: 3em;
+         font-size: 3.5em;
       }
    }
 }
 
 /*
 -------------------------------------------
-* Overview
+*              Overview
 -------------------------------------------
 */
 .single-project-overview {
@@ -53,6 +56,7 @@
    display: flex;
    flex-direction: column;
    align-items: center;
+
    // Banner
    &--mobile-banner {
       width: 60%;
@@ -120,9 +124,10 @@
          }
 
          h2 {
-            font-size: 1.25em;
+            font-size: 1em;
             margin-bottom: 10px;
             color: $accent;
+            text-transform: uppercase;
          }
 
          ul {
@@ -208,6 +213,9 @@
    margin: auto;
    height: 35em;
    color: $main_text;
+   p {
+      font-size: 1em !important;
+   }
    @media screen and (min-width: 50em) {
       height: 600px;
    }
@@ -407,7 +415,7 @@
 */
 .code-snippet {
    width: 100%;
-   padding: 20px;
+   padding: 20px 0px;
    max-width: 1150px;
    margin: auto;
 

@@ -17,11 +17,15 @@ const SPOverview = ({
             src={mobileBanner}
             alt="Project Banner"
             className="single-project-overview--mobile-banner"
+            data-aos="fade-up"
+            data-aos-delay="650"
          />
          <img
             src={desktopBanner}
             alt="Project Banner"
             className="single-project-overview--desktop-banner"
+            data-aos="fade-up"
+            data-aos-delay="650"
          />
 
          {/* <--- This is the start of the content container ---> */}

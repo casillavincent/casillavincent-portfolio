@@ -36,8 +36,6 @@ import movieFinalDesktop4 from "../../../assets/movie-app-final/desktop/butter-d
 import mobileBanner from "../../../assets/banners/movie-mobile.jpg";
 import desktopBanner from "../../../assets/banners/movie-desktop.jpg";
 
-// AOS
-import AOS from "aos";
 import SPTypography from "../single-page-components/SPTypography";
 
 const SingleMovieApp = () => {
@@ -65,9 +63,6 @@ const SingleMovieApp = () => {
          size: "40px",
       },
    };
-
-   // AOS Plugin
-   AOS.init();
 
    return (
       <section className="single-project-info">
@@ -100,36 +95,9 @@ const SingleMovieApp = () => {
             <SPDesign text={MY_PROJECTS[0].design} />
             <SRLWrapper options={options}>
                <div className="design-gallery">
-                  <img
-                     src={movieMockup1}
-                     alt="Popular Page"
-                     width="150"
-                     loading="lazy"
-                     data-aos="fade-up"
-                     data-aos-easing="ease-out-quart"
-                     data-aos-once="false"
-                     data-aos-anchor-placement="center-bottom"
-                  />
-                  <img
-                     src={movieMockup2}
-                     alt="Favourites Page"
-                     width="150"
-                     loading="lazy"
-                     data-aos="fade-up"
-                     data-aos-easing="ease-out-quart"
-                     data-aos-once="false"
-                     data-aos-anchor-placement="center-bottom"
-                  />
-                  <img
-                     src={movieMockup3}
-                     alt="Single Page"
-                     width="150"
-                     loading="lazy"
-                     data-aos="fade-up"
-                     data-aos-easing="ease-out-quart"
-                     data-aos-once="false"
-                     data-aos-anchor-placement="center-bottom"
-                  />
+                  <img src={movieMockup1} alt="Popular Page" width="150" loading="lazy" />
+                  <img src={movieMockup2} alt="Favourites Page" width="150" loading="lazy" />
+                  <img src={movieMockup3} alt="Single Page" width="150" loading="lazy" />
                </div>
 
                {/* Component for colors used */}
@@ -151,13 +119,7 @@ const SingleMovieApp = () => {
                <SPDevelopment text={MY_PROJECTS[0].development} />
 
                {/* Complete project images */}
-               <article
-                  className="final-project-gallery--mobile"
-                  data-aos="fade-up"
-                  data-aos-easing="ease-out-quart"
-                  data-aos-once="false"
-                  data-aos-anchor-placement="top-center"
-               >
+               <article className="final-project-gallery--mobile">
                   <h3>Mobile</h3>
                   <hr />
                   <div className="mobile-gallery">
@@ -203,40 +165,24 @@ const SingleMovieApp = () => {
                         alt="Butter DB Final Live Site"
                         width="150"
                         loading="lazy"
-                        data-aos="fade-up"
-                        data-aos-easing="ease-out-quart"
-                        data-aos-once="false"
-                        data-aos-anchor-placement="center-bottom"
                      />
                      <img
                         src={movieFinalDesktop2}
                         alt="Butter DB Final Live Site"
                         width="150"
                         loading="lazy"
-                        data-aos="fade-up"
-                        data-aos-easing="ease-out-quart"
-                        data-aos-once="false"
-                        data-aos-anchor-placement="center-bottom"
                      />
                      <img
                         src={movieFinalDesktop3}
                         alt="Butter DB Final Live Site"
                         width="150"
                         loading="lazy"
-                        data-aos="fade-up"
-                        data-aos-easing="ease-out-quart"
-                        data-aos-once="false"
-                        data-aos-anchor-placement="center-bottom"
                      />
                      <img
                         src={movieFinalDesktop4}
                         alt="Butter DB Final Live Site"
                         width="150"
                         loading="lazy"
-                        data-aos="fade-up"
-                        data-aos-easing="ease-out-quart"
-                        data-aos-once="false"
-                        data-aos-anchor-placement="top-bottom"
                      />
                   </div>
                </article>

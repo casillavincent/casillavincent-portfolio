@@ -70,16 +70,11 @@ import Trello from "../../../assets/capstone-imgs/trello.png";
 // Code Snippet
 import CodeS1 from "../../../assets/capstone-imgs/rp-code-snippet/code-snippet1.png";
 import CodeS2 from "../../../assets/capstone-imgs/rp-code-snippet/code-snippet2.png";
-// AOS
-import AOS from "aos";
 
 const SingleMovieApp = () => {
    useEffect(() => {
       window.scrollTo(0, 0);
    }, []);
-
-   // AOS Plugin
-   AOS.init();
 
    const options = {
       settings: {
@@ -261,14 +256,7 @@ const SingleMovieApp = () => {
                         team because this guided us on what facets of the website are crucial.
                         <span>(Click the image below to read the user's journey)</span>
                      </p>
-                     <img
-                        src={Journey}
-                        alt="Journey Map"
-                        loading="lazy"
-                        data-aos="fade-up"
-                        data-aos-easing="ease-out-quart"
-                        data-aos-once="false"
-                     />
+                     <img src={Journey} alt="Journey Map" loading="lazy" />
 
                      <div className="personas">
                         <h4>User Personas</h4>
@@ -282,18 +270,12 @@ const SingleMovieApp = () => {
                            alt="Angela Johnson User Persona"
                            width="250"
                            loading="lazy"
-                           data-aos="fade-up"
-                           data-aos-easing="ease-out-quart"
-                           data-aos-once="false"
                         />
                         <img
                            src={archetypes2}
                            alt="Jessica Campbell User Persona"
                            width="250"
                            loading="lazy"
-                           data-aos="fade-up"
-                           data-aos-easing="ease-out-quart"
-                           data-aos-once="false"
                         />
                      </div>
                   </div>
@@ -309,22 +291,11 @@ const SingleMovieApp = () => {
                         alt="Site Map"
                         width="250"
                         loading="lazy"
-                        data-aos="fade-up"
-                        data-aos-easing="ease-out-quart"
-                        data-aos-once="false"
                         className="site-map-01"
                      />
 
                      <h4>Feature Prioritization</h4>
-                     <img
-                        src={Features}
-                        alt="Site Map"
-                        width="250"
-                        loading="lazy"
-                        data-aos="fade-up"
-                        data-aos-easing="ease-out-quart"
-                        data-aos-once="false"
-                     />
+                     <img src={Features} alt="Site Map" width="250" loading="lazy" />
 
                      <h4>Information Architecture</h4>
                      <p>
@@ -336,13 +307,7 @@ const SingleMovieApp = () => {
                         clean markup.
                      </p>
 
-                     <div
-                        className="ia-gallery-container"
-                        data-aos="fade-up"
-                        data-aos-easing="ease-out-quart"
-                        data-aos-once="false"
-                        data-aos-anchor-placement="top-center"
-                     >
+                     <div className="ia-gallery-container">
                         <img
                            src={IA4}
                            alt="Information Architecture"
@@ -364,10 +329,6 @@ const SingleMovieApp = () => {
                         width="150"
                         loading="lazy"
                         className="ia-template-heirarchy site-map-02"
-                        data-aos="fade-up"
-                        data-aos-easing="ease-out-quart"
-                        data-aos-once="false"
-                        data-aos-anchor-placement="top-center"
                      />
                   </div>
 
@@ -376,38 +337,10 @@ const SingleMovieApp = () => {
                   {/* Wireframes */}
                   <div className="process-item wireframes">
                      <h3 className="process-heading">Wireframes</h3>
-                     <img
-                        src={wireframe1}
-                        alt="The Rolling Pin Wireframes"
-                        loading="lazy"
-                        data-aos="fade-up"
-                        data-aos-easing="ease-out-quart"
-                        data-aos-once="false"
-                     />
-                     <img
-                        src={wireframe2}
-                        alt="The Rolling Pin Wireframes"
-                        loading="lazy"
-                        data-aos="fade-up"
-                        data-aos-easing="ease-out-quart"
-                        data-aos-once="false"
-                     />
-                     <img
-                        src={wireframe3}
-                        alt="The Rolling Pin Wireframes"
-                        loading="lazy"
-                        data-aos="fade-up"
-                        data-aos-easing="ease-out-quart"
-                        data-aos-once="false"
-                     />
-                     <img
-                        src={wireframe4}
-                        alt="The Rolling Pin Wireframes"
-                        loading="lazy"
-                        data-aos="fade-up"
-                        data-aos-easing="ease-out-quart"
-                        data-aos-once="false"
-                     />
+                     <img src={wireframe1} alt="The Rolling Pin Wireframes" loading="lazy" />
+                     <img src={wireframe2} alt="The Rolling Pin Wireframes" loading="lazy" />
+                     <img src={wireframe3} alt="The Rolling Pin Wireframes" loading="lazy" />
+                     <img src={wireframe4} alt="The Rolling Pin Wireframes" loading="lazy" />
                   </div>
 
                   <div className="timeline"></div>
@@ -418,26 +351,11 @@ const SingleMovieApp = () => {
 
                      {/* Photo with Adobe XD */}
                      <div className="hfmu-overview">
-                        <img
-                           src={HFMU1}
-                           alt="Adobe XD All Mockup"
-                           width="750"
-                           loading="lazy"
-                           data-aos="fade-up"
-                           data-aos-easing="ease-out-quart"
-                           data-aos-once="false"
-                           data-aos-anchor-placement="center-bottom"
-                        />
+                        <img src={HFMU1} alt="Adobe XD All Mockup" width="750" loading="lazy" />
                      </div>
 
                      {/* Single Page Items */}
-                     <div
-                        className="hfmu-single-pages"
-                        data-aos="fade-up"
-                        data-aos-easing="ease-out-quart"
-                        data-aos-once="false"
-                        data-aos-anchor-placement="top-bottom"
-                     >
+                     <div className="hfmu-single-pages">
                         <img
                            src={HFMU5}
                            alt="Home Mockup Page"
@@ -495,26 +413,8 @@ const SingleMovieApp = () => {
                   <h3>Logo</h3>
                   <hr />
                   <div className="logo-items">
-                     <img
-                        src={Logo1}
-                        alt="The Rolling Pin Logo Dark"
-                        width="250"
-                        loading="lazy"
-                        data-aos="fade-right"
-                        data-aos-easing="ease-out-quart"
-                        data-aos-once="false"
-                        data-aos-anchor-placement="top-center"
-                     />
-                     <img
-                        src={Logo2}
-                        alt="The Rolling Pin Logo Light"
-                        width="250"
-                        loading="lazy"
-                        data-aos="fade-left"
-                        data-aos-easing="ease-out-quart"
-                        data-aos-once="false"
-                        data-aos-anchor-placement="top-center"
-                     />
+                     <img src={Logo1} alt="The Rolling Pin Logo Dark" width="250" loading="lazy" />
+                     <img src={Logo2} alt="The Rolling Pin Logo Light" width="250" loading="lazy" />
                   </div>
                </div>
 
@@ -528,9 +428,6 @@ const SingleMovieApp = () => {
                      alt="Trello; Project Management Split"
                      width="800"
                      loading="lazy"
-                     data-aos="fade-up"
-                     data-aos-easing="ease-out-quart"
-                     data-aos-once="false"
                   />
                </div>
 
@@ -544,15 +441,7 @@ const SingleMovieApp = () => {
                         Function for displaying the Featured Items ACF{" "}
                         <span>(Click the image to see the code)</span>
                      </p>
-                     <img
-                        src={CodeS1}
-                        alt="ACF Code Snippet"
-                        width="500"
-                        loading="lazy"
-                        data-aos="fade-up"
-                        data-aos-easing="ease-out-quart"
-                        data-aos-once="false"
-                     />
+                     <img src={CodeS1} alt="ACF Code Snippet" width="500" loading="lazy" />
                   </div>
 
                   <div className="code-snippet code-snippet-2">
@@ -565,9 +454,6 @@ const SingleMovieApp = () => {
                         alt="Conditional Rendering for class attribute in Header"
                         width="500"
                         loading="lazy"
-                        data-aos="fade-up"
-                        data-aos-easing="ease-out-quart"
-                        data-aos-once="false"
                      />
                   </div>
                </div>

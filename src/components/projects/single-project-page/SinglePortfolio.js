@@ -33,16 +33,10 @@ import WF6 from "../../../assets/portfolio/portfolio-wireframes/portfolio-wirefr
 // Project Info
 import { MY_PROJECTS } from "../../../globals/project-info";
 
-// AOS
-import AOS from "aos";
-
 const SingleMovieApp = () => {
    useEffect(() => {
       window.scrollTo(0, 0);
    }, []);
-
-   // AOS Plugin
-   AOS.init();
 
    // Options for Lightbox
    const options = {
@@ -147,16 +141,7 @@ const SingleMovieApp = () => {
                   content. I then created a detailed content plan for all the necessary information
                   I wanted to present for each project.
                </p>
-               <img
-                  src={contentPlan}
-                  alt="Content Plan"
-                  width="250"
-                  loading="lazy"
-                  data-aos="fade-up"
-                  data-aos-easing="ease-out-quart"
-                  data-aos-once="false"
-                  data-aos-anchor-placement="center-bottom"
-               />
+               <img src={contentPlan} alt="Content Plan" width="250" loading="lazy" />
                <div className="content-plan__sample">
                   <h5> Content plan for my portfolio react app (example)</h5>
                   <ul>

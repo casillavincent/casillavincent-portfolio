@@ -1,11 +1,6 @@
 import React from "react";
 
-// AOS
-import AOS from "aos";
-
 const ProjectsSummary = () => {
-   // AOS Plugin
-   AOS.init();
    return (
       <article className="section projects" id="my-work">
          {/* Title and Summary */}

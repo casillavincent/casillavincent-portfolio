@@ -7,9 +7,21 @@ import Thumb01 from "../../assets/banners/capstone.png";
 import Thumb02 from "../../assets/banners/jynx.png";
 import Thumb03 from "../../assets/banners/movie.png";
 import Thumb04 from "../../assets/banners/portfolio.png";
+import Thumb05 from "../../assets/banners/mercedes.png";
 
 // Data
 const workObj = [
+   {
+      project: "Yaeger",
+      description: "Custom built WordPress theme. A photography portfolio. More info on Github.",
+      stack: ["WordPress", "PHP", "Sass", "HTML5"],
+      github: "https://github.com/casillavincent/yaeger",
+      livesite: "http://portfolio.vcasilla.com/",
+      img: Thumb05,
+      info: false,
+      router: null,
+      slug: "mercedes",
+   },
    {
       project: "Jynx Media",
       description: "A digital agency where creativity meets innovation.",
